@@ -1,0 +1,10 @@
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Dashboard.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Dashboard.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Dashboard.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.csproj.AssemblyReference.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.frDashboard.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.csproj.CoreCompileInputs.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.pdb
