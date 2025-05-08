@@ -160,6 +160,7 @@
             // 
             // btn_Cancel
             // 
+            this.btn_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_Cancel.Location = new System.Drawing.Point(186, 586);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(80, 23);
@@ -568,9 +569,9 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBox_nom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frNewPayload";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajouter un payload";
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();

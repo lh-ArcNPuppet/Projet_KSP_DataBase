@@ -716,6 +716,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbo_statusMission);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frNewMission";
             this.Text = "Ajouter un vol";
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();

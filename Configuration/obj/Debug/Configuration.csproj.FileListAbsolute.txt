@@ -1,0 +1,10 @@
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\Configuration.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\Configuration.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\Configuration.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.csproj.AssemblyReference.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigAstre.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.Properties.Resources.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.csproj.GenerateResource.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.csproj.CoreCompileInputs.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.pdb
