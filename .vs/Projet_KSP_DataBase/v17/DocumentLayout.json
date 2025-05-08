@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\01- Programmation\\03- C#\\Projet_KSP_DataBase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AFD7E5-22A0-4EA0-92E5-BF1DDE86859A}|Dashboard\\Dashboard.csproj|p:\\01- programmation\\03- c#\\projet_ksp_database\\dashboard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4AFD7E5-22A0-4EA0-92E5-BF1DDE86859A}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "P:\\01- Programmation\\03- C#\\Projet_KSP_DataBase\\Dashboard\\Form1.cs",
+              "RelativeDocumentMoniker": "Dashboard\\Form1.cs",
+              "ToolTip": "P:\\01- Programmation\\03- C#\\Projet_KSP_DataBase\\Dashboard\\Form1.cs [Design]",
+              "RelativeToolTip": "Dashboard\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T08:09:27.554Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
