@@ -352,7 +352,7 @@
             // 
             // btn_viderListKerbonaute
             // 
-            this.btn_viderListKerbonaute.Location = new System.Drawing.Point(169, 117);
+            this.btn_viderListKerbonaute.Location = new System.Drawing.Point(226, 117);
             this.btn_viderListKerbonaute.Name = "btn_viderListKerbonaute";
             this.btn_viderListKerbonaute.Size = new System.Drawing.Size(75, 23);
             this.btn_viderListKerbonaute.TabIndex = 20;
@@ -361,7 +361,7 @@
             // 
             // btn_editListKerbonaute
             // 
-            this.btn_editListKerbonaute.Location = new System.Drawing.Point(169, 93);
+            this.btn_editListKerbonaute.Location = new System.Drawing.Point(226, 93);
             this.btn_editListKerbonaute.Name = "btn_editListKerbonaute";
             this.btn_editListKerbonaute.Size = new System.Drawing.Size(75, 23);
             this.btn_editListKerbonaute.TabIndex = 20;
@@ -383,7 +383,7 @@
             this.lst_kerbonaute.FormattingEnabled = true;
             this.lst_kerbonaute.Location = new System.Drawing.Point(6, 19);
             this.lst_kerbonaute.Name = "lst_kerbonaute";
-            this.lst_kerbonaute.Size = new System.Drawing.Size(157, 121);
+            this.lst_kerbonaute.Size = new System.Drawing.Size(207, 121);
             this.lst_kerbonaute.TabIndex = 9;
             // 
             // groupBox2
@@ -701,11 +701,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 524);
+            this.Controls.Add(this.txtBox_nomMission);
             this.Controls.Add(this.pctBox_PictureType);
             this.Controls.Add(this.lbl_numVol);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.txtBox_nomMission);
             this.Controls.Add(this.btn_annuler);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

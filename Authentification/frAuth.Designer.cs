@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 113);
+            this.label1.Location = new System.Drawing.Point(14, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 139);
+            this.label2.Location = new System.Drawing.Point(14, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 0;
@@ -56,14 +56,14 @@
             // 
             // txtBox_username
             // 
-            this.txtBox_username.Location = new System.Drawing.Point(95, 110);
+            this.txtBox_username.Location = new System.Drawing.Point(97, 12);
             this.txtBox_username.Name = "txtBox_username";
             this.txtBox_username.Size = new System.Drawing.Size(195, 20);
             this.txtBox_username.TabIndex = 1;
             // 
             // txtBox_password
             // 
-            this.txtBox_password.Location = new System.Drawing.Point(95, 136);
+            this.txtBox_password.Location = new System.Drawing.Point(97, 38);
             this.txtBox_password.Name = "txtBox_password";
             this.txtBox_password.Size = new System.Drawing.Size(195, 20);
             this.txtBox_password.TabIndex = 2;
@@ -72,7 +72,7 @@
             // chk_showPassword
             // 
             this.chk_showPassword.AutoSize = true;
-            this.chk_showPassword.Location = new System.Drawing.Point(95, 158);
+            this.chk_showPassword.Location = new System.Drawing.Point(97, 60);
             this.chk_showPassword.Name = "chk_showPassword";
             this.chk_showPassword.Size = new System.Drawing.Size(128, 17);
             this.chk_showPassword.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             // btn_connect
             // 
-            this.btn_connect.Location = new System.Drawing.Point(199, 179);
+            this.btn_connect.Location = new System.Drawing.Point(201, 81);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(91, 23);
             this.btn_connect.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 214);
+            this.ClientSize = new System.Drawing.Size(305, 117);
             this.Controls.Add(this.btn_connect);
             this.Controls.Add(this.chk_showPassword);
             this.Controls.Add(this.txtBox_password);
