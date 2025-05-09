@@ -1,0 +1,6 @@
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.csproj.AssemblyReference.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.csproj.CoreCompileInputs.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.pdb

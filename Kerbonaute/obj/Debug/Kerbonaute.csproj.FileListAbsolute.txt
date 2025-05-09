@@ -1,0 +1,11 @@
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\Kerbonaute.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\Kerbonaute.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\Kerbonaute.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.csproj.AssemblyReference.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.frKerbonaute.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.frNewKerbonaute.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.Properties.Resources.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.csproj.GenerateResource.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.csproj.CoreCompileInputs.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.pdb

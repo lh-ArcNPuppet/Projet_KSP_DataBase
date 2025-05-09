@@ -8,3 +8,4 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configur
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigSysteme.resources

@@ -1,0 +1,13 @@
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\Mission.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\Mission.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\Mission.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj.AssemblyReference.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditerListeKerbonaute.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditListPayload.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frMission.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frNewMission.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.Properties.Resources.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj.GenerateResource.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj.CoreCompileInputs.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.pdb

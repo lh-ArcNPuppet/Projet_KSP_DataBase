@@ -79,5 +79,39 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Authentification\Authentification.csproj">
+      <Project>{707832e2-bbaf-4d20-8304-d4c472462ae9}</Project>
+      <Name>Authentification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{3154b825-db09-44b3-bfc3-a7db8b3768d6}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kerbonaute\Kerbonaute.csproj">
+      <Project>{916595a5-2579-44cf-8e12-3fffaf178df3}</Project>
+      <Name>Kerbonaute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lanceur\Lanceur.csproj">
+      <Project>{9b52a7d7-2129-4ca0-80a9-c2af97f9c589}</Project>
+      <Name>Lanceur</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIB_BLL\LIB_BLL.csproj">
+      <Project>{99d68747-6622-4d4e-93e3-435d5a59dd5a}</Project>
+      <Name>LIB_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIB_DAL\LIB_DAL.csproj">
+      <Project>{364e4f91-c378-42ea-8065-94e0873bae0e}</Project>
+      <Name>LIB_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mission\Mission.csproj">
+      <Project>{b82143b0-b6f1-4868-8655-2933480f5afd}</Project>
+      <Name>Mission</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Payload\Payload.csproj">
+      <Project>{1959a804-f6d4-417f-aded-d6c5fb6d45e6}</Project>
+      <Name>Payload</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

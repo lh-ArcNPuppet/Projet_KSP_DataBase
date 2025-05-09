@@ -35,17 +35,17 @@
             this.payloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kerbonautesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculateurDeDeltaVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculateurLKOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configLanceurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configPayloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configKerbonauteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesStatusMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesSituationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editerLaListeDesTypesDeLanveursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configLanceurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editerLaListeDesTypesDeLanceursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configPayloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesTypesDePayloadsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configKerbonauteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesProfessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -78,24 +78,28 @@
             this.missionsToolStripMenuItem.Name = "missionsToolStripMenuItem";
             this.missionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.missionsToolStripMenuItem.Text = "Missions";
+            this.missionsToolStripMenuItem.Click += new System.EventHandler(this.missionsToolStripMenuItem_Click);
             // 
             // lanceursToolStripMenuItem
             // 
             this.lanceursToolStripMenuItem.Name = "lanceursToolStripMenuItem";
             this.lanceursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lanceursToolStripMenuItem.Text = "Lanceurs";
+            this.lanceursToolStripMenuItem.Click += new System.EventHandler(this.lanceursToolStripMenuItem_Click);
             // 
             // payloadToolStripMenuItem
             // 
             this.payloadToolStripMenuItem.Name = "payloadToolStripMenuItem";
             this.payloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.payloadToolStripMenuItem.Text = "Payloads";
+            this.payloadToolStripMenuItem.Click += new System.EventHandler(this.payloadToolStripMenuItem_Click);
             // 
             // kerbonautesToolStripMenuItem
             // 
             this.kerbonautesToolStripMenuItem.Name = "kerbonautesToolStripMenuItem";
             this.kerbonautesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kerbonautesToolStripMenuItem.Text = "Kerbonautes";
+            this.kerbonautesToolStripMenuItem.Click += new System.EventHandler(this.kerbonautesToolStripMenuItem_Click);
             // 
             // outilsToolStripMenuItem
             // 
@@ -105,6 +109,20 @@
             this.outilsToolStripMenuItem.Name = "outilsToolStripMenuItem";
             this.outilsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.outilsToolStripMenuItem.Text = "Outils";
+            // 
+            // calculateurDeDeltaVToolStripMenuItem
+            // 
+            this.calculateurDeDeltaVToolStripMenuItem.Name = "calculateurDeDeltaVToolStripMenuItem";
+            this.calculateurDeDeltaVToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.calculateurDeDeltaVToolStripMenuItem.Text = "Calculateur de Delta V";
+            this.calculateurDeDeltaVToolStripMenuItem.Click += new System.EventHandler(this.calculateurDeDeltaVToolStripMenuItem_Click);
+            // 
+            // calculateurLKOToolStripMenuItem
+            // 
+            this.calculateurLKOToolStripMenuItem.Name = "calculateurLKOToolStripMenuItem";
+            this.calculateurLKOToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.calculateurLKOToolStripMenuItem.Text = "Calculateur LKO";
+            this.calculateurLKOToolStripMenuItem.Click += new System.EventHandler(this.calculateurLKOToolStripMenuItem_Click);
             // 
             // paramètresToolStripMenuItem
             // 
@@ -117,18 +135,6 @@
             this.paramètresToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.paramètresToolStripMenuItem.Text = "Paramètres";
             // 
-            // calculateurDeDeltaVToolStripMenuItem
-            // 
-            this.calculateurDeDeltaVToolStripMenuItem.Name = "calculateurDeDeltaVToolStripMenuItem";
-            this.calculateurDeDeltaVToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.calculateurDeDeltaVToolStripMenuItem.Text = "Calculateur de Delta V";
-            // 
-            // calculateurLKOToolStripMenuItem
-            // 
-            this.calculateurLKOToolStripMenuItem.Name = "calculateurLKOToolStripMenuItem";
-            this.calculateurLKOToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.calculateurLKOToolStripMenuItem.Text = "Calculateur LKO";
-            // 
             // configMissionToolStripMenuItem
             // 
             this.configMissionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -138,13 +144,34 @@
             this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configMissionToolStripMenuItem.Text = "Config Mission";
             // 
+            // editerLaListeDesStatusMissionToolStripMenuItem
+            // 
+            this.editerLaListeDesStatusMissionToolStripMenuItem.Name = "editerLaListeDesStatusMissionToolStripMenuItem";
+            this.editerLaListeDesStatusMissionToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.editerLaListeDesStatusMissionToolStripMenuItem.Text = "Editer la liste des status mission";
+            this.editerLaListeDesStatusMissionToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesStatusMissionToolStripMenuItem_Click);
+            // 
+            // editerLaListeDesSituationsToolStripMenuItem
+            // 
+            this.editerLaListeDesSituationsToolStripMenuItem.Name = "editerLaListeDesSituationsToolStripMenuItem";
+            this.editerLaListeDesSituationsToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.editerLaListeDesSituationsToolStripMenuItem.Text = "Editer la liste des situations";
+            this.editerLaListeDesSituationsToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesSituationsToolStripMenuItem_Click);
+            // 
             // configLanceurToolStripMenuItem
             // 
             this.configLanceurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editerLaListeDesTypesDeLanveursToolStripMenuItem});
+            this.editerLaListeDesTypesDeLanceursToolStripMenuItem});
             this.configLanceurToolStripMenuItem.Name = "configLanceurToolStripMenuItem";
             this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configLanceurToolStripMenuItem.Text = "Config Lanceur";
+            // 
+            // editerLaListeDesTypesDeLanceursToolStripMenuItem
+            // 
+            this.editerLaListeDesTypesDeLanceursToolStripMenuItem.Name = "editerLaListeDesTypesDeLanceursToolStripMenuItem";
+            this.editerLaListeDesTypesDeLanceursToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
+            this.editerLaListeDesTypesDeLanceursToolStripMenuItem.Text = "Editer la liste des types de lanceurs";
+            this.editerLaListeDesTypesDeLanceursToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesTypesDeLanceursToolStripMenuItem_Click);
             // 
             // configPayloadToolStripMenuItem
             // 
@@ -154,6 +181,13 @@
             this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configPayloadToolStripMenuItem.Text = "Config Payload";
             // 
+            // editerLaListeDesTypesDePayloadsToolStripMenuItem
+            // 
+            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Name = "editerLaListeDesTypesDePayloadsToolStripMenuItem";
+            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
+            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Text = "Editer la liste des types de payloads";
+            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesTypesDePayloadsToolStripMenuItem_Click);
+            // 
             // configKerbonauteToolStripMenuItem
             // 
             this.configKerbonauteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -162,35 +196,12 @@
             this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configKerbonauteToolStripMenuItem.Text = "Config Kerbonaute";
             // 
-            // editerLaListeDesStatusMissionToolStripMenuItem
-            // 
-            this.editerLaListeDesStatusMissionToolStripMenuItem.Name = "editerLaListeDesStatusMissionToolStripMenuItem";
-            this.editerLaListeDesStatusMissionToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.editerLaListeDesStatusMissionToolStripMenuItem.Text = "Editer la liste des status mission";
-            // 
-            // editerLaListeDesSituationsToolStripMenuItem
-            // 
-            this.editerLaListeDesSituationsToolStripMenuItem.Name = "editerLaListeDesSituationsToolStripMenuItem";
-            this.editerLaListeDesSituationsToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.editerLaListeDesSituationsToolStripMenuItem.Text = "Editer la liste des situations";
-            // 
-            // editerLaListeDesTypesDeLanveursToolStripMenuItem
-            // 
-            this.editerLaListeDesTypesDeLanveursToolStripMenuItem.Name = "editerLaListeDesTypesDeLanveursToolStripMenuItem";
-            this.editerLaListeDesTypesDeLanveursToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
-            this.editerLaListeDesTypesDeLanveursToolStripMenuItem.Text = "Editer la liste des types de lanceurs";
-            // 
-            // editerLaListeDesTypesDePayloadsToolStripMenuItem
-            // 
-            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Name = "editerLaListeDesTypesDePayloadsToolStripMenuItem";
-            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
-            this.editerLaListeDesTypesDePayloadsToolStripMenuItem.Text = "Editer la liste des types de payloads";
-            // 
             // editerLaListeDesProfessionsToolStripMenuItem
             // 
             this.editerLaListeDesProfessionsToolStripMenuItem.Name = "editerLaListeDesProfessionsToolStripMenuItem";
             this.editerLaListeDesProfessionsToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.editerLaListeDesProfessionsToolStripMenuItem.Text = "Editer la liste des professions";
+            this.editerLaListeDesProfessionsToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesProfessionsToolStripMenuItem_Click);
             // 
             // frDashboard
             // 
@@ -228,7 +239,7 @@
         private System.Windows.Forms.ToolStripMenuItem configKerbonauteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesStatusMissionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesSituationsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesTypesDeLanveursToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesTypesDeLanceursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesTypesDePayloadsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesProfessionsToolStripMenuItem;
     }
