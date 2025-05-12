@@ -52,19 +52,82 @@
     <Compile Include="frConfigAstre.Designer.cs">
       <DependentUpon>frConfigAstre.cs</DependentUpon>
     </Compile>
+    <Compile Include="frConfigListePayload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigListePayload.Designer.cs">
+      <DependentUpon>frConfigListePayload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfigProfession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigProfession.Designer.cs">
+      <DependentUpon>frConfigProfession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfigSituationActuelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigSituationActuelle.Designer.cs">
+      <DependentUpon>frConfigSituationActuelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfigStatusMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigStatusMission.Designer.cs">
+      <DependentUpon>frConfigStatusMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="frConfigSysteme.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frConfigSysteme.Designer.cs">
       <DependentUpon>frConfigSysteme.cs</DependentUpon>
     </Compile>
+    <Compile Include="frConfigTypeAstre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigTypeAstre.Designer.cs">
+      <DependentUpon>frConfigTypeAstre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfigTypeLanceur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigTypeLanceur.Designer.cs">
+      <DependentUpon>frConfigTypeLanceur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfigUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfigUsers.Designer.cs">
+      <DependentUpon>frConfigUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frConfigAstre.resx">
       <DependentUpon>frConfigAstre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frConfigListePayload.resx">
+      <DependentUpon>frConfigListePayload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfigProfession.resx">
+      <DependentUpon>frConfigProfession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfigSituationActuelle.resx">
+      <DependentUpon>frConfigSituationActuelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfigStatusMission.resx">
+      <DependentUpon>frConfigStatusMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frConfigSysteme.resx">
       <DependentUpon>frConfigSysteme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfigTypeAstre.resx">
+      <DependentUpon>frConfigTypeAstre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfigTypeLanceur.resx">
+      <DependentUpon>frConfigTypeLanceur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfigUsers.resx">
+      <DependentUpon>frConfigUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

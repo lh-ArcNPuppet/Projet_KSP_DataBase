@@ -47,6 +47,10 @@
             this.editerLaListeDesTypesDePayloadsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configKerbonauteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesProfessionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autresConfigsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editerLaListeDesAstresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editerLaListeDesSystèmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editerLaListeDesUtilisateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,28 +80,28 @@
             // missionsToolStripMenuItem
             // 
             this.missionsToolStripMenuItem.Name = "missionsToolStripMenuItem";
-            this.missionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.missionsToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.missionsToolStripMenuItem.Text = "Missions";
             this.missionsToolStripMenuItem.Click += new System.EventHandler(this.missionsToolStripMenuItem_Click);
             // 
             // lanceursToolStripMenuItem
             // 
             this.lanceursToolStripMenuItem.Name = "lanceursToolStripMenuItem";
-            this.lanceursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lanceursToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.lanceursToolStripMenuItem.Text = "Lanceurs";
             this.lanceursToolStripMenuItem.Click += new System.EventHandler(this.lanceursToolStripMenuItem_Click);
             // 
             // payloadToolStripMenuItem
             // 
             this.payloadToolStripMenuItem.Name = "payloadToolStripMenuItem";
-            this.payloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.payloadToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.payloadToolStripMenuItem.Text = "Payloads";
             this.payloadToolStripMenuItem.Click += new System.EventHandler(this.payloadToolStripMenuItem_Click);
             // 
             // kerbonautesToolStripMenuItem
             // 
             this.kerbonautesToolStripMenuItem.Name = "kerbonautesToolStripMenuItem";
-            this.kerbonautesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kerbonautesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.kerbonautesToolStripMenuItem.Text = "Kerbonautes";
             this.kerbonautesToolStripMenuItem.Click += new System.EventHandler(this.kerbonautesToolStripMenuItem_Click);
             // 
@@ -130,7 +134,8 @@
             this.configMissionToolStripMenuItem,
             this.configLanceurToolStripMenuItem,
             this.configPayloadToolStripMenuItem,
-            this.configKerbonauteToolStripMenuItem});
+            this.configKerbonauteToolStripMenuItem,
+            this.autresConfigsToolStripMenuItem});
             this.paramètresToolStripMenuItem.Name = "paramètresToolStripMenuItem";
             this.paramètresToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.paramètresToolStripMenuItem.Text = "Paramètres";
@@ -203,6 +208,34 @@
             this.editerLaListeDesProfessionsToolStripMenuItem.Text = "Editer la liste des professions";
             this.editerLaListeDesProfessionsToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesProfessionsToolStripMenuItem_Click);
             // 
+            // autresConfigsToolStripMenuItem
+            // 
+            this.autresConfigsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editerLaListeDesAstresToolStripMenuItem,
+            this.editerLaListeDesSystèmesToolStripMenuItem,
+            this.editerLaListeDesUtilisateursToolStripMenuItem});
+            this.autresConfigsToolStripMenuItem.Name = "autresConfigsToolStripMenuItem";
+            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.autresConfigsToolStripMenuItem.Text = "Autres configs";
+            // 
+            // editerLaListeDesAstresToolStripMenuItem
+            // 
+            this.editerLaListeDesAstresToolStripMenuItem.Name = "editerLaListeDesAstresToolStripMenuItem";
+            this.editerLaListeDesAstresToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.editerLaListeDesAstresToolStripMenuItem.Text = "Editer la liste des astres";
+            // 
+            // editerLaListeDesSystèmesToolStripMenuItem
+            // 
+            this.editerLaListeDesSystèmesToolStripMenuItem.Name = "editerLaListeDesSystèmesToolStripMenuItem";
+            this.editerLaListeDesSystèmesToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.editerLaListeDesSystèmesToolStripMenuItem.Text = "Editer la liste des systèmes";
+            // 
+            // editerLaListeDesUtilisateursToolStripMenuItem
+            // 
+            this.editerLaListeDesUtilisateursToolStripMenuItem.Name = "editerLaListeDesUtilisateursToolStripMenuItem";
+            this.editerLaListeDesUtilisateursToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.editerLaListeDesUtilisateursToolStripMenuItem.Text = "Editer la liste des utilisateurs";
+            // 
             // frDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +275,10 @@
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesTypesDeLanceursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesTypesDePayloadsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesProfessionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autresConfigsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesAstresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesSystèmesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesUtilisateursToolStripMenuItem;
     }
 }
 
