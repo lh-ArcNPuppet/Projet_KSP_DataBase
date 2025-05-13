@@ -79,5 +79,18 @@ namespace Dashboard
             frConfigProfession frConfigProfession = new frConfigProfession();
             frConfigProfession.Show();
         }
+
+        private void frDashboard_Load(object sender, EventArgs e)
+        {
+            if (BDD_Connect.openConnexion())
+            {
+                MessageBox.Show(BDD_Connect.showConnexion());
+                tStripLbl_connectionState.Text = "Application connecté à la base de données";
+            }
+            else
+            {
+                tStripLbl_connectionState.Text = "Application hors-ligne. Vérifiez la connection";
+            }
+        }
     }
 }

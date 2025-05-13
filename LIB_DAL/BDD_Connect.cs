@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LIB_DAL
 {
-    public class SqlConnect
+    public class BDD_Connect
     {
         private static bool connecte = false;
         public static SqlConnection cnx;

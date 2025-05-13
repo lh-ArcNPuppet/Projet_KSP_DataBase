@@ -9,3 +9,10 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configur
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigSysteme.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigListePayload.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigProfession.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigSituationActuelle.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigStatusMission.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigTypeAstre.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigTypeLanceur.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigUsers.resources

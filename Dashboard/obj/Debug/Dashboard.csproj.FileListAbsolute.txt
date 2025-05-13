@@ -31,3 +31,6 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Mission.exe.
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Payload.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Payload.exe.config
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.csproj.Up2Date
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Calculateurs.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Calculateurs.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Calculateurs.exe.config
