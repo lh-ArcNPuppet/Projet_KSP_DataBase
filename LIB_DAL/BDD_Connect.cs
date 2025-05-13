@@ -21,7 +21,7 @@ namespace LIB_DAL
             //string initialCatalog = "Initial Catalog=" + "BD_STOCK2";
 
             string dataSource = "Data Source=" + "PC-F_Louis\\SQLEXPRESS";
-            string initialCatalog = "Initial Catalog=" + "AP2";
+            string initialCatalog = "Initial Catalog=" + "KSP_DB";
 
             string integratedSecurity = "Integrated Security=" + "SSPI";
 

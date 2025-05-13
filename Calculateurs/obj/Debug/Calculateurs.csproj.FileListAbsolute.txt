@@ -8,3 +8,8 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculate
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\LIB_DAL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculat.2A9EBEED.Up2Date

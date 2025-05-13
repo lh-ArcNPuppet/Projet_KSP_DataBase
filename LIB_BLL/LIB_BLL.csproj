@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Astre.cs" />
-    <Compile Include="Kerbonaute.cs" />
+    <Compile Include="Astronaute.cs" />
     <Compile Include="Lanceur.cs" />
     <Compile Include="Mission.cs" />
     <Compile Include="Payload.cs" />

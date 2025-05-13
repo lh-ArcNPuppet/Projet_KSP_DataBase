@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frKerbonaute.cs">
+    <Compile Include="frAstronaute.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frKerbonaute.Designer.cs">
-      <DependentUpon>frKerbonaute.cs</DependentUpon>
+    <Compile Include="frAstronaute.Designer.cs">
+      <DependentUpon>frAstronaute.cs</DependentUpon>
     </Compile>
-    <Compile Include="frNewKerbonaute.cs">
+    <Compile Include="frNewAstronaute.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frNewKerbonaute.Designer.cs">
-      <DependentUpon>frNewKerbonaute.cs</DependentUpon>
+    <Compile Include="frNewAstronaute.Designer.cs">
+      <DependentUpon>frNewAstronaute.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frKerbonaute.resx">
-      <DependentUpon>frKerbonaute.cs</DependentUpon>
+    <EmbeddedResource Include="frAstronaute.resx">
+      <DependentUpon>frAstronaute.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frNewKerbonaute.resx">
-      <DependentUpon>frNewKerbonaute.cs</DependentUpon>
+    <EmbeddedResource Include="frNewAstronaute.resx">
+      <DependentUpon>frNewAstronaute.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -105,8 +105,8 @@
             // kerbonautesToolStripMenuItem
             // 
             this.kerbonautesToolStripMenuItem.Name = "kerbonautesToolStripMenuItem";
-            this.kerbonautesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.kerbonautesToolStripMenuItem.Text = "Kerbonautes";
+            this.kerbonautesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kerbonautesToolStripMenuItem.Text = "Astronautes";
             this.kerbonautesToolStripMenuItem.Click += new System.EventHandler(this.kerbonautesToolStripMenuItem_Click);
             // 
             // outilsToolStripMenuItem
@@ -122,6 +122,7 @@
             this.calculateurLKOToolStripMenuItem.Name = "calculateurLKOToolStripMenuItem";
             this.calculateurLKOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.calculateurLKOToolStripMenuItem.Text = "Calculateur LKO";
+            this.calculateurLKOToolStripMenuItem.Click += new System.EventHandler(this.calculateurLKOToolStripMenuItem_Click);
             // 
             // paramètresToolStripMenuItem
             // 
@@ -193,8 +194,8 @@
             this.configKerbonauteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesProfessionsToolStripMenuItem});
             this.configKerbonauteToolStripMenuItem.Name = "configKerbonauteToolStripMenuItem";
-            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.configKerbonauteToolStripMenuItem.Text = "Config Kerbonaute";
+            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configKerbonauteToolStripMenuItem.Text = "Config Astronaute";
             // 
             // editerLaListeDesProfessionsToolStripMenuItem
             // 

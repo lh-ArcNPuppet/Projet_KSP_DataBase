@@ -47,7 +47,7 @@ namespace Dashboard
 
         private void kerbonautesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frKerbonaute frKerbonaute = new frKerbonaute();
+            frAstronaute frKerbonaute = new frAstronaute();
             frKerbonaute.Show();
         } 
 
@@ -78,6 +78,12 @@ namespace Dashboard
         {
             frConfigProfession frConfigProfession = new frConfigProfession();
             frConfigProfession.Show();
+        }
+
+        private void calculateurLKOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frDeltaV_Calculator frDeltaV_Calculator = new frDeltaV_Calculator();
+            frDeltaV_Calculator.Show();
         }
 
         private void frDashboard_Load(object sender, EventArgs e)

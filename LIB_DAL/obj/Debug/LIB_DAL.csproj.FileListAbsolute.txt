@@ -4,3 +4,6 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\obj\Debug\LIB_DAL.csproj
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\obj\Debug\LIB_DAL.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\obj\Debug\LIB_DAL.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\obj\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\obj\Debug\LIB_DAL.csproj.Up2Date

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kerbonaute
 {
-    public partial class frNewKerbonaute: Form
+    public partial class frNewAstronaute: Form
     {
-        public frNewKerbonaute()
+        public frNewAstronaute()
         {
             InitializeComponent();
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Kerbonaute
+    public class Astronaute
     {
         //Attributs privés
         private int id;
@@ -20,7 +20,7 @@ namespace LIB_BLL
         private string statusVital;
 
         //Constructeur
-        public Kerbonaute(int id, string nom, char sexe, string profession, int lv, int c, int s, int v, string sV)
+        public Astronaute(int id, string nom, char sexe, string profession, int lv, int c, int s, int v, string sV)
         {
             this.id = id;
             this.nom = nom;

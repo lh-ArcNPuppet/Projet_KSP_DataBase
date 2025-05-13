@@ -115,9 +115,19 @@
             0,
             0,
             0});
+            this.numUD_etage1_m0.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage1_m0.Name = "numUD_etage1_m0";
             this.numUD_etage1_m0.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage1_m0.TabIndex = 0;
+            this.numUD_etage1_m0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
@@ -147,9 +157,19 @@
             0,
             0,
             0});
+            this.numUD_etage2_m0.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage2_m0.Name = "numUD_etage2_m0";
             this.numUD_etage2_m0.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage2_m0.TabIndex = 0;
+            this.numUD_etage2_m0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage3_m0
             // 
@@ -160,9 +180,19 @@
             0,
             0,
             0});
+            this.numUD_etage3_m0.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage3_m0.Name = "numUD_etage3_m0";
             this.numUD_etage3_m0.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage3_m0.TabIndex = 0;
+            this.numUD_etage3_m0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage4_m0
             // 
@@ -173,9 +203,19 @@
             0,
             0,
             0});
+            this.numUD_etage4_m0.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage4_m0.Name = "numUD_etage4_m0";
             this.numUD_etage4_m0.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage4_m0.TabIndex = 0;
+            this.numUD_etage4_m0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage5_m0
             // 
@@ -186,9 +226,19 @@
             0,
             0,
             0});
+            this.numUD_etage5_m0.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage5_m0.Name = "numUD_etage5_m0";
             this.numUD_etage5_m0.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage5_m0.TabIndex = 0;
+            this.numUD_etage5_m0.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label3
             // 
@@ -235,9 +285,19 @@
             0,
             0,
             0});
+            this.numUD_etage1_mf.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage1_mf.Name = "numUD_etage1_mf";
             this.numUD_etage1_mf.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage1_mf.TabIndex = 0;
+            this.numUD_etage1_mf.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage2_mf
             // 
@@ -248,9 +308,19 @@
             0,
             0,
             0});
+            this.numUD_etage2_mf.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage2_mf.Name = "numUD_etage2_mf";
             this.numUD_etage2_mf.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage2_mf.TabIndex = 0;
+            this.numUD_etage2_mf.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage3_mf
             // 
@@ -261,9 +331,19 @@
             0,
             0,
             0});
+            this.numUD_etage3_mf.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage3_mf.Name = "numUD_etage3_mf";
             this.numUD_etage3_mf.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage3_mf.TabIndex = 0;
+            this.numUD_etage3_mf.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage4_mf
             // 
@@ -274,9 +354,19 @@
             0,
             0,
             0});
+            this.numUD_etage4_mf.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage4_mf.Name = "numUD_etage4_mf";
             this.numUD_etage4_mf.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage4_mf.TabIndex = 0;
+            this.numUD_etage4_mf.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage5_mf
             // 
@@ -287,9 +377,19 @@
             0,
             0,
             0});
+            this.numUD_etage5_mf.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numUD_etage5_mf.Name = "numUD_etage5_mf";
             this.numUD_etage5_mf.Size = new System.Drawing.Size(93, 20);
             this.numUD_etage5_mf.TabIndex = 0;
+            this.numUD_etage5_mf.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numUD_etage1_isp
             // 
@@ -358,6 +458,7 @@
             this.txtBox_etage1_g.ReadOnly = true;
             this.txtBox_etage1_g.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage1_g.TabIndex = 3;
+            this.txtBox_etage1_g.Text = "0";
             // 
             // txtBox_etage2_g
             // 
@@ -366,6 +467,7 @@
             this.txtBox_etage2_g.ReadOnly = true;
             this.txtBox_etage2_g.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage2_g.TabIndex = 3;
+            this.txtBox_etage2_g.Text = "0";
             // 
             // txtBox_etage3_g
             // 
@@ -374,6 +476,7 @@
             this.txtBox_etage3_g.ReadOnly = true;
             this.txtBox_etage3_g.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage3_g.TabIndex = 3;
+            this.txtBox_etage3_g.Text = "0";
             // 
             // txtBox_etage4_g
             // 
@@ -382,6 +485,7 @@
             this.txtBox_etage4_g.ReadOnly = true;
             this.txtBox_etage4_g.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage4_g.TabIndex = 3;
+            this.txtBox_etage4_g.Text = "0";
             // 
             // txtBox_etage5_g
             // 
@@ -390,6 +494,7 @@
             this.txtBox_etage5_g.ReadOnly = true;
             this.txtBox_etage5_g.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage5_g.TabIndex = 3;
+            this.txtBox_etage5_g.Text = "0";
             // 
             // txtBox_etage1_dV
             // 
@@ -398,6 +503,7 @@
             this.txtBox_etage1_dV.ReadOnly = true;
             this.txtBox_etage1_dV.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage1_dV.TabIndex = 3;
+            this.txtBox_etage1_dV.Text = "0";
             // 
             // txtBox_etage2_dV
             // 
@@ -406,6 +512,7 @@
             this.txtBox_etage2_dV.ReadOnly = true;
             this.txtBox_etage2_dV.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage2_dV.TabIndex = 3;
+            this.txtBox_etage2_dV.Text = "0";
             // 
             // txtBox_etage3_dV
             // 
@@ -414,6 +521,7 @@
             this.txtBox_etage3_dV.ReadOnly = true;
             this.txtBox_etage3_dV.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage3_dV.TabIndex = 3;
+            this.txtBox_etage3_dV.Text = "0";
             // 
             // txtBox_etage4_dV
             // 
@@ -422,6 +530,7 @@
             this.txtBox_etage4_dV.ReadOnly = true;
             this.txtBox_etage4_dV.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage4_dV.TabIndex = 3;
+            this.txtBox_etage4_dV.Text = "0";
             // 
             // txtBox_etage5_dV
             // 
@@ -430,6 +539,7 @@
             this.txtBox_etage5_dV.ReadOnly = true;
             this.txtBox_etage5_dV.Size = new System.Drawing.Size(74, 20);
             this.txtBox_etage5_dV.TabIndex = 3;
+            this.txtBox_etage5_dV.Text = "0";
             // 
             // label7
             // 
@@ -478,6 +588,7 @@
             this.txtBox_total_dV.ReadOnly = true;
             this.txtBox_total_dV.Size = new System.Drawing.Size(74, 20);
             this.txtBox_total_dV.TabIndex = 3;
+            this.txtBox_total_dV.Text = "0";
             // 
             // label11
             // 
@@ -530,18 +641,20 @@
             this.cbo_Astre.Name = "cbo_Astre";
             this.cbo_Astre.Size = new System.Drawing.Size(121, 21);
             this.cbo_Astre.TabIndex = 6;
+            this.cbo_Astre.SelectedIndexChanged += new System.EventHandler(this.cbo_Astre_SelectedIndexChanged);
             // 
             // numUD_dV_requis
             // 
             this.numUD_dV_requis.Location = new System.Drawing.Point(103, 45);
             this.numUD_dV_requis.Maximum = new decimal(new int[] {
-            5,
+            10000000,
             0,
             0,
             0});
             this.numUD_dV_requis.Name = "numUD_dV_requis";
             this.numUD_dV_requis.Size = new System.Drawing.Size(75, 20);
             this.numUD_dV_requis.TabIndex = 5;
+            this.numUD_dV_requis.ValueChanged += new System.EventHandler(this.numUD_dV_requis_ValueChanged);
             // 
             // numUD_nbrEtage
             // 
@@ -580,9 +693,9 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(6, 47);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(57, 13);
+            this.label15.Size = new System.Drawing.Size(82, 13);
             this.label15.TabIndex = 2;
-            this.label15.Text = "Δv requis :";
+            this.label15.Text = "Δv requis (min) :";
             // 
             // label13
             // 
@@ -595,6 +708,8 @@
             // 
             // numUD_massePayload
             // 
+            this.numUD_massePayload.DecimalPlaces = 3;
+            this.numUD_massePayload.Enabled = false;
             this.numUD_massePayload.Location = new System.Drawing.Point(107, 43);
             this.numUD_massePayload.Maximum = new decimal(new int[] {
             5,
@@ -602,8 +717,9 @@
             0,
             0});
             this.numUD_massePayload.Name = "numUD_massePayload";
-            this.numUD_massePayload.Size = new System.Drawing.Size(75, 20);
+            this.numUD_massePayload.Size = new System.Drawing.Size(86, 20);
             this.numUD_massePayload.TabIndex = 5;
+            this.numUD_massePayload.ValueChanged += new System.EventHandler(this.numUD_massePayload_ValueChanged);
             // 
             // label14
             // 
@@ -636,9 +752,9 @@
             this.lbl_rapport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_rapport.Location = new System.Drawing.Point(59, 22);
             this.lbl_rapport.Name = "lbl_rapport";
-            this.lbl_rapport.Size = new System.Drawing.Size(134, 13);
+            this.lbl_rapport.Size = new System.Drawing.Size(144, 13);
             this.lbl_rapport.TabIndex = 7;
-            this.lbl_rapport.Text = "En attente du calcul...";
+            this.lbl_rapport.Text = "En attente du Δv total...";
             // 
             // label19
             // 
@@ -670,7 +786,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(184, 47);
+            this.label21.Location = new System.Drawing.Point(195, 45);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(10, 13);
             this.label21.TabIndex = 2;
@@ -684,6 +800,7 @@
             this.btn_calculer.TabIndex = 7;
             this.btn_calculer.Text = "Calculer Δv";
             this.btn_calculer.UseVisualStyleBackColor = true;
+            this.btn_calculer.Click += new System.EventHandler(this.btn_calculer_Click);
             // 
             // btn_toggleAide
             // 

@@ -34,5 +34,33 @@ namespace LIB_DAL
             }
         }
 
+        public static decimal getSurfaceGravityByName(string nom)
+        {
+            decimal res = 0;
+            try
+            {
+                string sql =
+                    "SELECT graviteSurface FROM Astre " +
+                    "WHERE nom = @nom;";
+
+                SqlCommand cmd = new SqlCommand(sql, BDD_Connect.cnx);
+                cmd.Parameters.AddWithValue("@nom", nom);
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    res = dr.GetDecimal(0);
+                }
+                dr.Close();
+                return res;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return 0;
+            }
+            
+        }
+
     }
 }

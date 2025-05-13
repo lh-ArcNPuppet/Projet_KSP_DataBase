@@ -1,6 +1,6 @@
 ﻿namespace Kerbonaute
 {
-    partial class frKerbonaute
+    partial class frAstronaute
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

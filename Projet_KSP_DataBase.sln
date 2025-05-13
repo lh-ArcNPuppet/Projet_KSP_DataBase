@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payload", "Payload\Payload.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission", "Mission\Mission.csproj", "{B82143B0-B6F1-4868-8655-2933480F5AFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kerbonaute", "Kerbonaute\Kerbonaute.csproj", "{916595A5-2579-44CF-8E12-3FFFAF178DF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astronautes", "Kerbonaute\Astronautes.csproj", "{916595A5-2579-44CF-8E12-3FFFAF178DF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "Configuration\Configuration.csproj", "{3154B825-DB09-44B3-BFC3-A7DB8B3768D6}"
 EndProject

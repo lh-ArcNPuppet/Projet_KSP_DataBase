@@ -27,7 +27,7 @@ namespace LIB_BLL
         public string getDescription() { return this.description; }
 
         //Accesseurs - Setter
-        public void setID(int id) { this.id = code; }
+        public void setID(int id) { this.id = id; }
         public void setLibelle(string lib) { this.libelle = lib; }
         public void setDescription(string desc) { this.description = desc; }
     }
