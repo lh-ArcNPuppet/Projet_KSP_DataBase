@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    class Lanceur
+    public class Lanceur
     {
         //Attributs privés
         private int id;

@@ -1,0 +1,10 @@
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\Calculateurs.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\Calculateurs.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\Calculateurs.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.csproj.AssemblyReference.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.frDeltaV_Calculator.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.Properties.Resources.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.csproj.GenerateResource.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.csproj.CoreCompileInputs.cache
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.exe
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.pdb

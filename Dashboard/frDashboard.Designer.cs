@@ -35,7 +35,6 @@
             this.payloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kerbonautesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculateurDeDeltaVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculateurLKOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,25 +107,16 @@
             // outilsToolStripMenuItem
             // 
             this.outilsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calculateurDeDeltaVToolStripMenuItem,
             this.calculateurLKOToolStripMenuItem});
             this.outilsToolStripMenuItem.Name = "outilsToolStripMenuItem";
             this.outilsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.outilsToolStripMenuItem.Text = "Outils";
             // 
-            // calculateurDeDeltaVToolStripMenuItem
-            // 
-            this.calculateurDeDeltaVToolStripMenuItem.Name = "calculateurDeDeltaVToolStripMenuItem";
-            this.calculateurDeDeltaVToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.calculateurDeDeltaVToolStripMenuItem.Text = "Calculateur de Delta V";
-            this.calculateurDeDeltaVToolStripMenuItem.Click += new System.EventHandler(this.calculateurDeDeltaVToolStripMenuItem_Click);
-            // 
             // calculateurLKOToolStripMenuItem
             // 
             this.calculateurLKOToolStripMenuItem.Name = "calculateurLKOToolStripMenuItem";
-            this.calculateurLKOToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.calculateurLKOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.calculateurLKOToolStripMenuItem.Text = "Calculateur LKO";
-            this.calculateurLKOToolStripMenuItem.Click += new System.EventHandler(this.calculateurLKOToolStripMenuItem_Click);
             // 
             // paramètresToolStripMenuItem
             // 
@@ -146,7 +136,7 @@
             this.editerLaListeDesStatusMissionToolStripMenuItem,
             this.editerLaListeDesSituationsToolStripMenuItem});
             this.configMissionToolStripMenuItem.Name = "configMissionToolStripMenuItem";
-            this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.configMissionToolStripMenuItem.Text = "Config Mission";
             // 
             // editerLaListeDesStatusMissionToolStripMenuItem
@@ -168,7 +158,7 @@
             this.configLanceurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesTypesDeLanceursToolStripMenuItem});
             this.configLanceurToolStripMenuItem.Name = "configLanceurToolStripMenuItem";
-            this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.configLanceurToolStripMenuItem.Text = "Config Lanceur";
             // 
             // editerLaListeDesTypesDeLanceursToolStripMenuItem
@@ -183,7 +173,7 @@
             this.configPayloadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesTypesDePayloadsToolStripMenuItem});
             this.configPayloadToolStripMenuItem.Name = "configPayloadToolStripMenuItem";
-            this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.configPayloadToolStripMenuItem.Text = "Config Payload";
             // 
             // editerLaListeDesTypesDePayloadsToolStripMenuItem
@@ -198,7 +188,7 @@
             this.configKerbonauteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesProfessionsToolStripMenuItem});
             this.configKerbonauteToolStripMenuItem.Name = "configKerbonauteToolStripMenuItem";
-            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.configKerbonauteToolStripMenuItem.Text = "Config Kerbonaute";
             // 
             // editerLaListeDesProfessionsToolStripMenuItem
@@ -215,7 +205,7 @@
             this.editerLaListeDesSystèmesToolStripMenuItem,
             this.editerLaListeDesUtilisateursToolStripMenuItem});
             this.autresConfigsToolStripMenuItem.Name = "autresConfigsToolStripMenuItem";
-            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.autresConfigsToolStripMenuItem.Text = "Autres configs";
             // 
             // editerLaListeDesAstresToolStripMenuItem
@@ -263,7 +253,6 @@
         private System.Windows.Forms.ToolStripMenuItem payloadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kerbonautesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem outilsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculateurDeDeltaVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculateurLKOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paramètresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configMissionToolStripMenuItem;

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    class Payload
+    public class Payload
     {
         //Attributs privés
         private int id;
         private string nom;
-        private int type;
+        private string type;
         private int deltaV;
         private int capKerbal;
 
@@ -29,7 +29,7 @@ namespace LIB_BLL
 
 
         //Constructeur
-        public Payload(int id, string nom, int t, int dV, int capKerb, string aElec, string aFood, string aWater, string aOx, decimal m, decimal lon, decimal lar, decimal hau, int cost, string com)
+        public Payload(int id, string nom, string t, int dV, int capKerb, string aElec, string aFood, string aWater, string aOx, decimal m, decimal lon, decimal lar, decimal hau, int cost, string com)
         {
             this.id = id;
             this.nom = nom;
@@ -51,7 +51,7 @@ namespace LIB_BLL
         //Accesseurs - Getter
         public int getId() { return this.id; }
         public string getName() { return this.nom; }
-        public int getType() { return this.type; }
+        public string getType() { return this.type; }
         public int getDeltaV() { return this.deltaV; }
         public int getKerbalCapacity() { return this.capKerbal; }
         public string getElecAutonomy() { return this.autoResElec; }
@@ -68,7 +68,7 @@ namespace LIB_BLL
         //Accesseurs - Setter
         public void setId(int id) { this.id = id; }
         public void setName(string nom) { this.nom = nom; }
-        public void setType(int t) { this.type = t; }
+        public void setType(string t) { this.type = t; }
         public void setDeltaV(int dV) { this.deltaV = dV; }
         public void setKerbalCapacity(int capKerb) { this.capKerbal = capKerb; }
         public void setElecAutonomy(string aElec) { this.autoResElec = aElec; }

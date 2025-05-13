@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    class Mission
+    public class Mission
     {
         //Attributs privés
-        private int id;
+        private int numVol;
         private string nom;
 
-        private int statusMission;
-        private int idLanceur;
-        private string idPayloadList; //A modifier pour une autre approche impliquant l'ajout de listBox
+        private string statusMission;
+        private string lanceur;
+        private string payloadList; //A modifier pour une autre approche impliquant l'ajout de listBox
         private int cost;
 
         private int startYear;
@@ -25,24 +26,24 @@ namespace LIB_BLL
         private int endDay;
         private string endHour;
 
-        private string idListKerbonaute; //A modifier pour une autre approche impliquant l'ajout de listBox
+        private string listKerbonaute; //A modifier pour une autre approche impliquant l'ajout de listBox
 
-        private int idSysteme;
-        private int idAstre;
+        private string systeme;
+        private string astre;
         private string objectif;
 
-        private int situationActuelle;
-        private int resultMission;
+        private string situationActuelle;
+        private string resultMission;
         private string commentaire;
 
 
         //Constructeur
         public Mission(
-            int id,
+            int numVol,
             string nom,
-            int sttMission,
-            int idLanceur,
-            string idPayloadList,
+            string sttMission,
+            string lanceur,
+            string payloadList,
             int cost,
             int startY,
             int startD,
@@ -50,19 +51,19 @@ namespace LIB_BLL
             int endY,
             int endD,
             string endH,
-            string idListKerbonaute,
-            int idSysteme,
-            int idAstre,
+            string listKerbonaute,
+            string systeme,
+            string astre,
             string objectif,
-            int situationActuelle,
-            int resultMission,
+            string situationActuelle,
+            string resultMission,
             string commentaire)
         {
-            this.id = id;
+            this.numVol = numVol;
             this.nom = nom;
             this.statusMission = sttMission;
-            this.idLanceur = idLanceur;
-            this.idPayloadList = idPayloadList;
+            this.lanceur = lanceur;
+            this.payloadList = payloadList;
             this.cost = cost;
             this.startYear = startY;
             this.startDay = startD;
@@ -70,9 +71,32 @@ namespace LIB_BLL
             this.endYear = endY;
             this.endDay = endD;
             this.endHour = endH;
-            this.idListKerbonaute = idListKerbonaute;
-            this.idSysteme = idSysteme;
-            this.idAstre = idAstre;
+            this.listKerbonaute = listKerbonaute;
+            this.systeme = systeme;
+            this.astre = astre;
+            this.objectif = objectif;
+            this.situationActuelle = situationActuelle;
+            this.resultMission = resultMission;
+            this.commentaire = commentaire;
+        }
+        public Mission(
+            int numVol,
+            string nom,
+            string sttMission,
+            string lanceur,
+            string payloadList,
+            string listKerbonaute,
+            string objectif,
+            string situationActuelle,
+            string resultMission,
+            string commentaire)
+        {
+            this.numVol = numVol;
+            this.nom = nom;
+            this.statusMission = sttMission;
+            this.lanceur = lanceur;
+            this.payloadList = payloadList;
+            this.listKerbonaute = listKerbonaute;
             this.objectif = objectif;
             this.situationActuelle = situationActuelle;
             this.resultMission = resultMission;
@@ -80,12 +104,44 @@ namespace LIB_BLL
         }
 
         //Accesseurs - Getter
-        public int getInt() { return this.id; }
+        public int getNumFlight() { return this.numVol; }
         public string getName() { return this.nom; }
-        public int getMissionState() { return this.statusMission; }
-        public int getIdLanceur() { return this.idLanceur; }
+        public string getMissionState() { return this.statusMission; }
+        public string getLanceur() { return this.lanceur; }
+        public string getPayloadList() { return this.payloadList; }
+        public int getCost() { return this.cost; }
+        public int getStartYear() { return this.startYear; }
+        public int getStartDay() { return this.startDay; }
+        public string getTimeStart() { return this.startHour; }
+        public int getEndYear() { return this.endYear; }
+        public int getEndDay() { return this.endDay; }
+        public string getEndTime() { return this.endHour; }
+        public string getKerbonautList() { return this.listKerbonaute; }
+        public string getAstre() { return this.astre; }
+        public string getSysteme() { return this.systeme; }
+        public string getObjectif() { return this.objectif; }
+        public string getActualSituation() { return this.situationActuelle; }
+        public string getResultsMission() { return this.resultMission; }
+        public string getComments() { return this.commentaire; }
 
         //Accesseurs - Setter
-        public void setId(int id) { this.id = id; }
+        public void setName(string nom) { this.nom = nom; }
+        public void setMissionState(string ms) { this.statusMission = ms; }
+        public void setLanceur(string l) { this.lanceur = l; }
+        public void setPayloadList(string pl) { this.payloadList = pl; }
+        public void setCost(int c) { this.cost = c; }
+        public void setStartYear(int sY) { this.startYear = sY; }
+        public void setStartDay(int sD) { this.startDay = sD; }
+        public void setStartTime(string sTime) { this.startHour = sTime; }
+        public void setEndYear(int eY) { this.endYear = eY; }
+        public void setEndDay(int eD) { this.endDay = eD; }
+        public void setEndTime(string eTime) { this.endHour = eTime; }
+        public void setKerbonautList(string kl) { this.listKerbonaute = kl; }
+        public void setAstre(string a) { this.astre = a; }
+        public void setSysteme(string s) { this.systeme = s; }
+        public void setObjectif(string o) { this.objectif = o; }
+        public void setActualSituation(string acst) { this.situationActuelle = acst; }
+        public void setResultMission(string r) { this.resultMission = r; }
+        public void setComments(string com) { this.commentaire = com; }
     }
 }

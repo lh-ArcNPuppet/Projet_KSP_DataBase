@@ -11,32 +11,27 @@ namespace LIB_BLL
         //Attributs privés
         private int id;
         private string nom;
-        private int type;
-        private int astreParent;
-        private int systemeParent;
+        private string type;
+        private string systemeRelatif;
 
         //Constructeur
-        public Astre(int id, string nom, int type, int astreP, int systemeP)
+        public Astre(int id, string nom, string type, string systemeR)
         {
             this.id = id;
             this.nom = nom;
             this.type = type;
-            this.astreParent = astreP;
-            this.systemeParent = systemeP;
+            this.systemeRelatif = systemeR;
         }
 
         //Accesseurs - Getter
         public int getId() { return this.id; }
         public string getName() { return this.nom; }
-        public int getType() { return this.type; }
-        public int getRelatedStar() { return this.astreParent; }
-        public int getRelatedSystem() { return this.systemeParent; }
+        public string getType() { return this.type; }
+        public string getRelatedSystem() { return this.systemeRelatif; }
 
         //Accesseurs - Setter
-        public void setId(int id) { this.id = id; }
         public void setName(string nom) { this.nom = nom; }
-        public void setType(int t) { this.type = t; }
-        public void setRelatedStar(int astreP) { this.astreParent = astreP; }
-        public void setRelatedSystem(int systemP) { this.systemeParent = systemP; }
+        public void setType(string type) { this.type = type; }
+        public void setRelatedSystem(string systemR) { this.systemeRelatif = systemR; }
     }
 }

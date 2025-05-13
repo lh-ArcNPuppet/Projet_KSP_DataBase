@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard\Dashboard.csproj", "{C4AFD7E5-22A0-4EA0-92E5-BF1DDE86859A}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIB_BLL", "LIB_BLL\LIB_BLL.csproj", "{99D68747-6622-4D4E-93E3-435D5A59DD5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentification", "Authentification\Authentification.csproj", "{707832E2-BBAF-4D20-8304-D4C472462AE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculateurs", "Calculateurs\Calculateurs.csproj", "{526E4D80-91CC-489F-9823-8CD779E75CE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{707832E2-BBAF-4D20-8304-D4C472462AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{707832E2-BBAF-4D20-8304-D4C472462AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{707832E2-BBAF-4D20-8304-D4C472462AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526E4D80-91CC-489F-9823-8CD779E75CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526E4D80-91CC-489F-9823-8CD779E75CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526E4D80-91CC-489F-9823-8CD779E75CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526E4D80-91CC-489F-9823-8CD779E75CE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

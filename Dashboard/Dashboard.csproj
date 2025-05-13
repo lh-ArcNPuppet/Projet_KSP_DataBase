@@ -84,6 +84,10 @@
       <Project>{707832e2-bbaf-4d20-8304-d4c472462ae9}</Project>
       <Name>Authentification</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Calculateurs\Calculateurs.csproj">
+      <Project>{526e4d80-91cc-489f-9823-8cd779e75ce4}</Project>
+      <Name>Calculateurs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Configuration\Configuration.csproj">
       <Project>{3154b825-db09-44b3-bfc3-a7db8b3768d6}</Project>
       <Name>Configuration</Name>

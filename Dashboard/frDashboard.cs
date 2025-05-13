@@ -16,6 +16,7 @@ using LIB_BLL;
 using LIB_DAL;
 using Mission;
 using Payload;
+using Calculateurs;
 
 namespace Dashboard
 {
@@ -48,41 +49,35 @@ namespace Dashboard
         {
             frKerbonaute frKerbonaute = new frKerbonaute();
             frKerbonaute.Show();
-        }
-
-        private void calculateurDeDeltaVToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void calculateurLKOToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        } 
 
         private void editerLaListeDesStatusMissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frConfigStatusMission frConfigStatusMission = new frConfigStatusMission();
+            frConfigStatusMission.Show();
         }
 
         private void editerLaListeDesSituationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frConfigSituationActuelle frConfigSituationActuelle = new frConfigSituationActuelle();
+            frConfigSituationActuelle.Show();
         }
 
         private void editerLaListeDesTypesDeLanceursToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frConfigTypeLanceur frConfigTypeLanceur = new frConfigTypeLanceur();
         }
 
         private void editerLaListeDesTypesDePayloadsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frConfigListePayload frConfigListePayload = new frConfigListePayload();
+            frConfigListePayload.Show();
         }
 
         private void editerLaListeDesProfessionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frConfigProfession frConfigProfession = new frConfigProfession();
+            frConfigProfession.Show();
         }
     }
 }
