@@ -26,7 +26,7 @@ namespace LIB_BLL
         private int endDay;
         private string endHour;
 
-        private string listKerbonaute; //A modifier pour une autre approche impliquant l'ajout de listBox
+        private string listAstronaute; //A modifier pour une autre approche impliquant l'ajout de listBox
 
         private string systeme;
         private string astre;
@@ -51,7 +51,7 @@ namespace LIB_BLL
             int endY,
             int endD,
             string endH,
-            string listKerbonaute,
+            string listAstronaute,
             string systeme,
             string astre,
             string objectif,
@@ -71,7 +71,7 @@ namespace LIB_BLL
             this.endYear = endY;
             this.endDay = endD;
             this.endHour = endH;
-            this.listKerbonaute = listKerbonaute;
+            this.listAstronaute = listAstronaute;
             this.systeme = systeme;
             this.astre = astre;
             this.objectif = objectif;
@@ -81,11 +81,11 @@ namespace LIB_BLL
         }
         public Mission(
             int numVol,
-            string nom,
             string sttMission,
+            string nom,
             string lanceur,
             string payloadList,
-            string listKerbonaute,
+            string listAstronaute,
             string objectif,
             string situationActuelle,
             string resultMission,
@@ -96,7 +96,7 @@ namespace LIB_BLL
             this.statusMission = sttMission;
             this.lanceur = lanceur;
             this.payloadList = payloadList;
-            this.listKerbonaute = listKerbonaute;
+            this.listAstronaute = listAstronaute;
             this.objectif = objectif;
             this.situationActuelle = situationActuelle;
             this.resultMission = resultMission;
@@ -116,7 +116,7 @@ namespace LIB_BLL
         public int getEndYear() { return this.endYear; }
         public int getEndDay() { return this.endDay; }
         public string getEndTime() { return this.endHour; }
-        public string getKerbonautList() { return this.listKerbonaute; }
+        public string getAstronautList() { return this.listAstronaute; }
         public string getAstre() { return this.astre; }
         public string getSysteme() { return this.systeme; }
         public string getObjectif() { return this.objectif; }
@@ -136,7 +136,7 @@ namespace LIB_BLL
         public void setEndYear(int eY) { this.endYear = eY; }
         public void setEndDay(int eD) { this.endDay = eD; }
         public void setEndTime(string eTime) { this.endHour = eTime; }
-        public void setKerbonautList(string kl) { this.listKerbonaute = kl; }
+        public void setAstronautList(string al) { this.listAstronaute = al; }
         public void setAstre(string a) { this.astre = a; }
         public void setSysteme(string s) { this.systeme = s; }
         public void setObjectif(string o) { this.objectif = o; }

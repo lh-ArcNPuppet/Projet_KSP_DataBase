@@ -73,7 +73,7 @@
             this.dgv_listKerbonaute.Size = new System.Drawing.Size(665, 330);
             this.dgv_listKerbonaute.TabIndex = 1;
             // 
-            // frKerbonaute
+            // frAstronaute
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,8 +82,9 @@
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.btn_editer);
             this.Controls.Add(this.btn_ajouter);
-            this.Name = "frKerbonaute";
-            this.Text = "Liste des kerbonautes";
+            this.Name = "frAstronaute";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Liste des astronautes";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listKerbonaute)).EndInit();
             this.ResumeLayout(false);
 

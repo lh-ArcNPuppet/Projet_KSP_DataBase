@@ -50,7 +50,6 @@
             this.numUD_tauxCourrage = new System.Windows.Forms.NumericUpDown();
             this.numUD_niveau = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cbo_profession = new System.Windows.Forms.ComboBox();
             this.txtBox_nom = new System.Windows.Forms.TextBox();
@@ -68,9 +67,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Kerbonaute n°";
+            this.label1.Text = "Astronaute n°";
             // 
             // label2
             // 
@@ -91,7 +90,7 @@
             this.groupBox2.Size = new System.Drawing.Size(321, 38);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Situation du kerbal";
+            this.groupBox2.Text = "Situation de l\'astronaute";
             // 
             // rdBtn_enVie
             // 
@@ -273,15 +272,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Niveau :";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Kerman";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -315,7 +305,7 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Nom :";
             // 
-            // frNewKerbonaute
+            // frNewAstronaute
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -328,7 +318,6 @@
             this.Controls.Add(this.rdBtn_feminin);
             this.Controls.Add(this.rdBtn_masculin);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbo_profession);
             this.Controls.Add(this.txtBox_nom);
@@ -336,9 +325,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "frNewKerbonaute";
+            this.Name = "frNewAstronaute";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ajouter un kerbonaute";
+            this.Text = "Ajouter un astronaute";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
@@ -375,7 +364,6 @@
         private System.Windows.Forms.NumericUpDown numUD_tauxCourrage;
         private System.Windows.Forms.NumericUpDown numUD_niveau;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbo_profession;
         private System.Windows.Forms.TextBox txtBox_nom;

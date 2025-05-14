@@ -11,3 +11,8 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_DAL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj.Up2Date

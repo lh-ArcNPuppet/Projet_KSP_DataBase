@@ -66,6 +66,7 @@ namespace Dashboard
         private void editerLaListeDesTypesDeLanceursToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frConfigTypeLanceur frConfigTypeLanceur = new frConfigTypeLanceur();
+            frConfigTypeLanceur.Show();
         }
 
         private void editerLaListeDesTypesDePayloadsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -84,6 +85,24 @@ namespace Dashboard
         {
             frDeltaV_Calculator frDeltaV_Calculator = new frDeltaV_Calculator();
             frDeltaV_Calculator.Show();
+        }
+
+        private void editerLaListeDesAstresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frConfigAstre frConfigAstre = new frConfigAstre();
+            frConfigAstre.Show();
+        }
+
+        private void editerLaListeDesSystèmesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frConfigSysteme frConfigSysteme = new frConfigSysteme();
+            frConfigSysteme.Show();
+        }
+
+        private void editerLaListeDesUtilisateursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frConfigUsers frConfigUsers = new frConfigUsers();
+            frConfigUsers.Show();
         }
 
         private void frDashboard_Load(object sender, EventArgs e)
