@@ -96,14 +96,14 @@ namespace Calculateurs
 
             double m01_e1 = Convert.ToDouble(numUD_etage1_m0.Value) + Convert.ToDouble(numUD_massePayload.Value);
             double mf1_e1 = Convert.ToDouble(numUD_etage1_mf.Value) + Convert.ToDouble(numUD_massePayload.Value);
-            double dV_1 = Convert.ToDouble(txtBox_etage1_g.Text) * Convert.ToDouble(numUD_etage1_isp.Value) * Math.Log10(m01_e1 / mf1_e1);
+            double dV_1 = (Convert.ToDouble(txtBox_etage1_g.Text) * Convert.ToDouble(numUD_etage1_isp.Value)) * Math.Log(m01_e1 / mf1_e1);
             txtBox_etage1_dV.Text = Convert.ToInt64(dV_1).ToString();
 
             if (numUD_nbrEtage.Value >= 2)
             {
                 double m01_e2 = Convert.ToDouble(numUD_etage2_m0.Value) + Convert.ToDouble(numUD_massePayload.Value);
                 double mf1_e2 = Convert.ToDouble(numUD_etage2_mf.Value) + Convert.ToDouble(numUD_massePayload.Value);
-                dV_2 = Convert.ToDouble(txtBox_etage2_g.Text) * Convert.ToDouble(numUD_etage2_isp.Value) * Math.Log(m01_e2 / mf1_e2);
+                dV_2 = (Convert.ToDouble(txtBox_etage2_g.Text) * Convert.ToDouble(numUD_etage2_isp.Value)) * Math.Log(m01_e2 / mf1_e2);
                 txtBox_etage2_dV.Text = Convert.ToInt64(dV_2).ToString();
             }
             else
@@ -115,7 +115,7 @@ namespace Calculateurs
             {
                 double m01_e3 = Convert.ToDouble(numUD_etage3_m0.Value) + Convert.ToDouble(numUD_massePayload.Value);
                 double mf1_e3 = Convert.ToDouble(numUD_etage3_mf.Value) + Convert.ToDouble(numUD_massePayload.Value);
-                dV_3 = Convert.ToDouble(txtBox_etage3_g.Text) * Convert.ToDouble(numUD_etage3_isp.Value) * Math.Log(m01_e3 / mf1_e3);
+                dV_3 = (Convert.ToDouble(txtBox_etage3_g.Text) * Convert.ToDouble(numUD_etage3_isp.Value)) * Math.Log(m01_e3 / mf1_e3);
                 txtBox_etage3_dV.Text = Convert.ToInt64(dV_3).ToString();
             }
             else
@@ -127,7 +127,7 @@ namespace Calculateurs
             {
                 double m01_e4 = Convert.ToDouble(numUD_etage4_m0.Value) + Convert.ToDouble(numUD_massePayload.Value);
                 double mf1_e4 = Convert.ToDouble(numUD_etage4_mf.Value) + Convert.ToDouble(numUD_massePayload.Value);
-                dV_4 = Convert.ToDouble(txtBox_etage4_g.Text) * Convert.ToDouble(numUD_etage4_isp.Value) * Math.Log(m01_e4 / mf1_e4);
+                dV_4 = (Convert.ToDouble(txtBox_etage4_g.Text) * Convert.ToDouble(numUD_etage4_isp.Value)) * Math.Log(m01_e4 / mf1_e4);
                 txtBox_etage4_dV.Text = Convert.ToInt64(dV_4).ToString();
             }
             else
@@ -139,7 +139,7 @@ namespace Calculateurs
             {
                 double m01_e5 = Convert.ToDouble(numUD_etage5_m0.Value) + Convert.ToDouble(numUD_massePayload.Value);
                 double mf1_e5 = Convert.ToDouble(numUD_etage5_mf.Value) + Convert.ToDouble(numUD_massePayload.Value);
-                dV_5 = Convert.ToDouble(txtBox_etage5_g.Text) * Convert.ToDouble(numUD_etage5_isp.Value) * Math.Log(m01_e5 / mf1_e5);
+                dV_5 = (Convert.ToDouble(txtBox_etage5_g.Text) * Convert.ToDouble(numUD_etage5_isp.Value)) * Math.Log(m01_e5 / mf1_e5);
                 txtBox_etage5_dV.Text = Convert.ToInt64(dV_5).ToString();
             }
             else
@@ -187,6 +187,15 @@ namespace Calculateurs
                         lbl_rapport.Text = "Configuration OK";
                         lbl_rapport.ForeColor = Color.Green;
                     }
+
+                    if (marge < 0)
+                    {
+                        txtBox_margeEstime.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        txtBox_margeEstime.ForeColor = Color.Empty;
+                    }
                 }
             }
         }
@@ -198,6 +207,7 @@ namespace Calculateurs
             {
                 cbo_Astre.Items.Add(a.getName());
             }
+            numUD_nbrEtage.Focus();
         }
 
         private void numUD_nbrEtage_ValueChanged(object sender, EventArgs e)
@@ -237,8 +247,11 @@ namespace Calculateurs
 
         private void numUD_dV_requis_ValueChanged(object sender, EventArgs e)
         {
-            calculateData();
-            launchCkeckup();
+            if (txtBox_total_dV.Text != "0")
+            {
+                calculateData();
+                launchCkeckup();
+            }
         }
 
         private void numUD_massePayload_ValueChanged(object sender, EventArgs e)
