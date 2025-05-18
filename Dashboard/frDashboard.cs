@@ -107,14 +107,17 @@ namespace Dashboard
 
         private void frDashboard_Load(object sender, EventArgs e)
         {
-            if (BDD_Connect.openConnexion())
+            frAuth frAuth = new frAuth();
+            DialogResult res = frAuth.ShowDialog();
+
+            if (res == DialogResult.OK)
             {
                 MessageBox.Show(BDD_Connect.showConnexion());
-                tStripLbl_connectionState.Text = "Application connecté à la base de données";
+                lbl_username.Text = DAO_Dashboard.getCurrentUsername() + " (" + DAO_Dashboard.getRoleUser() + ")";
             }
             else
             {
-                tStripLbl_connectionState.Text = "Application hors-ligne. Vérifiez la connection";
+                Close();
             }
         }
     }

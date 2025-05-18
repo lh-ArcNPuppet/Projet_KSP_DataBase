@@ -34,3 +34,8 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.cs
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Calculateurs.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Calculateurs.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\Calculateurs.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\obj\Debug\Dashboard.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\MySql.Data.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\System.Memory.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\System.Numerics.Vectors.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\MySql.Data.xml

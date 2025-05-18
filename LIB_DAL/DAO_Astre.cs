@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +16,8 @@ namespace LIB_DAL
             {
                 List<Astre> res = new List<Astre>();
                 string sql = "SELECT * FROM Vue_Astre;";
-                SqlCommand cmd = new SqlCommand(sql, BDD_Connect.cnx);
-                SqlDataReader dr = cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx);
+                MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     Astre a = new Astre(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3));
@@ -43,9 +43,9 @@ namespace LIB_DAL
                     "SELECT graviteSurface FROM Astre " +
                     "WHERE nom = @nom;";
 
-                SqlCommand cmd = new SqlCommand(sql, BDD_Connect.cnx);
+                MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx);
                 cmd.Parameters.AddWithValue("@nom", nom);
-                SqlDataReader dr = cmd.ExecuteReader();
+                MySqlDataReader dr = cmd.ExecuteReader();
 
                 if (dr.Read())
                 {

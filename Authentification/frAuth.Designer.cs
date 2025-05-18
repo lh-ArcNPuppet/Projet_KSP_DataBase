@@ -78,6 +78,7 @@
             this.chk_showPassword.TabIndex = 3;
             this.chk_showPassword.Text = "Afficher mot de passe";
             this.chk_showPassword.UseVisualStyleBackColor = true;
+            this.chk_showPassword.CheckedChanged += new System.EventHandler(this.chk_showPassword_CheckedChanged);
             // 
             // btn_connect
             // 
@@ -87,6 +88,7 @@
             this.btn_connect.TabIndex = 4;
             this.btn_connect.Text = "Se connecter";
             this.btn_connect.UseVisualStyleBackColor = true;
+            this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 
             // frAuth
             // 

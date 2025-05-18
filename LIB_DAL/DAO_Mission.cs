@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
@@ -18,8 +18,8 @@ namespace LIB_DAL
             try
             {
                 string sql = "SELECT * FROM Vue_Mission;";
-                SqlCommand cmd = new SqlCommand(sql, BDD_Connect.cnx);
-                SqlDataReader dr = cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx);
+                MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     Mission mission = new Mission(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8), dr.GetString(9));

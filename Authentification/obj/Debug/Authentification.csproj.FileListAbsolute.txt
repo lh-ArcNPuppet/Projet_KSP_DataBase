@@ -8,3 +8,13 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authentification.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authentification.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authentification.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authentification.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\LIB_DAL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\MySql.Data.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\System.Memory.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\System.Numerics.Vectors.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\MySql.Data.xml
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authenti.24B0F41E.Up2Date

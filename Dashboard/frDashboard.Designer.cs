@@ -54,6 +54,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tStripLbl_connectionState = new System.Windows.Forms.ToolStripStatusLabel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -142,7 +144,7 @@
             this.editerLaListeDesStatusMissionToolStripMenuItem,
             this.editerLaListeDesSituationsToolStripMenuItem});
             this.configMissionToolStripMenuItem.Name = "configMissionToolStripMenuItem";
-            this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.configMissionToolStripMenuItem.Text = "Config Mission";
             // 
             // editerLaListeDesStatusMissionToolStripMenuItem
@@ -164,7 +166,7 @@
             this.configLanceurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesTypesDeLanceursToolStripMenuItem});
             this.configLanceurToolStripMenuItem.Name = "configLanceurToolStripMenuItem";
-            this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.configLanceurToolStripMenuItem.Text = "Config Lanceur";
             // 
             // editerLaListeDesTypesDeLanceursToolStripMenuItem
@@ -179,7 +181,7 @@
             this.configPayloadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesTypesDePayloadsToolStripMenuItem});
             this.configPayloadToolStripMenuItem.Name = "configPayloadToolStripMenuItem";
-            this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.configPayloadToolStripMenuItem.Text = "Config Payload";
             // 
             // editerLaListeDesTypesDePayloadsToolStripMenuItem
@@ -194,7 +196,7 @@
             this.configKerbonauteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesProfessionsToolStripMenuItem});
             this.configKerbonauteToolStripMenuItem.Name = "configKerbonauteToolStripMenuItem";
-            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.configKerbonauteToolStripMenuItem.Text = "Config Astronaute";
             // 
             // editerLaListeDesProfessionsToolStripMenuItem
@@ -211,7 +213,7 @@
             this.editerLaListeDesSystèmesToolStripMenuItem,
             this.editerLaListeDesUtilisateursToolStripMenuItem});
             this.autresConfigsToolStripMenuItem.Name = "autresConfigsToolStripMenuItem";
-            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.autresConfigsToolStripMenuItem.Text = "Autres configs";
             // 
             // editerLaListeDesAstresToolStripMenuItem
@@ -256,11 +258,31 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Utilisateur :";
+            // 
+            // lbl_username
+            // 
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Location = new System.Drawing.Point(72, 24);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(45, 13);
+            this.lbl_username.TabIndex = 3;
+            this.lbl_username.Text = "inconnu";
+            // 
             // frDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_username);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -305,6 +327,8 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tStripLbl_connectionState;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_username;
     }
 }
 

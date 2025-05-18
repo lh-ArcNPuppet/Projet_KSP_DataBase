@@ -1,41 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Win32;
 
 namespace LIB_DAL
 {
     public class BDD_Connect
     {
         private static bool connecte = false;
-        public static SqlConnection cnx;
+        public static MySqlConnection cnx;
 
-        public static bool openConnexion()
+        public static bool openConnexion(string userIn, string pswdIn)
         {
-            cnx = new SqlConnection();
+            cnx = new MySqlConnection();
 
-            //Informations de connexion relative au serveur SQL Server
-            //string dataSource = "Data Source=" + "SRV-SQL\\SQL_SLAM";
-            //string initialCatalog = "Initial Catalog=" + "BD_STOCK2";
+            string server = "server=" + "localhost";
+            string db = "database=" + "space_db";
+            string user = "user id=" + userIn;
+            string pswd = "password=" + pswdIn;
 
-            string dataSource = "Data Source=" + "PC-F_Louis\\SQLEXPRESS";
-            string initialCatalog = "Initial Catalog=" + "KSP_DB";
-
-            string integratedSecurity = "Integrated Security=" + "SSPI";
-
-            cnx.ConnectionString = dataSource + ";" + initialCatalog + ";" + integratedSecurity;
-            try
+            cnx.ConnectionString = server + ";" + user + ";" + pswd + ";" + db;
+            cnx.Open();
+            connecte = true;
+            return connecte;
+            /*try
             {
-                cnx.Open();
-                connecte = true;
-                return true;
+                
             }
             catch
             {
-                return false;
-            }
+                return connecte;
+            }*/
         }
 
         public static string showConnexion()

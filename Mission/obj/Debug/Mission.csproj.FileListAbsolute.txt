@@ -16,3 +16,8 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_DAL.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_BLL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_DAL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.csproj.Up2Date
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\MySql.Data.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\System.Memory.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\System.Numerics.Vectors.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\MySql.Data.xml
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.exe.config
