@@ -94,12 +94,6 @@
     <Compile Include="frConfigTypeLanceur.Designer.cs">
       <DependentUpon>frConfigTypeLanceur.cs</DependentUpon>
     </Compile>
-    <Compile Include="frConfigUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frConfigUsers.Designer.cs">
-      <DependentUpon>frConfigUsers.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frConfigAstre.resx">
@@ -126,9 +120,6 @@
     <EmbeddedResource Include="frConfigTypeLanceur.resx">
       <DependentUpon>frConfigTypeLanceur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frConfigUsers.resx">
-      <DependentUpon>frConfigUsers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -150,6 +141,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIB_BLL\LIB_BLL.csproj">
+      <Project>{99d68747-6622-4d4e-93e3-435d5a59dd5a}</Project>
+      <Name>LIB_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIB_DAL\LIB_DAL.csproj">
+      <Project>{364e4f91-c378-42ea-8065-94e0873bae0e}</Project>
+      <Name>LIB_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

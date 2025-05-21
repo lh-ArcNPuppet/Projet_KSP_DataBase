@@ -23,7 +23,7 @@ namespace LIB_DAL
                 while (dr.Read())
                 {
                     Mission mission = new Mission(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8), dr.GetString(9));
-                    Console.Write(mission);
+                    //Console.Write(mission);
                     missions.Add(mission);
                 }
                 dr.Close();

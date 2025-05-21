@@ -9,3 +9,13 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.csproj
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\LIB_DAL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\MySql.Data.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\System.Memory.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\System.Numerics.Vectors.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\bin\Debug\MySql.Data.xml
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.csproj.Up2Date

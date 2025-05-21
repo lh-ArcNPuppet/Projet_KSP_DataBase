@@ -85,6 +85,7 @@
             this.Name = "frAstronaute";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liste des astronautes";
+            this.Load += new System.EventHandler(this.frAstronaute_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listKerbonaute)).EndInit();
             this.ResumeLayout(false);
 

@@ -148,6 +148,7 @@
             this.Name = "frConfigSysteme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Systèmes";
+            this.Load += new System.EventHandler(this.frConfigSysteme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listSysteme)).EndInit();
             this.ResumeLayout(false);

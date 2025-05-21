@@ -15,4 +15,13 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configur
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigStatusMission.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigTypeAstre.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigTypeLanceur.resources
-P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.frConfigUsers.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configuration.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\LIB_DAL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\MySql.Data.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\System.Memory.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\System.Numerics.Vectors.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\bin\Debug\MySql.Data.xml
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Configuration\obj\Debug\Configur.5CBB0BA1.Up2Date

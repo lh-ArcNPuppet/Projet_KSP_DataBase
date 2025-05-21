@@ -42,6 +42,7 @@
             this.dgv_listPayloads.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_listPayloads.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_listPayloads.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listPayloads.Location = new System.Drawing.Point(12, 41);
             this.dgv_listPayloads.Name = "dgv_listPayloads";
@@ -91,6 +92,7 @@
             this.Name = "frPayload";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajouter un payload";
+            this.Load += new System.EventHandler(this.frPayload_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listPayloads)).EndInit();
             this.ResumeLayout(false);
 

@@ -22,7 +22,7 @@ namespace LIB_BLL
         }
 
         //Accesseurs - Getter
-        public int getCode() { return this.id; }
+        public int getId() { return this.id; }
         public string getLibelle() { return this.libelle; }
         public string getDescription() { return this.description; }
 

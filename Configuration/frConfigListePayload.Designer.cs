@@ -148,6 +148,7 @@
             this.Name = "frConfigListePayload";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Type payload";
+            this.Load += new System.EventHandler(this.frConfigListePayload_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listTypePayload)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.ResumeLayout(false);

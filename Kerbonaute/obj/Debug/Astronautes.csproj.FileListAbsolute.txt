@@ -9,3 +9,13 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Astronautes
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Astronautes.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\LIB_BLL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\LIB_DAL.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\MySql.Data.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\System.Memory.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\System.Numerics.Vectors.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\LIB_BLL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\MySql.Data.xml
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Astronau.61ABB481.Up2Date

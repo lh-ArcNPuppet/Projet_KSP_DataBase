@@ -148,6 +148,7 @@
             this.Name = "frConfigTypeLanceur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Type lanceur";
+            this.Load += new System.EventHandler(this.frConfigTypeLanceur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listTypeLanceur)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.ResumeLayout(false);

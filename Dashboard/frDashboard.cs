@@ -98,11 +98,10 @@ namespace Dashboard
             frConfigSysteme frConfigSysteme = new frConfigSysteme();
             frConfigSysteme.Show();
         }
-
-        private void editerLaListeDesUtilisateursToolStripMenuItem_Click(object sender, EventArgs e)
+        private void editerLaListeDesTypesDastresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frConfigUsers frConfigUsers = new frConfigUsers();
-            frConfigUsers.Show();
+            frConfigTypeAstre frConfigTypeAstre = new frConfigTypeAstre();
+            frConfigTypeAstre.Show();
         }
         private void checkRole()
         {
@@ -208,5 +207,7 @@ namespace Dashboard
                 }
             }
         }
+
+        
     }
 }

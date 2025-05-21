@@ -127,6 +127,7 @@
             this.Name = "frConfigSituationActuelle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Situation actuelle";
+            this.Load += new System.EventHandler(this.frConfigSituationActuelle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listSituationActuelle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.ResumeLayout(false);

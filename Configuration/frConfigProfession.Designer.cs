@@ -127,6 +127,7 @@
             this.Name = "frConfigProfession";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Professions";
+            this.Load += new System.EventHandler(this.frConfigProfession_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listProfession)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.ResumeLayout(false);

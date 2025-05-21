@@ -127,6 +127,7 @@
             this.Name = "frConfigStatusMission";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Status mission";
+            this.Load += new System.EventHandler(this.frConfigStatusMission_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listStatusMission)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.ResumeLayout(false);

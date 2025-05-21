@@ -40,10 +40,12 @@
             this.dgv_listeLanceur.AllowUserToAddRows = false;
             this.dgv_listeLanceur.AllowUserToDeleteRows = false;
             this.dgv_listeLanceur.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_listeLanceur.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_listeLanceur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listeLanceur.Location = new System.Drawing.Point(12, 41);
             this.dgv_listeLanceur.Name = "dgv_listeLanceur";
             this.dgv_listeLanceur.ReadOnly = true;
+            this.dgv_listeLanceur.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_listeLanceur.Size = new System.Drawing.Size(879, 355);
             this.dgv_listeLanceur.TabIndex = 0;
             // 
@@ -86,6 +88,7 @@
             this.Name = "frLanceur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liste des lanceurs";
+            this.Load += new System.EventHandler(this.frLanceur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listeLanceur)).EndInit();
             this.ResumeLayout(false);
 

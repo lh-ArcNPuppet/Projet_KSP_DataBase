@@ -127,6 +127,7 @@
             this.Name = "frConfigTypeAstre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Type astre";
+            this.Load += new System.EventHandler(this.frConfigTypeAstre_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listTypeAstre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.ResumeLayout(false);

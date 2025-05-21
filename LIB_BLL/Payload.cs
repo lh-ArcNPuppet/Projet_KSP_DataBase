@@ -26,6 +26,7 @@ namespace LIB_BLL
         private decimal hauteur;
         private int cout;
         private string commentaire;
+        private int nbrVol;
 
 
         //Constructeur
@@ -47,6 +48,16 @@ namespace LIB_BLL
             this.cout = cost;
             this.commentaire = com;
         }
+        public Payload(int id, string nom, string type, int deltaV, decimal masse, int nbrVol, string com)
+        {
+            this.id = id;
+            this.nom = nom;
+            this.type = type;
+            this.deltaV = deltaV;
+            this.masse = masse;
+            this.nbrVol = nbrVol;
+            this.commentaire = com;
+        }
 
         //Accesseurs - Getter
         public int getId() { return this.id; }
@@ -64,6 +75,7 @@ namespace LIB_BLL
         public decimal getHeight() { return this.hauteur; }
         public int getCost() { return this.cout; }
         public string getComment() { return this.commentaire; }
+        public int getNbrVol() { return this.nbrVol; }
 
         //Accesseurs - Setter
         public void setId(int id) { this.id = id; }

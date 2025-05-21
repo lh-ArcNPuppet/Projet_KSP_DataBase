@@ -165,11 +165,12 @@
             // 
             this.dgv_listeAstre.AllowUserToAddRows = false;
             this.dgv_listeAstre.AllowUserToDeleteRows = false;
+            this.dgv_listeAstre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listeAstre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listeAstre.Location = new System.Drawing.Point(303, 9);
             this.dgv_listeAstre.Name = "dgv_listeAstre";
             this.dgv_listeAstre.ReadOnly = true;
-            this.dgv_listeAstre.Size = new System.Drawing.Size(346, 380);
+            this.dgv_listeAstre.Size = new System.Drawing.Size(469, 380);
             this.dgv_listeAstre.TabIndex = 51;
             // 
             // numUD_rayon
@@ -358,7 +359,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 399);
+            this.ClientSize = new System.Drawing.Size(784, 399);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgv_listeAstre);
             this.Controls.Add(this.btn_supprimer);
@@ -377,6 +378,7 @@
             this.Name = "frConfigAstre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configurer liste Astres";
+            this.Load += new System.EventHandler(this.frConfigAstre_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listeAstre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_rayon)).EndInit();

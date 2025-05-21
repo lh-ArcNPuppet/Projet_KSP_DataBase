@@ -10,6 +10,31 @@ namespace LIB_DAL
 {
     public class DAO_Astre
     {
+        public static List<Astre> getAstreList()
+        {
+            var astres = new List<Astre>();
+
+            try
+            {
+                string sql = "SELECT * FROM vue_astre;";
+                MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Astre astre = new Astre(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3));
+                    //Console.Write(astre);
+                    astres.Add(astre);
+                }
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+            return astres;
+        }
+
         public static List<Astre> getAstres()
         {
             try

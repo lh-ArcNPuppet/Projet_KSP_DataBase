@@ -47,6 +47,16 @@
   <ItemGroup>
     <Compile Include="DAO_Astre.cs" />
     <Compile Include="BDD_Connect.cs" />
+    <Compile Include="DAO_Astronaute.cs" />
+    <Compile Include="DAO_Lanceur.cs" />
+    <Compile Include="DAO_Profession.cs" />
+    <Compile Include="DAO_SituationActuelle.cs" />
+    <Compile Include="DAO_StatusMission.cs" />
+    <Compile Include="DAO_Systeme.cs" />
+    <Compile Include="DAO_TypeAstre.cs" />
+    <Compile Include="DAO_TypeLanceur.cs" />
+    <Compile Include="DAO_TypePayload.cs" />
+    <Compile Include="DAO_Payload.cs" />
     <Compile Include="DAO_Utility.cs" />
     <Compile Include="DAO_Mission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

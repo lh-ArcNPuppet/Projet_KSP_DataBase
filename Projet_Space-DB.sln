@@ -5,11 +5,11 @@ VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard\Dashboard.csproj", "{C4AFD7E5-22A0-4EA0-92E5-BF1DDE86859A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanceur", "Lanceur\Lanceur.csproj", "{9B52A7D7-2129-4CA0-80A9-C2AF97F9C589}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanceurs", "Lanceur\Lanceurs.csproj", "{9B52A7D7-2129-4CA0-80A9-C2AF97F9C589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payload", "Payload\Payload.csproj", "{1959A804-F6D4-417F-ADED-D6C5FB6D45E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payloads", "Payload\Payloads.csproj", "{1959A804-F6D4-417F-ADED-D6C5FB6D45E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission", "Mission\Mission.csproj", "{B82143B0-B6F1-4868-8655-2933480F5AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Missions", "Mission\Missions.csproj", "{B82143B0-B6F1-4868-8655-2933480F5AFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astronautes", "Kerbonaute\Astronautes.csproj", "{916595A5-2579-44CF-8E12-3FFFAF178DF3}"
 EndProject

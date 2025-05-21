@@ -96,9 +96,9 @@
       <Project>{916595a5-2579-44cf-8e12-3fffaf178df3}</Project>
       <Name>Astronautes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lanceur\Lanceur.csproj">
+    <ProjectReference Include="..\Lanceur\Lanceurs.csproj">
       <Project>{9b52a7d7-2129-4ca0-80a9-c2af97f9c589}</Project>
-      <Name>Lanceur</Name>
+      <Name>Lanceurs</Name>
     </ProjectReference>
     <ProjectReference Include="..\LIB_BLL\LIB_BLL.csproj">
       <Project>{99d68747-6622-4d4e-93e3-435d5a59dd5a}</Project>
@@ -108,13 +108,13 @@
       <Project>{364e4f91-c378-42ea-8065-94e0873bae0e}</Project>
       <Name>LIB_DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Mission\Mission.csproj">
+    <ProjectReference Include="..\Mission\Missions.csproj">
       <Project>{b82143b0-b6f1-4868-8655-2933480f5afd}</Project>
-      <Name>Mission</Name>
+      <Name>Missions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Payload\Payload.csproj">
+    <ProjectReference Include="..\Payload\Payloads.csproj">
       <Project>{1959a804-f6d4-417f-aded-d6c5fb6d45e6}</Project>
-      <Name>Payload</Name>
+      <Name>Payloads</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

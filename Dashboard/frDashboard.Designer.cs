@@ -50,13 +50,13 @@
             this.autresConfigsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesAstresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editerLaListeDesSystèmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editerLaListeDesUtilisateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tStripLbl_connectionState = new System.Windows.Forms.ToolStripStatusLabel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_username = new System.Windows.Forms.Label();
             this.btn_disconnect = new System.Windows.Forms.Button();
+            this.editerLaListeDesTypesDastresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -145,7 +145,7 @@
             this.editerLaListeDesStatusMissionToolStripMenuItem,
             this.editerLaListeDesSituationsToolStripMenuItem});
             this.configMissionToolStripMenuItem.Name = "configMissionToolStripMenuItem";
-            this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.configMissionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configMissionToolStripMenuItem.Text = "Config Mission";
             // 
             // editerLaListeDesStatusMissionToolStripMenuItem
@@ -167,7 +167,7 @@
             this.configLanceurToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesTypesDeLanceursToolStripMenuItem});
             this.configLanceurToolStripMenuItem.Name = "configLanceurToolStripMenuItem";
-            this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.configLanceurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configLanceurToolStripMenuItem.Text = "Config Lanceur";
             // 
             // editerLaListeDesTypesDeLanceursToolStripMenuItem
@@ -182,7 +182,7 @@
             this.configPayloadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesTypesDePayloadsToolStripMenuItem});
             this.configPayloadToolStripMenuItem.Name = "configPayloadToolStripMenuItem";
-            this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.configPayloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configPayloadToolStripMenuItem.Text = "Config Payload";
             // 
             // editerLaListeDesTypesDePayloadsToolStripMenuItem
@@ -197,7 +197,7 @@
             this.configKerbonauteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesProfessionsToolStripMenuItem});
             this.configKerbonauteToolStripMenuItem.Name = "configKerbonauteToolStripMenuItem";
-            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.configKerbonauteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.configKerbonauteToolStripMenuItem.Text = "Config Astronaute";
             // 
             // editerLaListeDesProfessionsToolStripMenuItem
@@ -211,32 +211,25 @@
             // 
             this.autresConfigsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editerLaListeDesAstresToolStripMenuItem,
-            this.editerLaListeDesSystèmesToolStripMenuItem,
-            this.editerLaListeDesUtilisateursToolStripMenuItem});
+            this.editerLaListeDesTypesDastresToolStripMenuItem,
+            this.editerLaListeDesSystèmesToolStripMenuItem});
             this.autresConfigsToolStripMenuItem.Name = "autresConfigsToolStripMenuItem";
-            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.autresConfigsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.autresConfigsToolStripMenuItem.Text = "Autres configs";
             // 
             // editerLaListeDesAstresToolStripMenuItem
             // 
             this.editerLaListeDesAstresToolStripMenuItem.Name = "editerLaListeDesAstresToolStripMenuItem";
-            this.editerLaListeDesAstresToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.editerLaListeDesAstresToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.editerLaListeDesAstresToolStripMenuItem.Text = "Editer la liste des astres";
             this.editerLaListeDesAstresToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesAstresToolStripMenuItem_Click);
             // 
             // editerLaListeDesSystèmesToolStripMenuItem
             // 
             this.editerLaListeDesSystèmesToolStripMenuItem.Name = "editerLaListeDesSystèmesToolStripMenuItem";
-            this.editerLaListeDesSystèmesToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.editerLaListeDesSystèmesToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.editerLaListeDesSystèmesToolStripMenuItem.Text = "Editer la liste des systèmes";
             this.editerLaListeDesSystèmesToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesSystèmesToolStripMenuItem_Click);
-            // 
-            // editerLaListeDesUtilisateursToolStripMenuItem
-            // 
-            this.editerLaListeDesUtilisateursToolStripMenuItem.Name = "editerLaListeDesUtilisateursToolStripMenuItem";
-            this.editerLaListeDesUtilisateursToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
-            this.editerLaListeDesUtilisateursToolStripMenuItem.Text = "Editer la liste des utilisateurs";
-            this.editerLaListeDesUtilisateursToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesUtilisateursToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -288,6 +281,13 @@
             this.btn_disconnect.UseVisualStyleBackColor = true;
             this.btn_disconnect.Click += new System.EventHandler(this.btn_disconnect_Click);
             // 
+            // editerLaListeDesTypesDastresToolStripMenuItem
+            // 
+            this.editerLaListeDesTypesDastresToolStripMenuItem.Name = "editerLaListeDesTypesDastresToolStripMenuItem";
+            this.editerLaListeDesTypesDastresToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.editerLaListeDesTypesDastresToolStripMenuItem.Text = "Editer la liste des types d\'astres";
+            this.editerLaListeDesTypesDastresToolStripMenuItem.Click += new System.EventHandler(this.editerLaListeDesTypesDastresToolStripMenuItem_Click);
+            // 
             // frDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,13 +336,13 @@
         private System.Windows.Forms.ToolStripMenuItem autresConfigsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesAstresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editerLaListeDesSystèmesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesUtilisateursToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tStripLbl_connectionState;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Button btn_disconnect;
+        private System.Windows.Forms.ToolStripMenuItem editerLaListeDesTypesDastresToolStripMenuItem;
     }
 }
 
