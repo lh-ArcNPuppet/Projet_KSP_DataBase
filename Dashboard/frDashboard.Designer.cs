@@ -34,7 +34,7 @@
             this.missionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lanceursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.payloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kerbonautesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.astronautesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculateurLKOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +56,7 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_username = new System.Windows.Forms.Label();
+            this.btn_disconnect = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +79,7 @@
             this.missionsToolStripMenuItem,
             this.lanceursToolStripMenuItem,
             this.payloadToolStripMenuItem,
-            this.kerbonautesToolStripMenuItem});
+            this.astronautesToolStripMenuItem});
             this.donnéesToolStripMenuItem.Name = "donnéesToolStripMenuItem";
             this.donnéesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.donnéesToolStripMenuItem.Text = "Données";
@@ -104,12 +105,12 @@
             this.payloadToolStripMenuItem.Text = "Payloads";
             this.payloadToolStripMenuItem.Click += new System.EventHandler(this.payloadToolStripMenuItem_Click);
             // 
-            // kerbonautesToolStripMenuItem
+            // astronautesToolStripMenuItem
             // 
-            this.kerbonautesToolStripMenuItem.Name = "kerbonautesToolStripMenuItem";
-            this.kerbonautesToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.kerbonautesToolStripMenuItem.Text = "Astronautes";
-            this.kerbonautesToolStripMenuItem.Click += new System.EventHandler(this.kerbonautesToolStripMenuItem_Click);
+            this.astronautesToolStripMenuItem.Name = "astronautesToolStripMenuItem";
+            this.astronautesToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.astronautesToolStripMenuItem.Text = "Astronautes";
+            this.astronautesToolStripMenuItem.Click += new System.EventHandler(this.kerbonautesToolStripMenuItem_Click);
             // 
             // outilsToolStripMenuItem
             // 
@@ -276,11 +277,23 @@
             this.lbl_username.TabIndex = 3;
             this.lbl_username.Text = "inconnu";
             // 
+            // btn_disconnect
+            // 
+            this.btn_disconnect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_disconnect.Location = new System.Drawing.Point(689, 27);
+            this.btn_disconnect.Name = "btn_disconnect";
+            this.btn_disconnect.Size = new System.Drawing.Size(99, 23);
+            this.btn_disconnect.TabIndex = 4;
+            this.btn_disconnect.Text = "Se déconnecter";
+            this.btn_disconnect.UseVisualStyleBackColor = true;
+            this.btn_disconnect.Click += new System.EventHandler(this.btn_disconnect_Click);
+            // 
             // frDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_disconnect);
             this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
@@ -307,7 +320,7 @@
         private System.Windows.Forms.ToolStripMenuItem missionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lanceursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem payloadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kerbonautesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem astronautesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem outilsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculateurLKOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paramètresToolStripMenuItem;
@@ -329,6 +342,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.Button btn_disconnect;
     }
 }
 

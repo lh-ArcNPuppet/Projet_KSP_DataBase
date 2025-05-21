@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="DAO_Astre.cs" />
     <Compile Include="BDD_Connect.cs" />
-    <Compile Include="DAO_Dashboard.cs" />
+    <Compile Include="DAO_Utility.cs" />
     <Compile Include="DAO_Mission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

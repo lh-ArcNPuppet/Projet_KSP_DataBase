@@ -104,7 +104,63 @@ namespace Dashboard
             frConfigUsers frConfigUsers = new frConfigUsers();
             frConfigUsers.Show();
         }
-
+        private void checkRole()
+        {
+            if (DAO_Utility.getRoleUser() == "Administrateur")
+            {
+                missionsToolStripMenuItem.Enabled = true;
+                lanceursToolStripMenuItem.Enabled = true;
+                payloadToolStripMenuItem.Enabled = true;
+                astronautesToolStripMenuItem.Enabled = true;
+                outilsToolStripMenuItem.Enabled = true;
+                paramètresToolStripMenuItem.Enabled = true;
+            }
+            if (DAO_Utility.getRoleUser() == "Consultant")
+            {
+                missionsToolStripMenuItem.Enabled = true;
+                lanceursToolStripMenuItem.Enabled = true;
+                payloadToolStripMenuItem.Enabled = true;
+                astronautesToolStripMenuItem.Enabled = true;
+                outilsToolStripMenuItem.Enabled = false;
+                paramètresToolStripMenuItem.Enabled = false;
+            }
+            if (DAO_Utility.getRoleUser() == "Ingénieur lanceur")
+            {
+                missionsToolStripMenuItem.Enabled = false;
+                lanceursToolStripMenuItem.Enabled = true;
+                payloadToolStripMenuItem.Enabled = false;
+                astronautesToolStripMenuItem.Enabled = false;
+                outilsToolStripMenuItem.Enabled = true;
+                paramètresToolStripMenuItem.Enabled = false;
+            }
+            if (DAO_Utility.getRoleUser() == "Ingénieur payload")
+            {
+                missionsToolStripMenuItem.Enabled = false;
+                lanceursToolStripMenuItem.Enabled = false;
+                payloadToolStripMenuItem.Enabled = true;
+                astronautesToolStripMenuItem.Enabled = false;
+                outilsToolStripMenuItem.Enabled = false;
+                paramètresToolStripMenuItem.Enabled = false;
+            }
+            if (DAO_Utility.getRoleUser() == "Ressource Humaines")
+            {
+                missionsToolStripMenuItem.Enabled = false;
+                lanceursToolStripMenuItem.Enabled = false;
+                payloadToolStripMenuItem.Enabled = false;
+                astronautesToolStripMenuItem.Enabled = true;
+                outilsToolStripMenuItem.Enabled = false;
+                paramètresToolStripMenuItem.Enabled = false;
+            }
+            if (DAO_Utility.getRoleUser() == "Directeur de vol")
+            {
+                missionsToolStripMenuItem.Enabled = true;
+                lanceursToolStripMenuItem.Enabled = true;
+                payloadToolStripMenuItem.Enabled = true;
+                astronautesToolStripMenuItem.Enabled = true;
+                outilsToolStripMenuItem.Enabled = true;
+                paramètresToolStripMenuItem.Enabled = false;
+            }
+        }
         private void frDashboard_Load(object sender, EventArgs e)
         {
             frAuth frAuth = new frAuth();
@@ -112,12 +168,44 @@ namespace Dashboard
 
             if (res == DialogResult.OK)
             {
-                MessageBox.Show(BDD_Connect.showConnexion());
-                lbl_username.Text = DAO_Dashboard.getCurrentUsername() + " (" + DAO_Dashboard.getRoleUser() + ")";
+                //MessageBox.Show(BDD_Connect.showConnexion());
+                lbl_username.Text = DAO_Utility.getCurrentUsername() + " (" + DAO_Utility.getRoleUser() + ")";
+                checkRole();
+                tStripLbl_connectionState.Text = "Connecté";
             }
             else
             {
                 Close();
+            }
+        }
+
+        private void btn_disconnect_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(
+                "Voulez-vous vous déconnecter de votre compte ?",
+                "Confirmation déconnexion",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (res == DialogResult.Yes) {
+                BDD_Connect.closeConnexion();
+                tStripLbl_connectionState.Text = "Utilisateur déconnecté";
+                lbl_username.Text = "";
+
+                frAuth frAuth = new frAuth();
+                DialogResult resConnect = frAuth.ShowDialog();
+
+                if (resConnect == DialogResult.OK)
+                {
+                    //MessageBox.Show(BDD_Connect.showConnexion());
+                    lbl_username.Text = DAO_Utility.getCurrentUsername() + " (" + DAO_Utility.getRoleUser() + ")";
+                    checkRole();
+                    tStripLbl_connectionState.Text = "Connecté à la base de donnée";
+                }
+                else
+                {
+                    Close();
+                }
             }
         }
     }

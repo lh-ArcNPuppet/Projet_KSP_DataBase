@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LIB_DAL
 {
-    public class DAO_Dashboard
+    public class DAO_Utility
     {
         public static string getCurrentUsername()
         {
