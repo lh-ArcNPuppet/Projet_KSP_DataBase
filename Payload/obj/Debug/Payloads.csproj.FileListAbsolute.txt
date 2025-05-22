@@ -19,3 +19,5 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payloads.cspro
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payloads.csproj.Up2Date
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.frDetailsPayload.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.frEditPayload.resources

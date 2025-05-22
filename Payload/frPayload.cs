@@ -54,5 +54,50 @@ namespace Payload
         {
             getListPayloads();
         }
+
+        private void btn_ajouter_Click(object sender, EventArgs e)
+        {
+            frNewPayload frNewPayload = new frNewPayload();
+            DialogResult res = frNewPayload.ShowDialog();
+            if (res == DialogResult.OK) { getListPayloads(); }
+        }
+
+        private void btn_editer_Click(object sender, EventArgs e)
+        {
+            var value = dgv_listPayloads.SelectedRows[0].Cells[0].Value.ToString();
+            if (value == null) return;
+
+            frEditPayload frEditPayload = new frEditPayload(Convert.ToInt32(value));
+            DialogResult res = frEditPayload.ShowDialog();
+            if (res == DialogResult.OK) { getListPayloads(); }
+        }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(
+                "Voulez-vous supprimer ce lanceur ?\n" +
+                "(Cette action est irréversible)",
+                "Suppression lanceur",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (res == DialogResult.Yes)
+            {
+                var value = dgv_listPayloads.SelectedRows[0].Cells[0].Value.ToString();
+                if (value == null) return;
+
+                DAO_Payload.deletePayload(Convert.ToInt32(value));
+                getListPayloads();
+            }
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            var value = dgv_listPayloads.SelectedRows[0].Cells[0].Value.ToString();
+            if (value == null) return;
+
+            frDetailsPayload frDetailsPayload = new frDetailsPayload(Convert.ToInt32(value));
+            frDetailsPayload.Show();
+        }
     }
 }

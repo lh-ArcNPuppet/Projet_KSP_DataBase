@@ -10,9 +10,9 @@ namespace LIB_DAL
 {
     public class DAO_TypeAstre
     {
-        public static List<TypeAstre> getTypeAstreList()
+        public static List<DB_TypeAstre> getTypeAstreList()
         {
-            var typesAstre = new List<TypeAstre>();
+            var typesAstre = new List<DB_TypeAstre>();
 
             try
             {
@@ -21,7 +21,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    TypeAstre typeAstre = new TypeAstre(dr.GetInt32(0), dr.GetString(1));
+                    DB_TypeAstre typeAstre = new DB_TypeAstre(dr.GetInt32(0), dr.GetString(1));
                     typesAstre.Add(typeAstre);
                 }
                 dr.Close();

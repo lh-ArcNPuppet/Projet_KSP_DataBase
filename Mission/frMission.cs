@@ -61,5 +61,11 @@ namespace Mission
         {
             getListMissions();
         }
+
+        private void btn_ajouter_Click(object sender, EventArgs e)
+        {
+            frNewMission frNewMission = new frNewMission();
+            frNewMission.Show();
+        }
     }
 }

@@ -170,7 +170,9 @@
             this.dgv_listeAstre.Location = new System.Drawing.Point(303, 9);
             this.dgv_listeAstre.Name = "dgv_listeAstre";
             this.dgv_listeAstre.ReadOnly = true;
-            this.dgv_listeAstre.Size = new System.Drawing.Size(469, 380);
+            this.dgv_listeAstre.RowHeadersVisible = false;
+            this.dgv_listeAstre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_listeAstre.Size = new System.Drawing.Size(525, 380);
             this.dgv_listeAstre.TabIndex = 51;
             // 
             // numUD_rayon
@@ -359,7 +361,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 399);
+            this.ClientSize = new System.Drawing.Size(840, 399);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgv_listeAstre);
             this.Controls.Add(this.btn_supprimer);

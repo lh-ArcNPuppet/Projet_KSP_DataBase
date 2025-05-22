@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class TypeLanceur
+    public class DB_TypeLanceur
     {
         //Attributs privés
         private string code;
@@ -14,7 +14,7 @@ namespace LIB_BLL
         private string description;
 
         //Constructeur
-        public TypeLanceur(string code, string lib, string desc)
+        public DB_TypeLanceur(string code, string lib, string desc)
         {
             this.code = code;
             this.libelle = lib;

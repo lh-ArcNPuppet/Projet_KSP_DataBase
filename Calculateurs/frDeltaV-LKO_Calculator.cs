@@ -203,7 +203,7 @@ namespace Calculateurs
         private void frDeltaV_Calculator_Load(object sender, EventArgs e)
         {
             refreshStagingDisplay();
-            foreach (Astre a in DAO_Astre.getAstres())
+            foreach (DB_Astre a in DAO_Astre.getAstreList())
             {
                 cbo_Astre.Items.Add(a.getName());
             }

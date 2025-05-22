@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class TypeProfession
+    public class DB_TypeAstre
     {
         //Attributs privés
         private int id;
         private string libelle;
 
         //Constructeur
-        public TypeProfession(int id, string lib)
+        public DB_TypeAstre(int id, string lib)
         {
             this.id = id;
             this.libelle = lib;

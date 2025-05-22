@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Systeme
+    public class DB_Systeme
     {
         //Attributs privés
         private int id;
@@ -14,7 +14,7 @@ namespace LIB_BLL
         private string description;
 
         //Constructeur
-        public Systeme(int id, string lib, string desc)
+        public DB_Systeme(int id, string lib, string desc)
         {
             this.id = id;
             this.libelle = lib;

@@ -728,7 +728,7 @@
             131072});
             this.numUD_massePayload.Location = new System.Drawing.Point(107, 43);
             this.numUD_massePayload.Maximum = new decimal(new int[] {
-            5,
+            1000000,
             0,
             0,
             0});

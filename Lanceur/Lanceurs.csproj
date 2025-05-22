@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frDetailsLanceur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDetailsLanceur.Designer.cs">
+      <DependentUpon>frDetailsLanceur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frEditLanceur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEditLanceur.Designer.cs">
+      <DependentUpon>frEditLanceur.cs</DependentUpon>
+    </Compile>
     <Compile Include="frLanceur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frDetailsLanceur.resx">
+      <DependentUpon>frDetailsLanceur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEditLanceur.resx">
+      <DependentUpon>frEditLanceur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frLanceur.resx">
       <DependentUpon>frLanceur.cs</DependentUpon>
     </EmbeddedResource>

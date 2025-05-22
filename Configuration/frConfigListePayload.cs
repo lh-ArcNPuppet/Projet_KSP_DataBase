@@ -24,7 +24,7 @@ namespace Configuration
             dt.Columns.Add("Code");
             dt.Columns.Add("Libellé");
 
-            var typesPayload = DAO_TypePayload.getAstreList();
+            var typesPayload = DAO_TypePayload.getTypePayloadList();
 
             foreach (var typePayload in typesPayload)
             {

@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class TypeAstre
+    public class DB_TypePayload
     {
         //Attributs privés
-        private int id;
+        private string code;
         private string libelle;
 
         //Constructeur
-        public TypeAstre(int id, string lib)
+        public DB_TypePayload(string code, string lib)
         {
-            this.id = id;
+            this.code = code;
             this.libelle = lib;
         }
 
         //Accesseurs - Getter
-        public int getId() { return this.id; }
+        public string getCode() { return this.code; }
         public string getLibelle() { return this.libelle; }
 
         //Accesseurs - Setter
-        public void setCode(int id) { this.id = id; }
+        public void setCode(string code) { this.code = code; }
         public void setLibelle(string lib) { this.libelle = lib; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Lanceur
+    public class DB_Lanceur
     {
         //Attributs privés
         private int id;
@@ -27,7 +27,21 @@ namespace LIB_BLL
 
 
         //Constructeurs
-        public Lanceur(int id, string nom, string type, int nbrEtage, int dV, decimal leoMax, decimal masse, decimal lon, decimal lar, decimal hau, int cost, string commentaire)
+        public DB_Lanceur(string nom, string type, int nbrEtage, int dV, decimal leoMax, decimal masse, decimal lon, decimal lar, decimal hau, int cost, string commentaire)
+        {
+            this.nom = nom;
+            this.type = type;
+            this.nbrEtage = nbrEtage;
+            this.deltaV = dV;
+            this.leoMax = leoMax;
+            this.masse = masse;
+            this.longueur = lon;
+            this.largeur = lar;
+            this.hauteur = hau;
+            this.cout = cost;
+            this.commentaire = commentaire;
+        }
+        public DB_Lanceur(int id, string nom, string type, int nbrEtage, int dV, decimal leoMax, decimal masse, decimal lon, decimal lar, decimal hau, int cost, string commentaire)
         {
             this.id = id;
             this.nom = nom;
@@ -42,7 +56,7 @@ namespace LIB_BLL
             this.cout = cost;
             this.commentaire = commentaire;
         }
-        public Lanceur(int id, string nom, string type, int nbrEtage, int dV, decimal leoMax, int nbrVol, string commentaire)
+        public DB_Lanceur(int id, string nom, string type, int nbrEtage, int dV, decimal leoMax, int nbrVol, string commentaire)
         {
             this.id = id;
             this.nom = nom;

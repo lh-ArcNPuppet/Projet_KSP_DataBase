@@ -62,8 +62,6 @@
             this.txtBox_nom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.lbl_id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_LKO)).BeginInit();
@@ -194,6 +192,7 @@
             this.btn_annuler.TabIndex = 25;
             this.btn_annuler.Text = "Annuler";
             this.btn_annuler.UseVisualStyleBackColor = true;
+            this.btn_annuler.Click += new System.EventHandler(this.btn_annuler_Click);
             // 
             // btn_enregistrer
             // 
@@ -203,6 +202,7 @@
             this.btn_enregistrer.TabIndex = 24;
             this.btn_enregistrer.Text = "Enregistrer";
             this.btn_enregistrer.UseVisualStyleBackColor = true;
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // txtBox_commentaire
             // 
@@ -392,14 +392,14 @@
             // cbo_typeLanceur
             // 
             this.cbo_typeLanceur.FormattingEnabled = true;
-            this.cbo_typeLanceur.Location = new System.Drawing.Point(53, 51);
+            this.cbo_typeLanceur.Location = new System.Drawing.Point(53, 45);
             this.cbo_typeLanceur.Name = "cbo_typeLanceur";
             this.cbo_typeLanceur.Size = new System.Drawing.Size(132, 21);
             this.cbo_typeLanceur.TabIndex = 20;
             // 
             // txtBox_nom
             // 
-            this.txtBox_nom.Location = new System.Drawing.Point(53, 28);
+            this.txtBox_nom.Location = new System.Drawing.Point(53, 20);
             this.txtBox_nom.Name = "txtBox_nom";
             this.txtBox_nom.Size = new System.Drawing.Size(132, 20);
             this.txtBox_nom.TabIndex = 19;
@@ -407,7 +407,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 54);
+            this.label2.Location = new System.Drawing.Point(12, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 18;
@@ -416,38 +416,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 17;
             this.label1.Text = "Nom :";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(12, 9);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(77, 13);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "ID du lanceur :";
-            // 
-            // lbl_id
-            // 
-            this.lbl_id.AutoSize = true;
-            this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(95, 9);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(14, 13);
-            this.lbl_id.TabIndex = 30;
-            this.lbl_id.Text = "0";
             // 
             // frNewLanceur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 516);
-            this.Controls.Add(this.lbl_id);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_annuler);
@@ -463,6 +442,7 @@
             this.Name = "frNewLanceur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajouter un lanceur";
+            this.Load += new System.EventHandler(this.frNewLanceur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -516,7 +496,5 @@
         private System.Windows.Forms.TextBox txtBox_nom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label lbl_id;
     }
 }

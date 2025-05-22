@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frNewPayload));
             this.txtBox_Commentaire = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.pctBox_PictureType = new System.Windows.Forms.PictureBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rdBtn_PresetCargo = new System.Windows.Forms.RadioButton();
-            this.rdBtn_PresetInhabite = new System.Windows.Forms.RadioButton();
-            this.rdBtn_PresetHabite = new System.Windows.Forms.RadioButton();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -70,12 +67,9 @@
             this.numUD_DeltaV = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.cbo_Type = new System.Windows.Forms.ComboBox();
-            this.lbl_id = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtBox_nom = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_Cout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_Hauteur)).BeginInit();
@@ -107,56 +101,12 @@
             // 
             // pctBox_PictureType
             // 
-            this.pctBox_PictureType.Location = new System.Drawing.Point(288, 7);
+            this.pctBox_PictureType.Image = ((System.Drawing.Image)(resources.GetObject("pctBox_PictureType.Image")));
+            this.pctBox_PictureType.Location = new System.Drawing.Point(284, 12);
             this.pctBox_PictureType.Name = "pctBox_PictureType";
-            this.pctBox_PictureType.Size = new System.Drawing.Size(64, 61);
+            this.pctBox_PictureType.Size = new System.Drawing.Size(68, 66);
             this.pctBox_PictureType.TabIndex = 49;
             this.pctBox_PictureType.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.rdBtn_PresetCargo);
-            this.groupBox4.Controls.Add(this.rdBtn_PresetInhabite);
-            this.groupBox4.Controls.Add(this.rdBtn_PresetHabite);
-            this.groupBox4.Location = new System.Drawing.Point(265, 79);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(87, 73);
-            this.groupBox4.TabIndex = 48;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Configuration";
-            // 
-            // rdBtn_PresetCargo
-            // 
-            this.rdBtn_PresetCargo.AutoSize = true;
-            this.rdBtn_PresetCargo.Location = new System.Drawing.Point(6, 50);
-            this.rdBtn_PresetCargo.Name = "rdBtn_PresetCargo";
-            this.rdBtn_PresetCargo.Size = new System.Drawing.Size(53, 17);
-            this.rdBtn_PresetCargo.TabIndex = 2;
-            this.rdBtn_PresetCargo.TabStop = true;
-            this.rdBtn_PresetCargo.Text = "Cargo";
-            this.rdBtn_PresetCargo.UseVisualStyleBackColor = true;
-            // 
-            // rdBtn_PresetInhabite
-            // 
-            this.rdBtn_PresetInhabite.AutoSize = true;
-            this.rdBtn_PresetInhabite.Location = new System.Drawing.Point(6, 33);
-            this.rdBtn_PresetInhabite.Name = "rdBtn_PresetInhabite";
-            this.rdBtn_PresetInhabite.Size = new System.Drawing.Size(63, 17);
-            this.rdBtn_PresetInhabite.TabIndex = 1;
-            this.rdBtn_PresetInhabite.TabStop = true;
-            this.rdBtn_PresetInhabite.Text = "Inhabité";
-            this.rdBtn_PresetInhabite.UseVisualStyleBackColor = true;
-            // 
-            // rdBtn_PresetHabite
-            // 
-            this.rdBtn_PresetHabite.AutoSize = true;
-            this.rdBtn_PresetHabite.Location = new System.Drawing.Point(6, 16);
-            this.rdBtn_PresetHabite.Name = "rdBtn_PresetHabite";
-            this.rdBtn_PresetHabite.Size = new System.Drawing.Size(56, 17);
-            this.rdBtn_PresetHabite.TabIndex = 0;
-            this.rdBtn_PresetHabite.TabStop = true;
-            this.rdBtn_PresetHabite.Text = "Habité";
-            this.rdBtn_PresetHabite.UseVisualStyleBackColor = true;
             // 
             // btn_Cancel
             // 
@@ -167,6 +117,7 @@
             this.btn_Cancel.TabIndex = 47;
             this.btn_Cancel.Text = "Annuler";
             this.btn_Cancel.UseVisualStyleBackColor = true;
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_Save
             // 
@@ -176,6 +127,7 @@
             this.btn_Save.TabIndex = 46;
             this.btn_Save.Text = "Enregistrer";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // groupBox3
             // 
@@ -436,7 +388,7 @@
             this.groupBox1.Controls.Add(this.numUD_DeltaV);
             this.groupBox1.Location = new System.Drawing.Point(17, 79);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(242, 73);
+            this.groupBox1.Size = new System.Drawing.Size(335, 73);
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caractéristiques";
@@ -513,16 +465,6 @@
             this.cbo_Type.Size = new System.Drawing.Size(166, 21);
             this.cbo_Type.TabIndex = 41;
             // 
-            // lbl_id
-            // 
-            this.lbl_id.AutoSize = true;
-            this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(81, 9);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(14, 13);
-            this.lbl_id.TabIndex = 38;
-            this.lbl_id.Text = "0";
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -531,15 +473,6 @@
             this.label21.Size = new System.Drawing.Size(35, 13);
             this.label21.TabIndex = 39;
             this.label21.Text = "Nom :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "ID Payload :";
             // 
             // txtBox_nom
             // 
@@ -557,7 +490,6 @@
             this.Controls.Add(this.txtBox_Commentaire);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.pctBox_PictureType);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.groupBox3);
@@ -565,18 +497,15 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbo_Type);
-            this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBox_nom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frNewPayload";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajouter un payload";
+            this.Load += new System.EventHandler(this.frNewPayload_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_Cout)).EndInit();
@@ -600,10 +529,6 @@
         private System.Windows.Forms.TextBox txtBox_Commentaire;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pctBox_PictureType;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton rdBtn_PresetCargo;
-        private System.Windows.Forms.RadioButton rdBtn_PresetInhabite;
-        private System.Windows.Forms.RadioButton rdBtn_PresetHabite;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -639,9 +564,7 @@
         private System.Windows.Forms.NumericUpDown numUD_DeltaV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbo_Type;
-        private System.Windows.Forms.Label lbl_id;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBox_nom;
     }
 }

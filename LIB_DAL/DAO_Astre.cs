@@ -10,9 +10,9 @@ namespace LIB_DAL
 {
     public class DAO_Astre
     {
-        public static List<Astre> getAstreList()
+        public static List<DB_Astre> getAstreList()
         {
-            var astres = new List<Astre>();
+            var astres = new List<DB_Astre>();
 
             try
             {
@@ -21,7 +21,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    Astre astre = new Astre(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3));
+                    DB_Astre astre = new DB_Astre(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3));
                     //Console.Write(astre);
                     astres.Add(astre);
                 }
@@ -33,30 +33,6 @@ namespace LIB_DAL
                 Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
             }
             return astres;
-        }
-
-        public static List<Astre> getAstres()
-        {
-            try
-            {
-                List<Astre> res = new List<Astre>();
-                string sql = "SELECT * FROM Vue_Astre;";
-                MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx);
-                MySqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    Astre a = new Astre(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3));
-                    res.Add(a);
-                    //Console.WriteLine(a);
-                }
-
-                dr.Close();
-                return res;
-            }
-            catch
-            {
-                return null;
-            }
         }
 
         public static decimal getSurfaceGravityByName(string nom)

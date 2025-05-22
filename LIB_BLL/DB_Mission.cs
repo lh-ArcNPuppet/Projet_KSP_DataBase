@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Mission
+    public class DB_Mission
     {
         //Attributs privés
         private int numVol;
@@ -38,7 +38,7 @@ namespace LIB_BLL
 
 
         //Constructeur
-        public Mission(
+        public DB_Mission(
             int numVol,
             string nom,
             string sttMission,
@@ -79,7 +79,7 @@ namespace LIB_BLL
             this.resultMission = resultMission;
             this.commentaire = commentaire;
         }
-        public Mission(
+        public DB_Mission(
             int numVol,
             string sttMission,
             string nom,

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class SituationActuelle
+    public class DB_StatusMission
     {
         //Attributs privés
         private int id;
         private string libelle;
 
         //Constructeur
-        public SituationActuelle(int id, string lib)
+        public DB_StatusMission(int id, string lib)
         {
             this.id = id;
             this.libelle = lib;

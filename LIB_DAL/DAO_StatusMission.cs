@@ -10,9 +10,9 @@ namespace LIB_DAL
 {
     public class DAO_StatusMission
     {
-        public static List<StatusMission> getStatusMissionList()
+        public static List<DB_StatusMission> getStatusMissionList()
         {
-            var statusMissions = new List<StatusMission>();
+            var statusMissions = new List<DB_StatusMission>();
 
             try
             {
@@ -21,7 +21,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    StatusMission statusMission = new StatusMission(dr.GetInt32(0), dr.GetString(1));
+                    DB_StatusMission statusMission = new DB_StatusMission(dr.GetInt32(0), dr.GetString(1));
                     //Console.Write(typePayload);
                     statusMissions.Add(statusMission);
                 }

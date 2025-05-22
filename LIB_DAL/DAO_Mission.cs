@@ -11,9 +11,9 @@ namespace LIB_DAL
 {
     public class DAO_Mission
     {
-        public static List<Mission> getMissionsList()
+        public static List<DB_Mission> getMissionsList()
         {
-            var missions = new List<Mission>();
+            var missions = new List<DB_Mission>();
 
             try
             {
@@ -22,7 +22,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    Mission mission = new Mission(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8), dr.GetString(9));
+                    DB_Mission mission = new DB_Mission(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5), dr.GetString(6), dr.GetString(7), dr.GetString(8), dr.GetString(9));
                     //Console.Write(mission);
                     missions.Add(mission);
                 }

@@ -10,9 +10,9 @@ namespace LIB_DAL
 {
     public class DAO_Systeme
     {
-        public static List<Systeme> getSystemeList()
+        public static List<DB_Systeme> getSystemeList()
         {
-            var systemes = new List<Systeme>();
+            var systemes = new List<DB_Systeme>();
 
             try
             {
@@ -21,7 +21,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    Systeme systeme = new Systeme(dr.GetInt32(0), dr.GetString(1), dr.GetString(2));
+                    DB_Systeme systeme = new DB_Systeme(dr.GetInt32(0), dr.GetString(1), dr.GetString(2));
                     //Console.Write(typePayload);
                     systemes.Add(systeme);
                 }

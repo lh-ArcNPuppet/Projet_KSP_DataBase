@@ -50,9 +50,15 @@
             // 
             // dgv_listSituationActuelle
             // 
+            this.dgv_listSituationActuelle.AllowUserToAddRows = false;
+            this.dgv_listSituationActuelle.AllowUserToDeleteRows = false;
+            this.dgv_listSituationActuelle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listSituationActuelle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listSituationActuelle.Location = new System.Drawing.Point(277, 12);
             this.dgv_listSituationActuelle.Name = "dgv_listSituationActuelle";
+            this.dgv_listSituationActuelle.ReadOnly = true;
+            this.dgv_listSituationActuelle.RowHeadersVisible = false;
+            this.dgv_listSituationActuelle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_listSituationActuelle.Size = new System.Drawing.Size(281, 128);
             this.dgv_listSituationActuelle.TabIndex = 60;
             // 

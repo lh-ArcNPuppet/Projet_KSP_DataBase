@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Payload
+    public class DB_Payload
     {
         //Attributs privés
         private int id;
@@ -30,7 +30,7 @@ namespace LIB_BLL
 
 
         //Constructeur
-        public Payload(int id, string nom, string t, int dV, int capKerb, string aElec, string aFood, string aWater, string aOx, decimal m, decimal lon, decimal lar, decimal hau, int cost, string com)
+        public DB_Payload(int id, string nom, string t, int dV, int capKerb, string aElec, string aFood, string aWater, string aOx, decimal m, decimal lon, decimal lar, decimal hau, int cost, string com)
         {
             this.id = id;
             this.nom = nom;
@@ -48,7 +48,24 @@ namespace LIB_BLL
             this.cout = cost;
             this.commentaire = com;
         }
-        public Payload(int id, string nom, string type, int deltaV, decimal masse, int nbrVol, string com)
+        public DB_Payload(string nom, string t, int dV, int capKerb, string aElec, string aFood, string aWater, string aOx, decimal m, decimal lon, decimal lar, decimal hau, int cost, string com)
+        {
+            this.nom = nom;
+            this.type = t;
+            this.deltaV = dV;
+            this.capKerbal = capKerb;
+            this.autoResElec = aElec;
+            this.autoResFood = aFood;
+            this.autoResWater = aWater;
+            this.autoResOxygen = aOx;
+            this.masse = m;
+            this.longueur = lon;
+            this.largueur = lar;
+            this.hauteur = hau;
+            this.cout = cost;
+            this.commentaire = com;
+        }
+        public DB_Payload(int id, string nom, string type, int deltaV, decimal masse, int nbrVol, string com)
         {
             this.id = id;
             this.nom = nom;

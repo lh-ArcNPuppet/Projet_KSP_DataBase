@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Astre
+    public class DB_Astre
     {
         //Attributs privés
         private int id;
@@ -21,14 +21,14 @@ namespace LIB_BLL
         private string description;
 
         //Constructeur
-        public Astre(int id, string nom, string type, string systemeR)
+        public DB_Astre(int id, string nom, string type, string systemeR)
         {
             this.id = id;
             this.nom = nom;
             this.type = type;
             this.systemeRelatif = systemeR;
         }
-        public Astre(int id, string nom, string type, string systemeR, decimal r, int temp, decimal sg, string atm, decimal pOrbit, string desc)
+        public DB_Astre(int id, string nom, string type, string systemeR, decimal r, int temp, decimal sg, string atm, decimal pOrbit, string desc)
         {
             this.id = id;
             this.nom = nom;

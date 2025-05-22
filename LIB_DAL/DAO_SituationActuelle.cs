@@ -10,9 +10,9 @@ namespace LIB_DAL
 {
     public class DAO_SituationActuelle
     {
-        public static List<SituationActuelle> getSituationActuelleList()
+        public static List<DB_SituationActuelle> getSituationActuelleList()
         {
-            var situationActuelles = new List<SituationActuelle>();
+            var situationActuelles = new List<DB_SituationActuelle>();
 
             try
             {
@@ -21,7 +21,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    SituationActuelle situationActuelle = new SituationActuelle(dr.GetInt32(0), dr.GetString(1));
+                    DB_SituationActuelle situationActuelle = new DB_SituationActuelle(dr.GetInt32(0), dr.GetString(1));
                     //Console.Write(typePayload);
                     situationActuelles.Add(situationActuelle);
                 }

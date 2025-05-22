@@ -32,6 +32,7 @@
             this.btn_ajouter = new System.Windows.Forms.Button();
             this.btn_editer = new System.Windows.Forms.Button();
             this.btn_supprimer = new System.Windows.Forms.Button();
+            this.btn_details = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listeLanceur)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@
             this.dgv_listeLanceur.Location = new System.Drawing.Point(12, 41);
             this.dgv_listeLanceur.Name = "dgv_listeLanceur";
             this.dgv_listeLanceur.ReadOnly = true;
+            this.dgv_listeLanceur.RowHeadersVisible = false;
             this.dgv_listeLanceur.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_listeLanceur.Size = new System.Drawing.Size(879, 355);
             this.dgv_listeLanceur.TabIndex = 0;
@@ -57,6 +59,7 @@
             this.btn_ajouter.TabIndex = 1;
             this.btn_ajouter.Text = "Ajouter";
             this.btn_ajouter.UseVisualStyleBackColor = true;
+            this.btn_ajouter.Click += new System.EventHandler(this.btn_ajouter_Click);
             // 
             // btn_editer
             // 
@@ -66,6 +69,7 @@
             this.btn_editer.TabIndex = 1;
             this.btn_editer.Text = "Editer";
             this.btn_editer.UseVisualStyleBackColor = true;
+            this.btn_editer.Click += new System.EventHandler(this.btn_editer_Click);
             // 
             // btn_supprimer
             // 
@@ -75,12 +79,24 @@
             this.btn_supprimer.TabIndex = 1;
             this.btn_supprimer.Text = "Supprimer";
             this.btn_supprimer.UseVisualStyleBackColor = true;
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
+            // 
+            // btn_details
+            // 
+            this.btn_details.Location = new System.Drawing.Point(573, 12);
+            this.btn_details.Name = "btn_details";
+            this.btn_details.Size = new System.Drawing.Size(75, 23);
+            this.btn_details.TabIndex = 2;
+            this.btn_details.Text = "Détails";
+            this.btn_details.UseVisualStyleBackColor = true;
+            this.btn_details.Click += new System.EventHandler(this.btn_details_Click);
             // 
             // frLanceur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 410);
+            this.Controls.Add(this.btn_details);
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.btn_editer);
             this.Controls.Add(this.btn_ajouter);
@@ -100,6 +116,7 @@
         private System.Windows.Forms.Button btn_ajouter;
         private System.Windows.Forms.Button btn_editer;
         private System.Windows.Forms.Button btn_supprimer;
+        private System.Windows.Forms.Button btn_details;
     }
 }
 

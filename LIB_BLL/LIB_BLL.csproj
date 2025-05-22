@@ -41,20 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Astre.cs" />
+    <Compile Include="DB_Astre.cs" />
     <Compile Include="Astronaute.cs" />
-    <Compile Include="Lanceur.cs" />
-    <Compile Include="Mission.cs" />
-    <Compile Include="Payload.cs" />
+    <Compile Include="DB_Lanceur.cs" />
+    <Compile Include="DB_Mission.cs" />
+    <Compile Include="DB_Payload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SituationActuelle.cs" />
-    <Compile Include="StatusMission.cs" />
-    <Compile Include="Systeme.cs" />
-    <Compile Include="TypeAstre.cs" />
-    <Compile Include="TypeLanceur.cs" />
-    <Compile Include="TypePayload.cs" />
-    <Compile Include="TypeProfession.cs" />
-    <Compile Include="Users.cs" />
+    <Compile Include="DB_SituationActuelle.cs" />
+    <Compile Include="DB_StatusMission.cs" />
+    <Compile Include="DB_Systeme.cs" />
+    <Compile Include="DB_TypeAstre.cs" />
+    <Compile Include="DB_TypeLanceur.cs" />
+    <Compile Include="DB_TypePayload.cs" />
+    <Compile Include="DB_TypeProfession.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

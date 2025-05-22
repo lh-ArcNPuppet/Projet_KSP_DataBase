@@ -12,28 +12,21 @@ namespace LIB_DAL
     {
         private static bool connecte = false;
         public static MySqlConnection cnx;
+        public static string connectionString;
 
         public static bool openConnexion(string userIn, string pswdIn)
         {
-            cnx = new MySqlConnection();
-
-            string server = "server=" + "localhost";
-            string db = "database=" + "space_db";
+            string server = "server=localhost";
+            string db = "database=space_db";
             string user = "user id=" + userIn;
             string pswd = "password=" + pswdIn;
 
-            cnx.ConnectionString = server + ";" + user + ";" + pswd + ";" + db;
+            connectionString = server + ";" + user + ";" + pswd + ";" + db;
+
+            cnx = new MySqlConnection(connectionString);
             cnx.Open();
             connecte = true;
             return connecte;
-            /*try
-            {
-                
-            }
-            catch
-            {
-                return connecte;
-            }*/
         }
 
         public static string showConnexion()

@@ -10,9 +10,9 @@ namespace LIB_DAL
 {
     public class DAO_Profession
     {
-        public static List<TypeProfession> getProfessionList()
+        public static List<DB_TypeProfession> getProfessionList()
         {
-            var professions = new List<TypeProfession>();
+            var professions = new List<DB_TypeProfession>();
 
             try
             {
@@ -21,7 +21,7 @@ namespace LIB_DAL
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    TypeProfession profession = new TypeProfession(dr.GetInt32(0), dr.GetString(1));
+                    DB_TypeProfession profession = new DB_TypeProfession(dr.GetInt32(0), dr.GetString(1));
                     //Console.Write(typePayload);
                     professions.Add(profession);
                 }

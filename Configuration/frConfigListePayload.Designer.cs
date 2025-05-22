@@ -60,9 +60,15 @@
             // 
             // dgv_listTypePayload
             // 
+            this.dgv_listTypePayload.AllowUserToAddRows = false;
+            this.dgv_listTypePayload.AllowUserToDeleteRows = false;
+            this.dgv_listTypePayload.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listTypePayload.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listTypePayload.Location = new System.Drawing.Point(253, 12);
             this.dgv_listTypePayload.Name = "dgv_listTypePayload";
+            this.dgv_listTypePayload.ReadOnly = true;
+            this.dgv_listTypePayload.RowHeadersVisible = false;
+            this.dgv_listTypePayload.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_listTypePayload.Size = new System.Drawing.Size(397, 155);
             this.dgv_listTypePayload.TabIndex = 34;
             // 
@@ -144,7 +150,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBox_nom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "frConfigListePayload";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuration liste Type payload";

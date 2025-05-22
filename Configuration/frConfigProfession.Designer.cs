@@ -50,9 +50,15 @@
             // 
             // dgv_listProfession
             // 
+            this.dgv_listProfession.AllowUserToAddRows = false;
+            this.dgv_listProfession.AllowUserToDeleteRows = false;
+            this.dgv_listProfession.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listProfession.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listProfession.Location = new System.Drawing.Point(255, 12);
             this.dgv_listProfession.Name = "dgv_listProfession";
+            this.dgv_listProfession.ReadOnly = true;
+            this.dgv_listProfession.RowHeadersVisible = false;
+            this.dgv_listProfession.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_listProfession.Size = new System.Drawing.Size(281, 128);
             this.dgv_listProfession.TabIndex = 44;
             // 

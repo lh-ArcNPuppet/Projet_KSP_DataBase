@@ -66,10 +66,13 @@
             // 
             this.dgv_listKerbonaute.AllowUserToAddRows = false;
             this.dgv_listKerbonaute.AllowUserToDeleteRows = false;
+            this.dgv_listKerbonaute.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_listKerbonaute.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listKerbonaute.Location = new System.Drawing.Point(12, 41);
             this.dgv_listKerbonaute.Name = "dgv_listKerbonaute";
             this.dgv_listKerbonaute.ReadOnly = true;
+            this.dgv_listKerbonaute.RowHeadersVisible = false;
+            this.dgv_listKerbonaute.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_listKerbonaute.Size = new System.Drawing.Size(665, 330);
             this.dgv_listKerbonaute.TabIndex = 1;
             // 

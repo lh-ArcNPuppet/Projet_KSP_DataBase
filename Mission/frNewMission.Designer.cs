@@ -790,8 +790,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbo_statusMission;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lbl_numVol;
         private System.Windows.Forms.NumericUpDown numUD_jourDebut;
         private System.Windows.Forms.NumericUpDown numUD_anneeDebut;
         private System.Windows.Forms.DateTimePicker dtp_heureFin;
@@ -805,5 +803,7 @@
         private System.Windows.Forms.Button btn_editListKerbonaute;
         private System.Windows.Forms.Button btn_editListPayload;
         private System.Windows.Forms.Button btn_viderListPayload;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_numVol;
     }
 }

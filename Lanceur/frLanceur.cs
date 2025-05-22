@@ -12,7 +12,7 @@ using LIB_DAL;
 
 namespace Lanceur
 {
-    public partial class frLanceur: Form
+    public partial class frLanceur : Form
     {
         public frLanceur()
         {
@@ -55,6 +55,51 @@ namespace Lanceur
         private void frLanceur_Load(object sender, EventArgs e)
         {
             getListLanceurs();
+        }
+
+        private void btn_ajouter_Click(object sender, EventArgs e)
+        {
+            frNewLanceur frNewLanceur = new frNewLanceur();
+            DialogResult res = frNewLanceur.ShowDialog();
+            if (res == DialogResult.OK) { getListLanceurs(); }
+        }
+
+        private void btn_editer_Click(object sender, EventArgs e)
+        {
+            var value = dgv_listeLanceur.SelectedRows[0].Cells[0].Value.ToString();
+            if (value == null) return;
+
+            frEditLanceur frEditLanceur = new frEditLanceur(Convert.ToInt32(value));
+            DialogResult res = frEditLanceur.ShowDialog();
+            if (res == DialogResult.OK) { getListLanceurs(); }
+        }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(
+                "Voulez-vous supprimer ce lanceur ?\n" +
+                "(Cette action est irréversible)",
+                "Suppression lanceur",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (res == DialogResult.Yes)
+            {
+                var value = dgv_listeLanceur.SelectedRows[0].Cells[0].Value.ToString();
+                if (value == null) return;
+
+                DAO_Lanceur.deleteLanceur(Convert.ToInt32(value));
+                getListLanceurs();
+            }
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            var value = dgv_listeLanceur.SelectedRows[0].Cells[0].Value.ToString();
+            if (value == null) return;
+
+            frDetailsLanceur frDetailsLanceur = new frDetailsLanceur(Convert.ToInt32(value));
+            frDetailsLanceur.Show();
         }
     }
 }

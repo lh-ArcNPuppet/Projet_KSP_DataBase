@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frDetailsPayload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDetailsPayload.Designer.cs">
+      <DependentUpon>frDetailsPayload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frEditPayload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEditPayload.Designer.cs">
+      <DependentUpon>frEditPayload.cs</DependentUpon>
+    </Compile>
     <Compile Include="frNewPayload.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frDetailsPayload.resx">
+      <DependentUpon>frDetailsPayload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEditPayload.resx">
+      <DependentUpon>frEditPayload.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frNewPayload.resx">
       <DependentUpon>frNewPayload.cs</DependentUpon>
     </EmbeddedResource>

@@ -33,7 +33,7 @@ namespace Configuration
 
                 row["Code"] = typeLanceur.getCode();
                 row["Libellé"] = typeLanceur.getLibelle();
-                row["Description"] = typeLanceur.getLibelle();
+                row["Description"] = typeLanceur.getDescription();
 
                 dt.Rows.Add(row);
             }

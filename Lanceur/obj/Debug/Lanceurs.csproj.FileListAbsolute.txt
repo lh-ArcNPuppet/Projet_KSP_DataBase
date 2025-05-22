@@ -19,3 +19,5 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceurs.cspro
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceurs.csproj.Up2Date
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.frEditLanceur.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.frDetailsLanceur.resources

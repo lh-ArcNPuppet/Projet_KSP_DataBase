@@ -60,10 +60,16 @@
             // 
             // dgv_listTypeLanceur
             // 
+            this.dgv_listTypeLanceur.AllowUserToAddRows = false;
+            this.dgv_listTypeLanceur.AllowUserToDeleteRows = false;
+            this.dgv_listTypeLanceur.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_listTypeLanceur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listTypeLanceur.Location = new System.Drawing.Point(251, 12);
             this.dgv_listTypeLanceur.Name = "dgv_listTypeLanceur";
-            this.dgv_listTypeLanceur.Size = new System.Drawing.Size(397, 155);
+            this.dgv_listTypeLanceur.ReadOnly = true;
+            this.dgv_listTypeLanceur.RowHeadersVisible = false;
+            this.dgv_listTypeLanceur.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_listTypeLanceur.Size = new System.Drawing.Size(428, 155);
             this.dgv_listTypeLanceur.TabIndex = 34;
             // 
             // pctBox_PictureType
@@ -132,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 183);
+            this.ClientSize = new System.Drawing.Size(694, 183);
             this.Controls.Add(this.txtBox_description);
             this.Controls.Add(this.txtBox_codeLanceur);
             this.Controls.Add(this.dgv_listTypeLanceur);

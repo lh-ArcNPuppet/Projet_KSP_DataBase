@@ -44,6 +44,7 @@
             this.btn_ajouter.TabIndex = 0;
             this.btn_ajouter.Text = "Ajouter";
             this.btn_ajouter.UseVisualStyleBackColor = true;
+            this.btn_ajouter.Click += new System.EventHandler(this.btn_ajouter_Click);
             // 
             // btn_editer
             // 
