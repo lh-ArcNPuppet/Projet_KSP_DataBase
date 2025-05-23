@@ -84,15 +84,6 @@ namespace LIB_DAL
                                     dr.GetInt32(7),
                                     dr.GetString(8)
                                 );
-                                Console.WriteLine(astronaute.getId());
-                                Console.WriteLine(astronaute.getName());
-                                Console.WriteLine(astronaute.getSexe());
-                                Console.WriteLine(astronaute.getProfession());
-                                Console.WriteLine(astronaute.getLevel());
-                                Console.WriteLine(astronaute.getCourageRate());
-                                Console.WriteLine(astronaute.getStupidityRate());
-                                Console.WriteLine(astronaute.getVeteranState());
-                                Console.WriteLine(astronaute.getVitalsState());
 
                                 return astronaute;
                             }
