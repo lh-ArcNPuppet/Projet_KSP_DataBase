@@ -21,3 +21,25 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Missions.cspro
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Missions.csproj.Up2Date
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\Mission.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\Mission.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\Mission.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Missions.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.frEditerListeKerbonaute.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.frEditListPayload.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.frMission.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.frNewMission.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.Properties.Resources.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Missions.csproj.GenerateResource.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Missions.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Missions.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Mission\obj\Debug\Mission.pdb

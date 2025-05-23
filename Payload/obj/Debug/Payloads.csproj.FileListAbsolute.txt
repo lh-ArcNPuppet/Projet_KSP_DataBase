@@ -21,3 +21,25 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.frDetailsPayload.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Payload\obj\Debug\Payload.frEditPayload.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\Payload.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\Payload.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\Payload.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payloads.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.frDetailsPayload.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.frEditPayload.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.frNewPayload.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.frPayload.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.Properties.Resources.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payloads.csproj.GenerateResource.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payloads.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payloads.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Payload\obj\Debug\Payload.pdb

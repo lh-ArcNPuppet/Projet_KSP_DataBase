@@ -21,3 +21,25 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.exe
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.frEditLanceur.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Lanceur\obj\Debug\Lanceur.frDetailsLanceur.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\Lanceur.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\Lanceur.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\Lanceur.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceurs.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.frDetailsLanceur.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.frEditLanceur.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.frLanceur.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.frNewLanceur.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.Properties.Resources.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceurs.csproj.GenerateResource.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceurs.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceurs.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Lanceur\obj\Debug\Lanceur.pdb

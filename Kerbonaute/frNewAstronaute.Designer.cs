@@ -122,6 +122,7 @@
             this.btn_Cancel.TabIndex = 34;
             this.btn_Cancel.Text = "Annuler";
             this.btn_Cancel.UseVisualStyleBackColor = true;
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_Save
             // 
@@ -131,6 +132,7 @@
             this.btn_Save.TabIndex = 32;
             this.btn_Save.Text = "Enregistrer";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // pctBox_PictureType
             // 
@@ -328,6 +330,7 @@
             this.Name = "frNewAstronaute";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajouter un astronaute";
+            this.Load += new System.EventHandler(this.frNewAstronaute_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();

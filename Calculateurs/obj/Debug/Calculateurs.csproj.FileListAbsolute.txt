@@ -18,3 +18,22 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\System.Me
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\System.Numerics.Vectors.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\bin\Debug\MySql.Data.xml
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Calculateurs\obj\Debug\Calculateurs.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\Calculateurs.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\Calculateurs.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\Calculateurs.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.frDeltaV_Calculator.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.Properties.Resources.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.csproj.GenerateResource.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Calculateurs\obj\Debug\Calculateurs.pdb

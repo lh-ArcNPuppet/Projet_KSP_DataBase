@@ -11,3 +11,16 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\MySql.Data.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\System.Memory.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\System.Numerics.Vectors.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\MySql.Data.xml
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.pdb

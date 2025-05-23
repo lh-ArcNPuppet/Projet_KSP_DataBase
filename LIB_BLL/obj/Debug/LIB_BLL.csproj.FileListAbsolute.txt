@@ -4,3 +4,9 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.csproj
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.csproj.CoreCompileInputs.cache
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_BLL\obj\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_BLL\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_BLL\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_BLL\obj\Debug\LIB_BLL.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_BLL\obj\Debug\LIB_BLL.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_BLL\obj\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_BLL\obj\Debug\LIB_BLL.pdb

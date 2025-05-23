@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LIB_BLL
 {
-    public class Astronaute
+    public class DB_Astronaute
     {
         //Attributs privés
         private int id;
@@ -21,7 +21,18 @@ namespace LIB_BLL
         private int nbrVol;
 
         //Constructeur
-        public Astronaute(int id, string nom, char sexe, string profession, int lv, int c, int s, int v, string sV)
+        public DB_Astronaute(string nom, char sexe, string profession, int lv, int c, int s, int v, string sV)
+        {
+            this.nom = nom;
+            this.sexe = sexe;
+            this.profession = profession;
+            this.niveau = lv;
+            this.courage = c;
+            this.stupidite = s;
+            this.veteran = v;
+            this.statusVital = sV;
+        }
+        public DB_Astronaute(int id, string nom, char sexe, string profession, int lv, int c, int s, int v, string sV)
         {
             this.id = id;
             this.nom = nom;
@@ -33,7 +44,7 @@ namespace LIB_BLL
             this.veteran = v;
             this.statusVital = sV;
         }
-        public Astronaute(int id, string nom, char sexe, string profession, int lv, int v, string sV, int nbrVol)
+        public DB_Astronaute(int id, string nom, char sexe, string profession, int lv, int v, string sV, int nbrVol)
         {
             this.id = id;
             this.nom = nom;

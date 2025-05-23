@@ -39,3 +39,43 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\MySql.Data.d
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\System.Memory.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\System.Numerics.Vectors.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Dashboard\bin\Debug\MySql.Data.xml
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Authentification.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Calculateurs.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Configuration.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Kerbonaute.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Lanceur.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Mission.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Payload.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Authentification.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Authentification.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Calculateurs.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Calculateurs.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Configuration.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Configuration.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Kerbonaute.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Kerbonaute.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Lanceur.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Lanceur.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Mission.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Mission.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Payload.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\bin\Debug\Payload.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.frDashboard.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Dashboard\obj\Debug\Dashboard.pdb

@@ -2,9 +2,6 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LIB_DAL
 {
@@ -16,23 +13,83 @@ namespace LIB_DAL
 
             try
             {
-                string sql = "SELECT * FROM type_profession;";
-                MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx);
-                MySqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    DB_TypeProfession profession = new DB_TypeProfession(dr.GetInt32(0), dr.GetString(1));
-                    //Console.Write(typePayload);
-                    professions.Add(profession);
-                }
-                dr.Close();
+                if (BDD_Connect.cnx.State != System.Data.ConnectionState.Open)
+                    BDD_Connect.cnx.Open();
 
+                string sql = "SELECT * FROM type_profession;";
+
+                using (var cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        var profession = new DB_TypeProfession(dr.GetInt32(0), dr.GetString(1));
+                        professions.Add(profession);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.Message);
+            }
+
+            return professions;
+        }
+
+        public static int getIdByLibelle(string libelle)
+        {
+            int res = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM type_profession WHERE libelle = @libelle;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@libelle", libelle);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_TypeProfession tpro = new DB_TypeProfession(dr.GetInt32(0), dr.GetString(1));
+                            res = tpro.getId();
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
             }
-            return professions;
+
+            return res;
+        }
+
+        public static string getLibelleById(int id)
+        {
+            string res = "";
+
+            try
+            {
+                string sql = "SELECT * FROM type_profession WHERE id = @id;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_TypeProfession tpro = new DB_TypeProfession(dr.GetInt32(0), dr.GetString(1));
+                            res = tpro.getLibelle();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+
+            return res;
         }
     }
 }

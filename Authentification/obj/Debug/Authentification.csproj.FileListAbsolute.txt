@@ -18,3 +18,22 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\LIB_D
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\LIB_BLL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\bin\Debug\MySql.Data.xml
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Authentification\obj\Debug\Authenti.24B0F41E.Up2Date
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\Authentification.exe.config
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\Authentification.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\Authentification.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\LIB_DAL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\LIB_BLL.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\System.Memory.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\System.Buffers.dll
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\LIB_DAL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\bin\Debug\LIB_BLL.pdb
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.csproj.AssemblyReference.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.frAuth.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.Properties.Resources.resources
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.csproj.GenerateResource.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.csproj.CoreCompileInputs.cache
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.csproj.CopyComplete
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.exe
+C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Authentification\obj\Debug\Authentification.pdb
