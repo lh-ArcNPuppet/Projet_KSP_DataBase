@@ -52,9 +52,9 @@ namespace Lanceur
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
         {
-            if (txtBox_nom.Text.Trim().Length == 0)
+            if (txtBox_nom.Text.Trim().Length != 0)
             {
-                if (cbo_typeLanceur.Text.Trim().Length == 0)
+                if (cbo_typeLanceur.Text.Trim().Length != 0)
                 {
                     string nom = txtBox_nom.Text.Trim();
                     string codeType = DAO_TypeLanceur.getCodeByLibelle(cbo_typeLanceur.SelectedItem.ToString());

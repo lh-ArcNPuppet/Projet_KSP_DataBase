@@ -24,3 +24,4 @@ C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.csproj.CopyComplete
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.dll
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\LIB_DAL\obj\Debug\LIB_DAL.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\LIB_DAL\bin\Debug\System.Buffers.dll

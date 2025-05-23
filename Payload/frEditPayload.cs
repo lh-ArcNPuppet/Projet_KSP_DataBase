@@ -55,9 +55,9 @@ namespace Payload
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (txtBox_nom.Text.Trim().Length == 0)
+            if (txtBox_nom.Text.Trim().Length != 0)
             {
-                if (cbo_Type.Text.Trim().Length == 0)
+                if (cbo_Type.Text.Trim().Length != 0)
                 {
                     string nom = txtBox_nom.Text;
                     string codeType = DAO_TypePayload.getCodeByLibelle(cbo_Type.SelectedItem.ToString());

@@ -17,7 +17,6 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\System.Nume
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\LIB_BLL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\LIB_DAL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\MySql.Data.xml
-P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.exe.config
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Astronau.61ABB481.Up2Date
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Kerbonaute\bin\Debug\Kerbonaute.exe.config
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Kerbonaute\bin\Debug\Kerbonaute.exe
@@ -39,3 +38,8 @@ C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Kerbonaute\obj\Deb
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Kerbonaute\obj\Debug\Astronautes.csproj.CopyComplete
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Kerbonaute\obj\Debug\Kerbonaute.exe
 C:\Users\lheinrich\Source\Repos\lh-ArcNPuppet\Projet_Space_DB\Kerbonaute\obj\Debug\Kerbonaute.pdb
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\System.Threading.Tasks.Extensions.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\bin\Debug\System.Buffers.dll
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.exe.config
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.frDetailsAstronaute.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Kerbonaute\obj\Debug\Kerbonaute.frEditAstronaute.resources

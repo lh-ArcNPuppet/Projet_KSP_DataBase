@@ -75,9 +75,9 @@ namespace Payload
         private void btn_supprimer_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show(
-                "Voulez-vous supprimer ce lanceur ?\n" +
+                "Voulez-vous supprimer ce payload ?\n" +
                 "(Cette action est irréversible)",
-                "Suppression lanceur",
+                "Suppression payload",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 

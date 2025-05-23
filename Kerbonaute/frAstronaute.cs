@@ -49,11 +49,56 @@ namespace Kerbonaute
                 dt.Rows.Add(row);
             }
 
-            dgv_listKerbonaute.DataSource = dt;
+            dgv_listAstronautes.DataSource = dt;
         }
         private void frAstronaute_Load(object sender, EventArgs e)
         {
             getListAstronautes();
+        }
+
+        private void btn_ajouter_Click(object sender, EventArgs e)
+        {
+            frNewAstronaute frNewAstronaute = new frNewAstronaute();
+            DialogResult res = frNewAstronaute.ShowDialog();
+            if (res == DialogResult.OK) { getListAstronautes(); }
+        }
+
+        private void btn_editer_Click(object sender, EventArgs e)
+        {
+            var value = dgv_listAstronautes.SelectedRows[0].Cells[0].Value.ToString();
+            if (value == null) return;
+
+            frEditAstronaute frEditAstronaute = new frEditAstronaute(Convert.ToInt32(value));
+            DialogResult res = frEditAstronaute.ShowDialog();
+            if (res == DialogResult.OK) { getListAstronautes(); }
+        }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(
+                "Voulez-vous supprimer cet astronaute ?\n" +
+                "(Cette action est irréversible)",
+                "Suppression astronaute",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (res == DialogResult.Yes)
+            {
+                var value = dgv_listAstronautes.SelectedRows[0].Cells[0].Value.ToString();
+                if (value == null) return;
+
+                DAO_Astronaute.deleteAstronaute(Convert.ToInt32(value));
+                getListAstronautes();
+            }
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            var value = dgv_listAstronautes.SelectedRows[0].Cells[0].Value.ToString();
+            if (value == null) return;
+
+            frDetailsAstronaute frDetailsAstronaute = new frDetailsAstronaute(Convert.ToInt32(value));
+            frDetailsAstronaute.Show();
         }
     }
 }

@@ -52,6 +52,18 @@
     <Compile Include="frAstronaute.Designer.cs">
       <DependentUpon>frAstronaute.cs</DependentUpon>
     </Compile>
+    <Compile Include="frDetailsAstronaute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDetailsAstronaute.Designer.cs">
+      <DependentUpon>frDetailsAstronaute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frEditAstronaute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEditAstronaute.Designer.cs">
+      <DependentUpon>frEditAstronaute.cs</DependentUpon>
+    </Compile>
     <Compile Include="frNewAstronaute.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frAstronaute.resx">
       <DependentUpon>frAstronaute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDetailsAstronaute.resx">
+      <DependentUpon>frDetailsAstronaute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEditAstronaute.resx">
+      <DependentUpon>frEditAstronaute.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frNewAstronaute.resx">
       <DependentUpon>frNewAstronaute.cs</DependentUpon>

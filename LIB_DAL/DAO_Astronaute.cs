@@ -49,7 +49,19 @@ namespace LIB_DAL
             try
             {
                 string sql =
-                    "SELECT * FROM astronaute WHERE id = @id;";
+                    "SELECT " +
+                    "astronaute.id, " +
+                    "astronaute.nom, " +
+                    "astronaute.sexe, " +
+                    "type_profession.libelle, " +
+                    "astronaute.niveau, " +
+                    "astronaute.tauxCourrage, " +
+                    "astronaute.tauxStupidite, " +
+                    "astronaute.estVeteran, " +
+                    "astronaute.statusVital " +
+                    "FROM astronaute " +
+                    "JOIN Type_Profession ON Astronaute.idProfession = Type_Profession.id " +
+                    "WHERE astronaute.id = @id;";
 
                 using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
                 {
@@ -72,6 +84,16 @@ namespace LIB_DAL
                                     dr.GetInt32(7),
                                     dr.GetString(8)
                                 );
+                                Console.WriteLine(astronaute.getId());
+                                Console.WriteLine(astronaute.getName());
+                                Console.WriteLine(astronaute.getSexe());
+                                Console.WriteLine(astronaute.getProfession());
+                                Console.WriteLine(astronaute.getLevel());
+                                Console.WriteLine(astronaute.getCourageRate());
+                                Console.WriteLine(astronaute.getStupidityRate());
+                                Console.WriteLine(astronaute.getVeteranState());
+                                Console.WriteLine(astronaute.getVitalsState());
+
                                 return astronaute;
                             }
                         }

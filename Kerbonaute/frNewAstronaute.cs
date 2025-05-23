@@ -35,18 +35,36 @@ namespace Kerbonaute
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (txtBox_nom.Text.Trim().Length == 0)
+            if (txtBox_nom.Text.Trim().Length != 0)
             {
-                if (cbo_profession.Text.Trim().Length == 0)
+                if (cbo_profession.Text.Trim().Length != 0)
                 {
                     if ((rdBtn_masculin.Checked == false) && (rdBtn_feminin.Checked == false))
                     {
+                        MessageBox.Show(
+                            "Création impossible.\n" +
+                            "L'astronaute doit avoir un sexe défini",
+                            "Entrée manquante",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
                         if ((rdBtn_enVie.Checked == false) && (rdBtn_decede.Checked == false))
+                        {
+                            MessageBox.Show(
+                            "Création impossible.\n" +
+                            "Un status vital doit être défini pour l'astronaute.",
+                            "Entrée manquante",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        }
+                        else
                         {
                             string nom = txtBox_nom.Text.Trim();
                             int idProfession = DAO_Profession.getIdByLibelle(cbo_profession.SelectedItem.ToString());
 
-                            char sexe;
+                            char sexe = ' ';
                             if (rdBtn_masculin.Checked) { sexe = 'M'; }
                             if (rdBtn_feminin.Checked) { sexe = 'F'; }
 
@@ -58,11 +76,11 @@ namespace Kerbonaute
                             if (chkBox_estVeteran.Checked) { veteran = 1; }
                             else { veteran = 0; }
 
-                            string statusVital;
-                            if (rdBtn_enVie.Checked) { statusVital = "En Vie"; }
+                            string statusVital = "";
+                            if (rdBtn_enVie.Checked) { statusVital = "En vie"; }
                             if (rdBtn_decede.Checked) { statusVital = "Décédé"; }
 
-                            DB_Astronaute astronaute = new DB_Astronaute(nom, idProfession, sexe, niveau, courrage, stupidite, veteran, statusVital);
+                            DB_Astronaute astronaute = new DB_Astronaute(nom, sexe, idProfession.ToString(), niveau, courrage, stupidite, veteran, statusVital);
                             bool res = DAO_Astronaute.createAstronaute(astronaute);
                             if (res)
                             {
@@ -85,24 +103,6 @@ namespace Kerbonaute
                                 Close();
                             }
                         }
-                        else
-                        {
-                            MessageBox.Show(
-                            "Création impossible.\n" +
-                            "Un status vital doit être défini pour l'astronaute.",
-                            "Entrée manquante",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show(
-                            "Création impossible.\n" +
-                            "L'astronaute doit avoir un sexe défini",
-                            "Entrée manquante",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
 
                     }
                 }

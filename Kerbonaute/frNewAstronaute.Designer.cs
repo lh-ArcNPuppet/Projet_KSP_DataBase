@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frNewAstronaute));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdBtn_enVie = new System.Windows.Forms.RadioButton();
             this.rdBtn_decede = new System.Windows.Forms.RadioButton();
@@ -61,25 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numUD_tauxCourrage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_niveau)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Astronaute n°";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "0";
             // 
             // groupBox2
             // 
@@ -277,7 +256,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 52);
+            this.label8.Location = new System.Drawing.Point(12, 46);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 13);
             this.label8.TabIndex = 25;
@@ -286,14 +265,14 @@
             // cbo_profession
             // 
             this.cbo_profession.FormattingEnabled = true;
-            this.cbo_profession.Location = new System.Drawing.Point(80, 49);
+            this.cbo_profession.Location = new System.Drawing.Point(80, 43);
             this.cbo_profession.Name = "cbo_profession";
             this.cbo_profession.Size = new System.Drawing.Size(165, 21);
             this.cbo_profession.TabIndex = 24;
             // 
             // txtBox_nom
             // 
-            this.txtBox_nom.Location = new System.Drawing.Point(80, 26);
+            this.txtBox_nom.Location = new System.Drawing.Point(80, 20);
             this.txtBox_nom.Name = "txtBox_nom";
             this.txtBox_nom.Size = new System.Drawing.Size(121, 20);
             this.txtBox_nom.TabIndex = 23;
@@ -301,7 +280,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 29);
+            this.label11.Location = new System.Drawing.Point(12, 23);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 13);
             this.label11.TabIndex = 22;
@@ -324,8 +303,6 @@
             this.Controls.Add(this.cbo_profession);
             this.Controls.Add(this.txtBox_nom);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frNewAstronaute";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -345,9 +322,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdBtn_enVie;
         private System.Windows.Forms.RadioButton rdBtn_decede;
