@@ -41,6 +41,18 @@ namespace LIB_BLL
             this.periodeOrbitale = pOrbit;
             this.description = desc;
         }
+        public DB_Astre(string nom, string type, string systemeR, decimal r, int temp, decimal sg, string atm, decimal pOrbit, string desc)
+        {
+            this.nom = nom;
+            this.type = type;
+            this.systemeRelatif = systemeR;
+            this.rayon = r;
+            this.temperature = temp;
+            this.graviteSurface = sg;
+            this.atmosphere = atm;
+            this.periodeOrbitale = pOrbit;
+            this.description = desc;
+        }
 
         //Accesseurs - Getter
         public int getId() { return this.id; }

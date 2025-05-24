@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frConfigAstre));
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_numAstre = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,6 +58,8 @@
             this.numUD_periodeOrbitale = new System.Windows.Forms.NumericUpDown();
             this.numUD_graviteSurface = new System.Windows.Forms.NumericUpDown();
             this.numUD_temperature = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listeAstre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_rayon)).BeginInit();
@@ -99,14 +102,16 @@
             this.cbo_systemeParent.FormattingEnabled = true;
             this.cbo_systemeParent.Location = new System.Drawing.Point(104, 72);
             this.cbo_systemeParent.Name = "cbo_systemeParent";
-            this.cbo_systemeParent.Size = new System.Drawing.Size(136, 21);
+            this.cbo_systemeParent.Size = new System.Drawing.Size(159, 21);
             this.cbo_systemeParent.TabIndex = 48;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(246, 9);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(264, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(66, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
@@ -145,21 +150,23 @@
             // 
             // btn_enregistrer
             // 
-            this.btn_enregistrer.Location = new System.Drawing.Point(222, 366);
+            this.btn_enregistrer.Location = new System.Drawing.Point(255, 366);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Size = new System.Drawing.Size(75, 23);
             this.btn_enregistrer.TabIndex = 50;
-            this.btn_enregistrer.Text = "Enregistrer";
+            this.btn_enregistrer.Text = "Ajouter";
             this.btn_enregistrer.UseVisualStyleBackColor = true;
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // btn_supprimer
             // 
-            this.btn_supprimer.Location = new System.Drawing.Point(141, 366);
+            this.btn_supprimer.Location = new System.Drawing.Point(12, 366);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Size = new System.Drawing.Size(75, 23);
             this.btn_supprimer.TabIndex = 50;
             this.btn_supprimer.Text = "Supprimer";
             this.btn_supprimer.UseVisualStyleBackColor = true;
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
             // 
             // dgv_listeAstre
             // 
@@ -167,7 +174,7 @@
             this.dgv_listeAstre.AllowUserToDeleteRows = false;
             this.dgv_listeAstre.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listeAstre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listeAstre.Location = new System.Drawing.Point(303, 9);
+            this.dgv_listeAstre.Location = new System.Drawing.Point(336, 9);
             this.dgv_listeAstre.Name = "dgv_listeAstre";
             this.dgv_listeAstre.ReadOnly = true;
             this.dgv_listeAstre.RowHeadersVisible = false;
@@ -208,7 +215,7 @@
             this.groupBox1.Controls.Add(this.numUD_rayon);
             this.groupBox1.Location = new System.Drawing.Point(15, 99);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(282, 261);
+            this.groupBox1.Size = new System.Drawing.Size(315, 261);
             this.groupBox1.TabIndex = 53;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caractéristiques";
@@ -218,7 +225,7 @@
             this.txtBox_description.Location = new System.Drawing.Point(94, 170);
             this.txtBox_description.Multiline = true;
             this.txtBox_description.Name = "txtBox_description";
-            this.txtBox_description.Size = new System.Drawing.Size(182, 83);
+            this.txtBox_description.Size = new System.Drawing.Size(215, 83);
             this.txtBox_description.TabIndex = 55;
             // 
             // label6
@@ -235,7 +242,7 @@
             this.txtBox_atmosphere.Location = new System.Drawing.Point(94, 88);
             this.txtBox_atmosphere.Multiline = true;
             this.txtBox_atmosphere.Name = "txtBox_atmosphere";
-            this.txtBox_atmosphere.Size = new System.Drawing.Size(182, 56);
+            this.txtBox_atmosphere.Size = new System.Drawing.Size(215, 56);
             this.txtBox_atmosphere.TabIndex = 54;
             // 
             // label14
@@ -357,19 +364,41 @@
             this.numUD_temperature.Size = new System.Drawing.Size(83, 20);
             this.numUD_temperature.TabIndex = 52;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(93, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 50;
+            this.button1.Text = "Editer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.Location = new System.Drawing.Point(174, 366);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.TabIndex = 54;
+            this.btn_update.Text = "Modifier";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
             // frConfigAstre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 399);
+            this.ClientSize = new System.Drawing.Size(878, 399);
+            this.Controls.Add(this.btn_update);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgv_listeAstre);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.btn_enregistrer);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbo_systemeParent);
             this.Controls.Add(this.cbo_type);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtBox_nom);
@@ -425,6 +454,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_update;
     }
 }
 
