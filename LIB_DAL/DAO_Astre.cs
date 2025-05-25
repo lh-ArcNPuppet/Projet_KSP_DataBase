@@ -68,14 +68,14 @@ namespace LIB_DAL
             try
             {
                 string sql =
-                    "INSERT INTO astre(nom, idTypeAstre, idSysteme, rayon, temp, graviteSurface, atmosphere, periodeOrbitale, description) " +
+                    "INSERT INTO astre(nom, idTypeAstre, idSysteme, rayon, temperature, graviteAbsolue, atmosphere, periodeOrbitale, description) " +
                     "VALUES (" +
                     "@nom, " +
                     "@idTypeAstre, " +
                     "@idSysteme, " +
                     "@rayon, " +
                     "@temp, " +
-                    "@graviteSurface, " +
+                    "@graviteAbsolue, " +
                     "@atmosphere, " +
                     "@periodeOrbitale, " +
                     "@description);";
@@ -89,7 +89,7 @@ namespace LIB_DAL
                         cmd.Parameters.AddWithValue("@idTypeAstre", newAstre.getType());
                         cmd.Parameters.AddWithValue("@idSysteme", newAstre.getRelatedSystem());
                         cmd.Parameters.AddWithValue("@rayon", newAstre.getRadius());
-                        cmd.Parameters.AddWithValue("@graviteSurface", newAstre.getSurfaceGravity());
+                        cmd.Parameters.AddWithValue("@graviteAbsolue", newAstre.getAbsoluteGravity());
                         cmd.Parameters.AddWithValue("@temp", newAstre.getTemperature());
                         cmd.Parameters.AddWithValue("@atmosphere", newAstre.getAthmosphere());
                         cmd.Parameters.AddWithValue("@periodeOrbitale", newAstre.getOrbitPeriod());
@@ -112,7 +112,7 @@ namespace LIB_DAL
             try
             {
                 string sql =
-                    "SELECT astre.id, astre.nom, type_astre.libelle, systeme.nom, astre.rayon, astre.temp, astre.graviteSurface, astre.atmosphere, astre.periodeOrbitale, astre.description " +
+                    "SELECT astre.id, astre.nom, type_astre.libelle, systeme.nom, astre.rayon, astre.temperature, astre.graviteAbsolue, astre.atmosphere, astre.periodeOrbitale, astre.description " +
                     "FROM astre " +
                     "JOIN type_astre ON astre.idTypeAstre = type_astre.id " +
                     "JOIN systeme ON astre.idSysteme = systeme.id " +
@@ -138,7 +138,7 @@ namespace LIB_DAL
                                     dr.GetInt32(5),
                                     dr.GetDecimal(6),
                                     dr.GetString(7),
-                                    dr.GetDecimal(8),
+                                    dr.GetString(8),
                                     dr.GetString(9)
                                     );
 
@@ -166,8 +166,8 @@ namespace LIB_DAL
                     "idTypeAstre = @idTypeAstre, " +
                     "idSysteme = @idSysteme, " +
                     "rayon = @rayon, " +
-                    "temp = @temp, " +
-                    "graviteSurface = @graviteSurface, " +
+                    "temperature = @temp, " +
+                    "graviteAbsolue = @graviteAbsolue, " +
                     "atmosphere = @atmosphere, " +
                     "periodeOrbitale = @periodeOrbitale, " +
                     "description = @description " +
@@ -184,7 +184,7 @@ namespace LIB_DAL
                         cmd.Parameters.AddWithValue("@idSysteme", newAstre.getRelatedSystem());
                         cmd.Parameters.AddWithValue("@rayon", newAstre.getRadius());
                         cmd.Parameters.AddWithValue("@temp", newAstre.getTemperature());
-                        cmd.Parameters.AddWithValue("@graviteSurface", newAstre.getSurfaceGravity());
+                        cmd.Parameters.AddWithValue("@graviteAbsolue", newAstre.getAbsoluteGravity());
                         cmd.Parameters.AddWithValue("@atmosphere", newAstre.getAthmosphere());
                         cmd.Parameters.AddWithValue("@periodeOrbitale", newAstre.getOrbitPeriod());
                         cmd.Parameters.AddWithValue("@description", newAstre.getDescription());

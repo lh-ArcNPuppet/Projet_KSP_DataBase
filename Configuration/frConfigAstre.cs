@@ -75,7 +75,7 @@ namespace Configuration
                         int temp = Convert.ToInt32(numUD_temperature.Value);
                         decimal gravSurf = numUD_graviteSurface.Value;
                         string atmos = txtBox_atmosphere.Text.Trim();
-                        decimal period = numUD_periodeOrbitale.Value;
+                        string period = txtBox_periodeOrbitale.Text.Trim();
                         string desc = txtBox_description.Text.Trim();
 
                         /*MessageBox.Show(
@@ -101,7 +101,7 @@ namespace Configuration
 
                             getListAstres();
 
-                            lbl_numAstre.Text = "0";
+                            lbl_numAstre.Text = "-";
                             txtBox_nom.Clear();
                             cbo_type.Text = "";
                             cbo_systemeParent.Text = "";
@@ -109,7 +109,7 @@ namespace Configuration
                             numUD_temperature.Value = 0;
                             numUD_graviteSurface.Value = 0;
                             txtBox_atmosphere.Clear();
-                            numUD_periodeOrbitale.Value = 0;
+                            txtBox_periodeOrbitale.Text.Trim();
                             txtBox_description.Clear();
 
                             btn_enregistrer.Enabled = true;
@@ -173,9 +173,9 @@ namespace Configuration
             cbo_systemeParent.Text = astre.getRelatedSystem();
             numUD_rayon.Value = astre.getRadius();
             numUD_temperature.Value = astre.getTemperature();
-            numUD_graviteSurface.Value = astre.getSurfaceGravity();
+            numUD_graviteSurface.Value = astre.getAbsoluteGravity();
             txtBox_atmosphere.Text = astre.getAthmosphere();
-            numUD_periodeOrbitale.Value = astre.getOrbitPeriod();
+            txtBox_periodeOrbitale.Text = astre.getOrbitPeriod();
             txtBox_description.Text = astre.getDescription();
 
             btn_enregistrer.Enabled = false;
@@ -201,7 +201,7 @@ namespace Configuration
             {
                 DAO_Astre.deleteAstre(Convert.ToInt32(value));
 
-                lbl_numAstre.Text = "0";
+                lbl_numAstre.Text = "-";
                 txtBox_nom.Clear();
                 cbo_type.Text = "";
                 cbo_systemeParent.Text = "";
@@ -209,7 +209,7 @@ namespace Configuration
                 numUD_temperature.Value = 0;
                 numUD_graviteSurface.Value = 0;
                 txtBox_atmosphere.Clear();
-                numUD_periodeOrbitale.Value = 0;
+                txtBox_periodeOrbitale.Clear();
                 txtBox_description.Clear();
 
                 btn_enregistrer.Enabled = true;
@@ -234,7 +234,7 @@ namespace Configuration
                         int temp = Convert.ToInt32(numUD_temperature.Value);
                         decimal gravSurf = numUD_graviteSurface.Value;
                         string atmos = txtBox_atmosphere.Text.Trim();
-                        decimal period = numUD_periodeOrbitale.Value;
+                        string  period = txtBox_periodeOrbitale.Text.Trim();
                         string desc = txtBox_description.Text.Trim();
 
                         DB_Astre astre = new DB_Astre(id, nom, type, idSysteme, rayon, temp, gravSurf, atmos, period, desc);
@@ -249,7 +249,7 @@ namespace Configuration
 
                             getListAstres();
 
-                            lbl_numAstre.Text = "0";
+                            lbl_numAstre.Text = "-";
                             txtBox_nom.Clear();
                             cbo_type.Text = "";
                             cbo_systemeParent.Text = "";
@@ -257,7 +257,7 @@ namespace Configuration
                             numUD_temperature.Value = 0;
                             numUD_graviteSurface.Value = 0;
                             txtBox_atmosphere.Clear();
-                            numUD_periodeOrbitale.Value = 0;
+                            txtBox_periodeOrbitale.Clear();
                             txtBox_description.Clear();
 
                             btn_enregistrer.Enabled = true;
@@ -305,6 +305,40 @@ namespace Configuration
                     MessageBoxIcon.Warning
                     );
             }
+        }
+
+        private void btn_annuler_Click(object sender, EventArgs e)
+        {
+            lbl_numAstre.Text = "-";
+            txtBox_nom.Clear();
+            cbo_type.Text = "";
+            cbo_systemeParent.Text = "";
+            numUD_rayon.Value = 0;
+            numUD_temperature.Value = 0;
+            numUD_graviteSurface.Value = 0;
+            txtBox_atmosphere.Clear();
+            txtBox_periodeOrbitale.Clear();
+            txtBox_description.Clear();
+
+            btn_enregistrer.Enabled = true;
+            btn_update.Enabled = false;
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            lbl_numAstre.Text = "-";
+            txtBox_nom.Clear();
+            cbo_type.Text = "";
+            cbo_systemeParent.Text = "";
+            numUD_rayon.Value = 0;
+            numUD_temperature.Value = 0;
+            numUD_graviteSurface.Value = 0;
+            txtBox_atmosphere.Clear();
+            txtBox_periodeOrbitale.Clear();
+            txtBox_description.Clear();
+
+            btn_enregistrer.Enabled = true;
+            btn_update.Enabled = false;
         }
     }
 }
