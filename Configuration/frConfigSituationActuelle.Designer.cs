@@ -37,6 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBox_libelle = new System.Windows.Forms.TextBox();
+            this.btn_editer = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listSituationActuelle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).BeginInit();
             this.SuspendLayout();
@@ -115,11 +118,41 @@
             this.txtBox_libelle.Size = new System.Drawing.Size(156, 20);
             this.txtBox_libelle.TabIndex = 54;
             // 
+            // btn_editer
+            // 
+            this.btn_editer.Location = new System.Drawing.Point(115, 85);
+            this.btn_editer.Name = "btn_editer";
+            this.btn_editer.Size = new System.Drawing.Size(75, 23);
+            this.btn_editer.TabIndex = 64;
+            this.btn_editer.Text = "Editer";
+            this.btn_editer.UseVisualStyleBackColor = true;
+            // 
+            // btn_update
+            // 
+            this.btn_update.Location = new System.Drawing.Point(196, 85);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.TabIndex = 63;
+            this.btn_update.Text = "Modifier";
+            this.btn_update.UseVisualStyleBackColor = true;
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.Location = new System.Drawing.Point(34, 61);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_clear.TabIndex = 62;
+            this.btn_clear.Text = "Clear Form";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            // 
             // frConfigSituationActuelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 154);
+            this.Controls.Add(this.btn_editer);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.txtBox_idSituationActuelle);
             this.Controls.Add(this.dgv_listSituationActuelle);
             this.Controls.Add(this.pctBox_PictureType);
@@ -151,5 +184,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBox_libelle;
+        private System.Windows.Forms.Button btn_editer;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_clear;
     }
 }

@@ -39,6 +39,9 @@
             this.dgv_listSysteme = new System.Windows.Forms.DataGridView();
             this.txtBox_idSysteme = new System.Windows.Forms.TextBox();
             this.txtBox_description = new System.Windows.Forms.TextBox();
+            this.btn_editer = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listSysteme)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +49,7 @@
             // pctBox_PictureType
             // 
             this.pctBox_PictureType.Image = ((System.Drawing.Image)(resources.GetObject("pctBox_PictureType.Image")));
-            this.pctBox_PictureType.Location = new System.Drawing.Point(12, 111);
+            this.pctBox_PictureType.Location = new System.Drawing.Point(15, 82);
             this.pctBox_PictureType.Name = "pctBox_PictureType";
             this.pctBox_PictureType.Size = new System.Drawing.Size(51, 50);
             this.pctBox_PictureType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,7 +119,7 @@
             this.dgv_listSysteme.ReadOnly = true;
             this.dgv_listSysteme.RowHeadersVisible = false;
             this.dgv_listSysteme.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_listSysteme.Size = new System.Drawing.Size(397, 155);
+            this.dgv_listSysteme.Size = new System.Drawing.Size(397, 180);
             this.dgv_listSysteme.TabIndex = 24;
             // 
             // txtBox_idSysteme
@@ -134,11 +137,41 @@
             this.txtBox_description.Size = new System.Drawing.Size(156, 81);
             this.txtBox_description.TabIndex = 26;
             // 
+            // btn_editer
+            // 
+            this.btn_editer.Location = new System.Drawing.Point(90, 163);
+            this.btn_editer.Name = "btn_editer";
+            this.btn_editer.Size = new System.Drawing.Size(75, 23);
+            this.btn_editer.TabIndex = 41;
+            this.btn_editer.Text = "Editer";
+            this.btn_editer.UseVisualStyleBackColor = true;
+            // 
+            // btn_update
+            // 
+            this.btn_update.Location = new System.Drawing.Point(171, 163);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.TabIndex = 40;
+            this.btn_update.Text = "Modifier";
+            this.btn_update.UseVisualStyleBackColor = true;
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.Location = new System.Drawing.Point(9, 138);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_clear.TabIndex = 39;
+            this.btn_clear.Text = "Clear Form";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            // 
             // frConfigSysteme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 176);
+            this.ClientSize = new System.Drawing.Size(665, 200);
+            this.Controls.Add(this.btn_editer);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.txtBox_description);
             this.Controls.Add(this.txtBox_idSysteme);
             this.Controls.Add(this.dgv_listSysteme);
@@ -174,5 +207,8 @@
         private System.Windows.Forms.DataGridView dgv_listSysteme;
         private System.Windows.Forms.TextBox txtBox_idSysteme;
         private System.Windows.Forms.TextBox txtBox_description;
+        private System.Windows.Forms.Button btn_editer;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_clear;
     }
 }

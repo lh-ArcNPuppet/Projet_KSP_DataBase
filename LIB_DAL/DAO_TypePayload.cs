@@ -90,5 +90,129 @@ namespace LIB_DAL
 
             return res;
         }
+
+        public static DB_TypePayload getTypePayload(string code)
+        {
+            try
+            {
+                string sql =
+                    "SELECT * " +
+                    "FROM type_payload " +
+                    "WHERE code = @code;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@code", code);
+                        using (var dr = cmd.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                DB_TypePayload tp = new DB_TypePayload(
+                                    dr.GetString(0),
+                                    dr.GetString(1)
+                                );
+
+                                return tp;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+            return null;
+        }
+
+        public static bool createTypePayload(DB_TypePayload newTypePayload)
+        {
+            try
+            {
+                string sql =
+                    "INSERT INTO type_payload(code, libelle) " +
+                    "VALUES (" +
+                    "@code, " +
+                    "@libelle);";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@code", newTypePayload.getCode());
+                        cmd.Parameters.AddWithValue("@libelle", newTypePayload.getLibelle());
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
+
+        public static bool updateTypePayload(DB_TypePayload newTypePayload)
+        {
+            try
+            {
+                string sql =
+                    "UPDATE type_payload " +
+                    "SET " +
+                    "libelle = @libelle " +
+                    "WHERE code = @code;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@code", newTypePayload.getCode());
+                        cmd.Parameters.AddWithValue("@libelle", newTypePayload.getLibelle());
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
+
+        public static bool deleteTypePayload(string codePayload)
+        {
+            try
+            {
+                string sql =
+                    "DELETE FROM type_payload " +
+                    "WHERE code = @code;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@code", codePayload);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
     }
 }

@@ -307,23 +307,6 @@ namespace Configuration
             }
         }
 
-        private void btn_annuler_Click(object sender, EventArgs e)
-        {
-            lbl_numAstre.Text = "-";
-            txtBox_nom.Clear();
-            cbo_type.Text = "";
-            cbo_systemeParent.Text = "";
-            numUD_rayon.Value = 0;
-            numUD_temperature.Value = 0;
-            numUD_graviteSurface.Value = 0;
-            txtBox_atmosphere.Clear();
-            txtBox_periodeOrbitale.Clear();
-            txtBox_description.Clear();
-
-            btn_enregistrer.Enabled = true;
-            btn_update.Enabled = false;
-        }
-
         private void btn_clear_Click(object sender, EventArgs e)
         {
             lbl_numAstre.Text = "-";
