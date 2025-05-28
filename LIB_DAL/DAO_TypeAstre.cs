@@ -60,5 +60,129 @@ namespace LIB_DAL
 
             return res;
         }
+
+        public static DB_TypeAstre getTypeAstre(int idTypeAstre)
+        {
+            try
+            {
+                string sql =
+                    "SELECT * " +
+                    "FROM type_astre " +
+                    "WHERE id = @id;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", idTypeAstre);
+                        using (var dr = cmd.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                DB_TypeAstre ta = new DB_TypeAstre(
+                                    dr.GetInt32(0),
+                                    dr.GetString(1)
+                                );
+
+                                return ta;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+            return null;
+        }
+
+        public static bool createTypeAstre(DB_TypeAstre newTypeAstre)
+        {
+            try
+            {
+                string sql =
+                    "INSERT INTO type_astre(id, libelle) " +
+                    "VALUES (" +
+                    "@id, " +
+                    "@libelle);";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", newTypeAstre.getId());
+                        cmd.Parameters.AddWithValue("@libelle", newTypeAstre.getLibelle());
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
+
+        public static bool updateTypeAstre(DB_TypeAstre newTypeAstre)
+        {
+            try
+            {
+                string sql =
+                    "UPDATE type_astre " +
+                    "SET " +
+                    "libelle = @libelle " +
+                    "WHERE id = @id;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", newTypeAstre.getId());
+                        cmd.Parameters.AddWithValue("@libelle", newTypeAstre.getLibelle());
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
+
+        public static bool deleteTypeAstre(int idTypeAstre)
+        {
+            try
+            {
+                string sql =
+                    "DELETE FROM type_astre " +
+                    "WHERE id = @id;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", idTypeAstre);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
     }
 }
