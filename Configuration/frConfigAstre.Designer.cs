@@ -43,6 +43,7 @@
             this.dgv_listeAstre = new System.Windows.Forms.DataGridView();
             this.numUD_rayon = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBox_periodeOrbitale = new System.Windows.Forms.TextBox();
             this.txtBox_description = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBox_atmosphere = new System.Windows.Forms.TextBox();
@@ -54,18 +55,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.numUD_graviteSurface = new System.Windows.Forms.NumericUpDown();
+            this.numUD_graviteAbsolue = new System.Windows.Forms.NumericUpDown();
             this.numUD_temperature = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
-            this.txtBox_periodeOrbitale = new System.Windows.Forms.TextBox();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.numUD_graviteSurface = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listeAstre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_rayon)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteAbsolue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_temperature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,7 +153,7 @@
             // 
             // btn_enregistrer
             // 
-            this.btn_enregistrer.Location = new System.Drawing.Point(255, 366);
+            this.btn_enregistrer.Location = new System.Drawing.Point(255, 402);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Size = new System.Drawing.Size(75, 23);
             this.btn_enregistrer.TabIndex = 50;
@@ -159,7 +163,7 @@
             // 
             // btn_supprimer
             // 
-            this.btn_supprimer.Location = new System.Drawing.Point(12, 366);
+            this.btn_supprimer.Location = new System.Drawing.Point(12, 402);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Size = new System.Drawing.Size(75, 23);
             this.btn_supprimer.TabIndex = 50;
@@ -178,7 +182,7 @@
             this.dgv_listeAstre.ReadOnly = true;
             this.dgv_listeAstre.RowHeadersVisible = false;
             this.dgv_listeAstre.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_listeAstre.Size = new System.Drawing.Size(525, 400);
+            this.dgv_listeAstre.Size = new System.Drawing.Size(525, 439);
             this.dgv_listeAstre.TabIndex = 51;
             // 
             // numUD_rayon
@@ -191,7 +195,7 @@
             0,
             0});
             this.numUD_rayon.Name = "numUD_rayon";
-            this.numUD_rayon.Size = new System.Drawing.Size(83, 20);
+            this.numUD_rayon.Size = new System.Drawing.Size(101, 20);
             this.numUD_rayon.TabIndex = 52;
             // 
             // groupBox1
@@ -200,27 +204,37 @@
             this.groupBox1.Controls.Add(this.txtBox_description);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtBox_atmosphere);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.numUD_graviteSurface);
+            this.groupBox1.Controls.Add(this.numUD_graviteAbsolue);
             this.groupBox1.Controls.Add(this.numUD_temperature);
             this.groupBox1.Controls.Add(this.numUD_rayon);
             this.groupBox1.Location = new System.Drawing.Point(15, 99);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(315, 261);
+            this.groupBox1.Size = new System.Drawing.Size(315, 297);
             this.groupBox1.TabIndex = 53;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caractéristiques";
             // 
+            // txtBox_periodeOrbitale
+            // 
+            this.txtBox_periodeOrbitale.Location = new System.Drawing.Point(94, 181);
+            this.txtBox_periodeOrbitale.Name = "txtBox_periodeOrbitale";
+            this.txtBox_periodeOrbitale.Size = new System.Drawing.Size(215, 20);
+            this.txtBox_periodeOrbitale.TabIndex = 56;
+            // 
             // txtBox_description
             // 
-            this.txtBox_description.Location = new System.Drawing.Point(94, 171);
+            this.txtBox_description.Location = new System.Drawing.Point(94, 208);
             this.txtBox_description.Multiline = true;
             this.txtBox_description.Name = "txtBox_description";
             this.txtBox_description.Size = new System.Drawing.Size(215, 83);
@@ -229,7 +243,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 91);
+            this.label6.Location = new System.Drawing.Point(6, 122);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 53;
@@ -237,7 +251,7 @@
             // 
             // txtBox_atmosphere
             // 
-            this.txtBox_atmosphere.Location = new System.Drawing.Point(94, 88);
+            this.txtBox_atmosphere.Location = new System.Drawing.Point(94, 119);
             this.txtBox_atmosphere.Multiline = true;
             this.txtBox_atmosphere.Name = "txtBox_atmosphere";
             this.txtBox_atmosphere.Size = new System.Drawing.Size(215, 56);
@@ -246,7 +260,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(207, 67);
+            this.label13.Location = new System.Drawing.Point(228, 67);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(15, 13);
             this.label13.TabIndex = 53;
@@ -255,7 +269,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(207, 44);
+            this.label12.Location = new System.Drawing.Point(228, 44);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(36, 13);
             this.label12.TabIndex = 53;
@@ -264,7 +278,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(207, 21);
+            this.label11.Location = new System.Drawing.Point(228, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(21, 13);
             this.label11.TabIndex = 53;
@@ -273,7 +287,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 176);
+            this.label10.Location = new System.Drawing.Point(6, 213);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(66, 13);
             this.label10.TabIndex = 53;
@@ -282,7 +296,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 151);
+            this.label9.Location = new System.Drawing.Point(6, 184);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 13);
             this.label9.TabIndex = 53;
@@ -315,18 +329,18 @@
             this.label2.TabIndex = 53;
             this.label2.Text = "Rayon équatoriale :";
             // 
-            // numUD_graviteSurface
+            // numUD_graviteAbsolue
             // 
-            this.numUD_graviteSurface.DecimalPlaces = 3;
-            this.numUD_graviteSurface.Location = new System.Drawing.Point(121, 65);
-            this.numUD_graviteSurface.Maximum = new decimal(new int[] {
+            this.numUD_graviteAbsolue.DecimalPlaces = 4;
+            this.numUD_graviteAbsolue.Location = new System.Drawing.Point(121, 65);
+            this.numUD_graviteAbsolue.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.numUD_graviteSurface.Name = "numUD_graviteSurface";
-            this.numUD_graviteSurface.Size = new System.Drawing.Size(83, 20);
-            this.numUD_graviteSurface.TabIndex = 52;
+            this.numUD_graviteAbsolue.Name = "numUD_graviteAbsolue";
+            this.numUD_graviteAbsolue.Size = new System.Drawing.Size(101, 20);
+            this.numUD_graviteAbsolue.TabIndex = 52;
             // 
             // numUD_temperature
             // 
@@ -337,12 +351,12 @@
             0,
             0});
             this.numUD_temperature.Name = "numUD_temperature";
-            this.numUD_temperature.Size = new System.Drawing.Size(83, 20);
+            this.numUD_temperature.Size = new System.Drawing.Size(101, 20);
             this.numUD_temperature.TabIndex = 52;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(174, 389);
+            this.button1.Location = new System.Drawing.Point(174, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 50;
@@ -352,7 +366,7 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(255, 389);
+            this.btn_update.Location = new System.Drawing.Point(255, 425);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 54;
@@ -360,16 +374,9 @@
             this.btn_update.UseVisualStyleBackColor = true;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
-            // txtBox_periodeOrbitale
-            // 
-            this.txtBox_periodeOrbitale.Location = new System.Drawing.Point(94, 148);
-            this.txtBox_periodeOrbitale.Name = "txtBox_periodeOrbitale";
-            this.txtBox_periodeOrbitale.Size = new System.Drawing.Size(215, 20);
-            this.txtBox_periodeOrbitale.TabIndex = 56;
-            // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(12, 389);
+            this.btn_clear.Location = new System.Drawing.Point(12, 425);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 23);
             this.btn_clear.TabIndex = 55;
@@ -377,11 +384,42 @@
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
+            // numUD_graviteSurface
+            // 
+            this.numUD_graviteSurface.DecimalPlaces = 3;
+            this.numUD_graviteSurface.Location = new System.Drawing.Point(121, 90);
+            this.numUD_graviteSurface.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numUD_graviteSurface.Name = "numUD_graviteSurface";
+            this.numUD_graviteSurface.Size = new System.Drawing.Size(101, 20);
+            this.numUD_graviteSurface.TabIndex = 52;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(228, 92);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 13);
+            this.label14.TabIndex = 53;
+            this.label14.Text = "m/s²";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 92);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 13);
+            this.label15.TabIndex = 53;
+            this.label15.Text = "Gravité surface :";
+            // 
             // frConfigAstre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 421);
+            this.ClientSize = new System.Drawing.Size(878, 460);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.groupBox1);
@@ -409,8 +447,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numUD_rayon)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteAbsolue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_temperature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,7 +473,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numUD_graviteSurface;
+        private System.Windows.Forms.NumericUpDown numUD_graviteAbsolue;
         private System.Windows.Forms.NumericUpDown numUD_temperature;
         private System.Windows.Forms.TextBox txtBox_description;
         private System.Windows.Forms.Label label6;
@@ -449,6 +488,9 @@
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.TextBox txtBox_periodeOrbitale;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.NumericUpDown numUD_graviteSurface;
     }
 }
 

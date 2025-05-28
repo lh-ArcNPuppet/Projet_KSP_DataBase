@@ -91,5 +91,129 @@ namespace LIB_DAL
 
             return res;
         }
+
+        public static DB_TypeProfession getProfession(int idProfession)
+        {
+            try
+            {
+                string sql =
+                    "SELECT * " +
+                    "FROM type_profession " +
+                    "WHERE id = @id;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", idProfession);
+                        using (var dr = cmd.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                DB_TypeProfession tpro = new DB_TypeProfession(
+                                    dr.GetInt32(0),
+                                    dr.GetString(1)
+                                );
+
+                                return tpro;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+            return null;
+        }
+
+        public static bool createTypeProfession(DB_TypeProfession newProfession)
+        {
+            try
+            {
+                string sql =
+                    "INSERT INTO type_profession(id, libelle) " +
+                    "VALUES (" +
+                    "@id, " +
+                    "@libelle);";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", newProfession.getId());
+                        cmd.Parameters.AddWithValue("@libelle", newProfession.getLibelle());
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
+
+        public static bool updateTypeProfession(DB_TypeProfession newProfession)
+        {
+            try
+            {
+                string sql =
+                    "UPDATE type_profession " +
+                    "SET " +
+                    "libelle = @libelle " +
+                    "WHERE id = @id;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", newProfession.getId());
+                        cmd.Parameters.AddWithValue("@libelle", newProfession.getLibelle());
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
+
+        public static bool deleteTypeProfession(int idProfession)
+        {
+            try
+            {
+                string sql =
+                    "DELETE FROM type_profession " +
+                    "WHERE id = @id;";
+
+                using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
+                {
+                    cnx.Open();
+                    using (var cmd = new MySqlCommand(sql, cnx))
+                    {
+                        cmd.Parameters.AddWithValue("@id", idProfession);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+                return false;
+            }
+        }
     }
 }

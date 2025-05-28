@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frConfigStatusMission));
-            this.txtBox_idProfession = new System.Windows.Forms.TextBox();
+            this.txtBox_idStatusMission = new System.Windows.Forms.TextBox();
             this.dgv_listStatusMission = new System.Windows.Forms.DataGridView();
             this.pctBox_PictureType = new System.Windows.Forms.PictureBox();
             this.btn_enregistrer = new System.Windows.Forms.Button();
@@ -44,12 +44,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtBox_idProfession
+            // txtBox_idStatusMission
             // 
-            this.txtBox_idProfession.Location = new System.Drawing.Point(116, 12);
-            this.txtBox_idProfession.Name = "txtBox_idProfession";
-            this.txtBox_idProfession.Size = new System.Drawing.Size(49, 20);
-            this.txtBox_idProfession.TabIndex = 53;
+            this.txtBox_idStatusMission.Location = new System.Drawing.Point(116, 12);
+            this.txtBox_idStatusMission.Name = "txtBox_idStatusMission";
+            this.txtBox_idStatusMission.Size = new System.Drawing.Size(49, 20);
+            this.txtBox_idStatusMission.TabIndex = 53;
             // 
             // dgv_listStatusMission
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.btn_editer);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.txtBox_idProfession);
+            this.Controls.Add(this.txtBox_idStatusMission);
             this.Controls.Add(this.dgv_listStatusMission);
             this.Controls.Add(this.pctBox_PictureType);
             this.Controls.Add(this.btn_enregistrer);
@@ -176,7 +176,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBox_idProfession;
+        private System.Windows.Forms.TextBox txtBox_idStatusMission;
         private System.Windows.Forms.DataGridView dgv_listStatusMission;
         private System.Windows.Forms.PictureBox pctBox_PictureType;
         private System.Windows.Forms.Button btn_enregistrer;

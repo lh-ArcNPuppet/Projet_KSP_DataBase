@@ -18,6 +18,9 @@ namespace Configuration
         public frConfigAstre()
         {
             InitializeComponent();
+
+            btn_enregistrer.Enabled = true;
+            btn_update.Enabled = false;
         }
         private void getListAstres()
         {
@@ -73,7 +76,9 @@ namespace Configuration
                         string idSysteme = DAO_Systeme.getIdByName(cbo_systemeParent.SelectedItem.ToString()).ToString();
                         decimal rayon = numUD_rayon.Value;
                         int temp = Convert.ToInt32(numUD_temperature.Value);
+                        decimal gravAbs = numUD_graviteAbsolue.Value;
                         decimal gravSurf = numUD_graviteSurface.Value;
+
                         string atmos = txtBox_atmosphere.Text.Trim();
                         string period = txtBox_periodeOrbitale.Text.Trim();
                         string desc = txtBox_description.Text.Trim();
@@ -90,7 +95,7 @@ namespace Configuration
                             "desc : " + desc + "\n"
                             );*/
 
-                        DB_Astre astre = new DB_Astre(nom, type, idSysteme, rayon, temp, gravSurf, atmos, period, desc);
+                        DB_Astre astre = new DB_Astre(nom, type, idSysteme, rayon, temp, gravAbs, gravSurf, atmos, period, desc);
                         bool res = DAO_Astre.createAstre(astre);
                         if (res) {
                             MessageBox.Show(
@@ -107,6 +112,7 @@ namespace Configuration
                             cbo_systemeParent.Text = "";
                             numUD_rayon.Value = 0;
                             numUD_temperature.Value = 0;
+                            numUD_graviteAbsolue.Value = 0;
                             numUD_graviteSurface.Value = 0;
                             txtBox_atmosphere.Clear();
                             txtBox_periodeOrbitale.Text.Trim();
@@ -173,7 +179,8 @@ namespace Configuration
             cbo_systemeParent.Text = astre.getRelatedSystem();
             numUD_rayon.Value = astre.getRadius();
             numUD_temperature.Value = astre.getTemperature();
-            numUD_graviteSurface.Value = astre.getAbsoluteGravity();
+            numUD_graviteAbsolue.Value = astre.getAbsoluteGravity();
+            numUD_graviteSurface.Value = astre.getSurfaceGravity();
             txtBox_atmosphere.Text = astre.getAthmosphere();
             txtBox_periodeOrbitale.Text = astre.getOrbitPeriod();
             txtBox_description.Text = astre.getDescription();
@@ -207,6 +214,7 @@ namespace Configuration
                 cbo_systemeParent.Text = "";
                 numUD_rayon.Value = 0;
                 numUD_temperature.Value = 0;
+                numUD_graviteAbsolue.Value = 0;
                 numUD_graviteSurface.Value = 0;
                 txtBox_atmosphere.Clear();
                 txtBox_periodeOrbitale.Clear();
@@ -232,12 +240,13 @@ namespace Configuration
                         string idSysteme = DAO_Systeme.getIdByName(cbo_systemeParent.SelectedItem.ToString()).ToString();
                         decimal rayon = numUD_rayon.Value;
                         int temp = Convert.ToInt32(numUD_temperature.Value);
+                        decimal gravAbs = numUD_graviteAbsolue.Value;
                         decimal gravSurf = numUD_graviteSurface.Value;
                         string atmos = txtBox_atmosphere.Text.Trim();
                         string  period = txtBox_periodeOrbitale.Text.Trim();
                         string desc = txtBox_description.Text.Trim();
 
-                        DB_Astre astre = new DB_Astre(id, nom, type, idSysteme, rayon, temp, gravSurf, atmos, period, desc);
+                        DB_Astre astre = new DB_Astre(id, nom, type, idSysteme, rayon, temp, gravAbs, gravSurf, atmos, period, desc);
                         bool res = DAO_Astre.updateAstre(astre);
                         if (res)
                         {
@@ -255,6 +264,7 @@ namespace Configuration
                             cbo_systemeParent.Text = "";
                             numUD_rayon.Value = 0;
                             numUD_temperature.Value = 0;
+                            numUD_graviteAbsolue.Value = 0;
                             numUD_graviteSurface.Value = 0;
                             txtBox_atmosphere.Clear();
                             txtBox_periodeOrbitale.Clear();
@@ -315,6 +325,7 @@ namespace Configuration
             cbo_systemeParent.Text = "";
             numUD_rayon.Value = 0;
             numUD_temperature.Value = 0;
+            numUD_graviteAbsolue.Value = 0;
             numUD_graviteSurface.Value = 0;
             txtBox_atmosphere.Clear();
             txtBox_periodeOrbitale.Clear();

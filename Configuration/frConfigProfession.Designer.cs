@@ -83,6 +83,7 @@
             this.btn_enregistrer.TabIndex = 42;
             this.btn_enregistrer.Text = "Enregistrer";
             this.btn_enregistrer.UseVisualStyleBackColor = true;
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // btn_supprimer
             // 
@@ -92,6 +93,7 @@
             this.btn_supprimer.TabIndex = 41;
             this.btn_supprimer.Text = "Supprimer";
             this.btn_supprimer.UseVisualStyleBackColor = true;
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
             // 
             // label3
             // 
@@ -126,6 +128,7 @@
             this.btn_editer.TabIndex = 67;
             this.btn_editer.Text = "Editer";
             this.btn_editer.UseVisualStyleBackColor = true;
+            this.btn_editer.Click += new System.EventHandler(this.btn_editer_Click);
             // 
             // btn_update
             // 
@@ -135,6 +138,7 @@
             this.btn_update.TabIndex = 66;
             this.btn_update.Text = "Modifier";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_clear
             // 
@@ -144,6 +148,7 @@
             this.btn_clear.TabIndex = 65;
             this.btn_clear.Text = "Clear Form";
             this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // frConfigProfession
             // 
