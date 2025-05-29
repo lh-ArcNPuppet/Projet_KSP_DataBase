@@ -244,5 +244,49 @@ namespace LIB_DAL
                 return false;
             }
         }
+
+        public static int getIdByLibelle(string nomPayload)
+        {
+            int res = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM payload WHERE nom = @nom;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@nom", nomPayload);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_Payload payload = new DB_Payload(
+                                    dr.GetInt32(0),
+                                    dr.GetString(1),
+                                    dr.GetString(2),
+                                    dr.GetInt32(3),
+                                    dr.GetInt32(4),
+                                    dr.GetString(5),
+                                    dr.GetString(6),
+                                    dr.GetString(7),
+                                    dr.GetString(8),
+                                    dr.GetDecimal(9),
+                                    dr.GetDecimal(10),
+                                    dr.GetDecimal(11),
+                                    dr.GetDecimal(12),
+                                    dr.GetInt32(13),
+                                    dr.GetString(14)
+                                );
+                            res = payload.getId();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+
+            return res;
+        }
     }
 }

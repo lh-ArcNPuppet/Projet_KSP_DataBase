@@ -6,8 +6,6 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_DAL.dll
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_BLL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\LIB_DAL.pdb
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Missions.csproj.AssemblyReference.cache
-P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditerListeKerbonaute.resources
-P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditListPayload.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frMission.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frNewMission.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.Properties.Resources.resources

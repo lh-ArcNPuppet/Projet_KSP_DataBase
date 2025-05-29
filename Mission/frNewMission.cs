@@ -68,8 +68,28 @@ namespace Mission
 
         private void btn_editListPayload_Click(object sender, EventArgs e)
         {
-            frEditListUsedPayload frEditListUsedPayload = new frEditListUsedPayload();
-            frEditListUsedPayload.Show();
+            string concatPayload = "";
+            if (lst_listPayload.Items.Count > 0)
+            {
+                List<string> usedPayloads = new List<string>();
+                foreach (var item in lst_listPayload.Items)
+                {
+                    usedPayloads.Add(item.ToString());
+                }
+
+                concatPayload = string.Join(",", usedPayloads);
+            }
+
+            frEditListUsedPayload frEditListUsedPayload = new frEditListUsedPayload(concatPayload);
+
+            if (frEditListUsedPayload.ShowDialog() == DialogResult.OK)
+            {
+                string listResult = frEditListUsedPayload.resultatList;
+                string[] listPayloadsArray = listResult.Split(',');
+
+                lst_listPayload.Items.Clear();
+                lst_listPayload.Items.AddRange(listPayloadsArray);
+            }
         }
     }
 }

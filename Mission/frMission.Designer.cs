@@ -38,7 +38,7 @@
             // btn_ajouter
             // 
             this.btn_ajouter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_ajouter.Location = new System.Drawing.Point(1343, 12);
+            this.btn_ajouter.Location = new System.Drawing.Point(1102, 12);
             this.btn_ajouter.Name = "btn_ajouter";
             this.btn_ajouter.Size = new System.Drawing.Size(75, 23);
             this.btn_ajouter.TabIndex = 0;
@@ -49,7 +49,7 @@
             // btn_editer
             // 
             this.btn_editer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_editer.Location = new System.Drawing.Point(1262, 12);
+            this.btn_editer.Location = new System.Drawing.Point(1021, 12);
             this.btn_editer.Name = "btn_editer";
             this.btn_editer.Size = new System.Drawing.Size(75, 23);
             this.btn_editer.TabIndex = 0;
@@ -59,7 +59,7 @@
             // btn_supprimer
             // 
             this.btn_supprimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_supprimer.Location = new System.Drawing.Point(1181, 12);
+            this.btn_supprimer.Location = new System.Drawing.Point(940, 12);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Size = new System.Drawing.Size(75, 23);
             this.btn_supprimer.TabIndex = 0;
@@ -81,14 +81,14 @@
             this.dgv_listeMission.ReadOnly = true;
             this.dgv_listeMission.RowHeadersVisible = false;
             this.dgv_listeMission.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_listeMission.Size = new System.Drawing.Size(1409, 629);
+            this.dgv_listeMission.Size = new System.Drawing.Size(1168, 544);
             this.dgv_listeMission.TabIndex = 1;
             // 
             // frMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1430, 682);
+            this.ClientSize = new System.Drawing.Size(1189, 597);
             this.Controls.Add(this.dgv_listeMission);
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.btn_editer);
