@@ -128,6 +128,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("INSERT", "Systeme");
+
                 return true;
             }
             catch (Exception ex)
@@ -144,8 +148,8 @@ namespace LIB_DAL
                 string sql =
                     "UPDATE systeme " +
                     "SET " +
-                    "libelle = @libelle " +
-                    "description = @description" +
+                    "libelle = @libelle, " +
+                    "description = @description " +
                     "WHERE id = @id;";
 
                 using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
@@ -160,6 +164,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("UPDATE", "Systeme");
+
                 return true;
             }
             catch (Exception ex)
@@ -187,6 +195,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("DELETE", "Systeme");
+
                 return true;
             }
             catch (Exception ex)

@@ -88,6 +88,7 @@
             this.cbo_statusMission = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lbl_numVol = new System.Windows.Forms.Label();
+            this.rdBtn_nonFini = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -148,6 +149,7 @@
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Controls.Add(this.rdBtn_echec);
             this.groupBox5.Controls.Add(this.rdBtn_semiEchec);
+            this.groupBox5.Controls.Add(this.rdBtn_nonFini);
             this.groupBox5.Controls.Add(this.rdBtn_reussite);
             this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.cbo_situationActuelle);
@@ -196,7 +198,7 @@
             // rdBtn_echec
             // 
             this.rdBtn_echec.AutoSize = true;
-            this.rdBtn_echec.Location = new System.Drawing.Point(106, 81);
+            this.rdBtn_echec.Location = new System.Drawing.Point(106, 98);
             this.rdBtn_echec.Name = "rdBtn_echec";
             this.rdBtn_echec.Size = new System.Drawing.Size(56, 17);
             this.rdBtn_echec.TabIndex = 19;
@@ -207,7 +209,7 @@
             // rdBtn_semiEchec
             // 
             this.rdBtn_semiEchec.AutoSize = true;
-            this.rdBtn_semiEchec.Location = new System.Drawing.Point(106, 63);
+            this.rdBtn_semiEchec.Location = new System.Drawing.Point(106, 80);
             this.rdBtn_semiEchec.Name = "rdBtn_semiEchec";
             this.rdBtn_semiEchec.Size = new System.Drawing.Size(82, 17);
             this.rdBtn_semiEchec.TabIndex = 18;
@@ -218,7 +220,7 @@
             // rdBtn_reussite
             // 
             this.rdBtn_reussite.AutoSize = true;
-            this.rdBtn_reussite.Location = new System.Drawing.Point(106, 45);
+            this.rdBtn_reussite.Location = new System.Drawing.Point(106, 62);
             this.rdBtn_reussite.Name = "rdBtn_reussite";
             this.rdBtn_reussite.Size = new System.Drawing.Size(66, 17);
             this.rdBtn_reussite.TabIndex = 17;
@@ -358,6 +360,7 @@
             this.btn_viderListKerbonaute.TabIndex = 20;
             this.btn_viderListKerbonaute.Text = "Vider liste";
             this.btn_viderListKerbonaute.UseVisualStyleBackColor = true;
+            this.btn_viderListKerbonaute.Click += new System.EventHandler(this.btn_viderListKerbonaute_Click);
             // 
             // btn_editListKerbonaute
             // 
@@ -585,6 +588,7 @@
             this.btn_editListPayload.TabIndex = 19;
             this.btn_editListPayload.Text = "Modifier liste";
             this.btn_editListPayload.UseVisualStyleBackColor = true;
+            this.btn_editListPayload.Click += new System.EventHandler(this.btn_editListPayload_Click);
             // 
             // btn_viderListPayload
             // 
@@ -594,6 +598,7 @@
             this.btn_viderListPayload.TabIndex = 19;
             this.btn_viderListPayload.Text = "Vider liste";
             this.btn_viderListPayload.UseVisualStyleBackColor = true;
+            this.btn_viderListPayload.Click += new System.EventHandler(this.btn_viderListPayload_Click);
             // 
             // pictureBox2
             // 
@@ -690,11 +695,22 @@
             // 
             this.lbl_numVol.AutoSize = true;
             this.lbl_numVol.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_numVol.Location = new System.Drawing.Point(46, 9);
+            this.lbl_numVol.Location = new System.Drawing.Point(41, 10);
             this.lbl_numVol.Name = "lbl_numVol";
-            this.lbl_numVol.Size = new System.Drawing.Size(33, 13);
+            this.lbl_numVol.Size = new System.Drawing.Size(15, 13);
             this.lbl_numVol.TabIndex = 30;
-            this.lbl_numVol.Text = "Vxxx";
+            this.lbl_numVol.Text = "X";
+            // 
+            // rdBtn_nonFini
+            // 
+            this.rdBtn_nonFini.AutoSize = true;
+            this.rdBtn_nonFini.Location = new System.Drawing.Point(106, 45);
+            this.rdBtn_nonFini.Name = "rdBtn_nonFini";
+            this.rdBtn_nonFini.Size = new System.Drawing.Size(61, 17);
+            this.rdBtn_nonFini.TabIndex = 17;
+            this.rdBtn_nonFini.TabStop = true;
+            this.rdBtn_nonFini.Text = "Non fini";
+            this.rdBtn_nonFini.UseVisualStyleBackColor = true;
             // 
             // frNewMission
             // 
@@ -719,7 +735,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frNewMission";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ajouter un vol";
+            this.Text = "Ajouter un vol/mission";
+            this.Load += new System.EventHandler(this.frNewMission_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -806,5 +823,6 @@
         private System.Windows.Forms.Button btn_viderListPayload;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbl_numVol;
+        private System.Windows.Forms.RadioButton rdBtn_nonFini;
     }
 }

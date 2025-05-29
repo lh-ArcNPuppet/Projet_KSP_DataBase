@@ -83,7 +83,7 @@ namespace LIB_DAL
 
                 using (var cnx = new MySqlConnection(BDD_Connect.connectionString))
                 {
-                    cnx.Open();
+                        cnx.Open();
                     using (var cmd = new MySqlCommand(sql, cnx))
                     {
                         cmd.Parameters.AddWithValue("@nom", newAstre.getName());
@@ -100,6 +100,9 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("INSERT", "Astre");
+
                 return true;
             }
             catch (Exception ex)
@@ -197,6 +200,9 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("UPDATE", "Astre");
+
                 return true;
             }
             catch (Exception ex)
@@ -224,6 +230,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("DELETE", "Astre");
+
                 return true;
             }
             catch (Exception ex)

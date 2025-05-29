@@ -178,7 +178,7 @@ namespace Configuration
             cbo_type.Text = astre.getType();
             cbo_systemeParent.Text = astre.getRelatedSystem();
             numUD_rayon.Value = astre.getRadius();
-            numUD_temperature.Value = astre.getTemperature();
+            numUD_temperature.Value = Convert.ToDecimal(astre.getTemperature());
             numUD_graviteAbsolue.Value = astre.getAbsoluteGravity();
             numUD_graviteSurface.Value = astre.getSurfaceGravity();
             txtBox_atmosphere.Text = astre.getAthmosphere();

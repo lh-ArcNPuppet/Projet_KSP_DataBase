@@ -47,29 +47,29 @@
             this.txtBox_description = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBox_atmosphere = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.numUD_graviteSurface = new System.Windows.Forms.NumericUpDown();
             this.numUD_graviteAbsolue = new System.Windows.Forms.NumericUpDown();
             this.numUD_temperature = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
-            this.numUD_graviteSurface = new System.Windows.Forms.NumericUpDown();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listeAstre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_rayon)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteAbsolue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_temperature)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -257,6 +257,15 @@
             this.txtBox_atmosphere.Size = new System.Drawing.Size(215, 56);
             this.txtBox_atmosphere.TabIndex = 54;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(228, 92);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 13);
+            this.label14.TabIndex = 53;
+            this.label14.Text = "m/s²";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -271,9 +280,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(228, 44);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 13);
+            this.label12.Size = new System.Drawing.Size(14, 13);
             this.label12.TabIndex = 53;
-            this.label12.Text = "Kelvin";
+            this.label12.Text = "K";
             // 
             // label11
             // 
@@ -302,6 +311,15 @@
             this.label9.TabIndex = 53;
             this.label9.Text = "Période orbitale :";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 92);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 13);
+            this.label15.TabIndex = 53;
+            this.label15.Text = "Gravité surface :";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -328,6 +346,19 @@
             this.label2.Size = new System.Drawing.Size(99, 13);
             this.label2.TabIndex = 53;
             this.label2.Text = "Rayon équatoriale :";
+            // 
+            // numUD_graviteSurface
+            // 
+            this.numUD_graviteSurface.DecimalPlaces = 3;
+            this.numUD_graviteSurface.Location = new System.Drawing.Point(121, 90);
+            this.numUD_graviteSurface.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numUD_graviteSurface.Name = "numUD_graviteSurface";
+            this.numUD_graviteSurface.Size = new System.Drawing.Size(101, 20);
+            this.numUD_graviteSurface.TabIndex = 52;
             // 
             // numUD_graviteAbsolue
             // 
@@ -384,37 +415,6 @@
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // numUD_graviteSurface
-            // 
-            this.numUD_graviteSurface.DecimalPlaces = 3;
-            this.numUD_graviteSurface.Location = new System.Drawing.Point(121, 90);
-            this.numUD_graviteSurface.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numUD_graviteSurface.Name = "numUD_graviteSurface";
-            this.numUD_graviteSurface.Size = new System.Drawing.Size(101, 20);
-            this.numUD_graviteSurface.TabIndex = 52;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(228, 92);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 13);
-            this.label14.TabIndex = 53;
-            this.label14.Text = "m/s²";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 92);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 13);
-            this.label15.TabIndex = 53;
-            this.label15.Text = "Gravité surface :";
-            // 
             // frConfigAstre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,9 +447,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numUD_rayon)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteAbsolue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_temperature)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUD_graviteSurface)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

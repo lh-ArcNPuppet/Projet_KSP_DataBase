@@ -131,6 +131,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("INSERT", "Astronaute");
+
                 return true;
             }
             catch (Exception ex)
@@ -175,6 +179,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("UPDATE", "Astronaute");
+
                 return true;
             }
             catch (Exception ex)
@@ -202,6 +210,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("DELETE", "Astronaute");
+
                 return true;
             }
             catch (Exception ex)

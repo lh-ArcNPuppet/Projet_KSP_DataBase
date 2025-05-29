@@ -58,6 +58,12 @@
     <Compile Include="frEditListPayload.Designer.cs">
       <DependentUpon>frEditListPayload.cs</DependentUpon>
     </Compile>
+    <Compile Include="frEditListUsedPayload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEditListUsedPayload.Designer.cs">
+      <DependentUpon>frEditListUsedPayload.cs</DependentUpon>
+    </Compile>
     <Compile Include="frMission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frEditListPayload.resx">
       <DependentUpon>frEditListPayload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEditListUsedPayload.resx">
+      <DependentUpon>frEditListUsedPayload.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frMission.resx">
       <DependentUpon>frMission.cs</DependentUpon>

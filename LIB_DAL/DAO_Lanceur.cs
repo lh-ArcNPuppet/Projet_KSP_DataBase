@@ -72,6 +72,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("INSERT", "Lanceur");
+
                 return true;
             }
             catch (Exception ex)
@@ -166,6 +170,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("UPDATE", "Lanceur");
+
                 return true;
             }
             catch (Exception ex)
@@ -193,6 +201,10 @@ namespace LIB_DAL
                         cmd.ExecuteNonQuery();
                     }
                 }
+
+                // Log l'action après succès
+                BDD_Connect.sendLogAction("DELETE", "Lanceur");
+
                 return true;
             }
             catch (Exception ex)
