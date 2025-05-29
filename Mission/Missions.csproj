@@ -46,18 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frEditerListeKerbonaute.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frEditerListeKerbonaute.Designer.cs">
-      <DependentUpon>frEditerListeKerbonaute.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frEditListPayload.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frEditListPayload.Designer.cs">
-      <DependentUpon>frEditListPayload.cs</DependentUpon>
-    </Compile>
     <Compile Include="frEditListUsedPayload.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,12 +66,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frEditerListeKerbonaute.resx">
-      <DependentUpon>frEditerListeKerbonaute.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frEditListPayload.resx">
-      <DependentUpon>frEditListPayload.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frEditListUsedPayload.resx">
       <DependentUpon>frEditListUsedPayload.cs</DependentUpon>
     </EmbeddedResource>
