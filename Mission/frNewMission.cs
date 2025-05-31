@@ -63,7 +63,7 @@ namespace Mission
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
                 );
-            if (res == DialogResult.Yes) { lst_kerbonaute.Items.Clear(); }
+            if (res == DialogResult.Yes) { lst_astronaute.Items.Clear(); }
         }
 
         private void btn_editListPayload_Click(object sender, EventArgs e)
@@ -89,6 +89,32 @@ namespace Mission
 
                 lst_listPayload.Items.Clear();
                 lst_listPayload.Items.AddRange(listPayloadsArray);
+            }
+        }
+
+        private void btn_editListKerbonaute_Click(object sender, EventArgs e)
+        {
+            string concatAstronaute = "";
+            if (lst_astronaute.Items.Count > 0)
+            {
+                List<string> usedAstronaute = new List<string>();
+                foreach (var item in lst_astronaute.Items)
+                {
+                    usedAstronaute.Add(item.ToString());
+                }
+
+                concatAstronaute = string.Join(",", usedAstronaute);
+            }
+
+            frEditListAstronautes frEditListAstronautes = new frEditListAstronautes(concatAstronaute);
+
+            if (frEditListAstronautes.ShowDialog() == DialogResult.OK)
+            {
+                string listResult = frEditListAstronautes.resultatList;
+                string[] listAstronauteArray = listResult.Split(',');
+
+                lst_astronaute.Items.Clear();
+                lst_astronaute.Items.AddRange(listAstronauteArray);
             }
         }
     }

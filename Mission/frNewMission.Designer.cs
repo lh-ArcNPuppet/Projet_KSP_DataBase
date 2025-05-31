@@ -40,6 +40,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.rdBtn_echec = new System.Windows.Forms.RadioButton();
             this.rdBtn_semiEchec = new System.Windows.Forms.RadioButton();
+            this.rdBtn_nonFini = new System.Windows.Forms.RadioButton();
             this.rdBtn_reussite = new System.Windows.Forms.RadioButton();
             this.label18 = new System.Windows.Forms.Label();
             this.cbo_situationActuelle = new System.Windows.Forms.ComboBox();
@@ -57,7 +58,7 @@
             this.btn_viderListKerbonaute = new System.Windows.Forms.Button();
             this.btn_editListKerbonaute = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lst_kerbonaute = new System.Windows.Forms.ListBox();
+            this.lst_astronaute = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtp_heureFin = new System.Windows.Forms.DateTimePicker();
             this.dtp_heureDebut = new System.Windows.Forms.DateTimePicker();
@@ -88,7 +89,6 @@
             this.cbo_statusMission = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lbl_numVol = new System.Windows.Forms.Label();
-            this.rdBtn_nonFini = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pctBox_PictureType)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -217,6 +217,17 @@
             this.rdBtn_semiEchec.Text = "Semi-Echec";
             this.rdBtn_semiEchec.UseVisualStyleBackColor = true;
             // 
+            // rdBtn_nonFini
+            // 
+            this.rdBtn_nonFini.AutoSize = true;
+            this.rdBtn_nonFini.Location = new System.Drawing.Point(106, 45);
+            this.rdBtn_nonFini.Name = "rdBtn_nonFini";
+            this.rdBtn_nonFini.Size = new System.Drawing.Size(61, 17);
+            this.rdBtn_nonFini.TabIndex = 17;
+            this.rdBtn_nonFini.TabStop = true;
+            this.rdBtn_nonFini.Text = "Non fini";
+            this.rdBtn_nonFini.UseVisualStyleBackColor = true;
+            // 
             // rdBtn_reussite
             // 
             this.rdBtn_reussite.AutoSize = true;
@@ -344,7 +355,7 @@
             this.groupBox3.Controls.Add(this.btn_viderListKerbonaute);
             this.groupBox3.Controls.Add(this.btn_editListKerbonaute);
             this.groupBox3.Controls.Add(this.pictureBox3);
-            this.groupBox3.Controls.Add(this.lst_kerbonaute);
+            this.groupBox3.Controls.Add(this.lst_astronaute);
             this.groupBox3.Location = new System.Drawing.Point(15, 356);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(307, 154);
@@ -354,7 +365,7 @@
             // 
             // btn_viderListKerbonaute
             // 
-            this.btn_viderListKerbonaute.Location = new System.Drawing.Point(226, 117);
+            this.btn_viderListKerbonaute.Location = new System.Drawing.Point(150, 117);
             this.btn_viderListKerbonaute.Name = "btn_viderListKerbonaute";
             this.btn_viderListKerbonaute.Size = new System.Drawing.Size(75, 23);
             this.btn_viderListKerbonaute.TabIndex = 20;
@@ -364,12 +375,13 @@
             // 
             // btn_editListKerbonaute
             // 
-            this.btn_editListKerbonaute.Location = new System.Drawing.Point(226, 93);
+            this.btn_editListKerbonaute.Location = new System.Drawing.Point(150, 93);
             this.btn_editListKerbonaute.Name = "btn_editListKerbonaute";
             this.btn_editListKerbonaute.Size = new System.Drawing.Size(75, 23);
             this.btn_editListKerbonaute.TabIndex = 20;
             this.btn_editListKerbonaute.Text = "Modifier liste";
             this.btn_editListKerbonaute.UseVisualStyleBackColor = true;
+            this.btn_editListKerbonaute.Click += new System.EventHandler(this.btn_editListKerbonaute_Click);
             // 
             // pictureBox3
             // 
@@ -381,13 +393,13 @@
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
-            // lst_kerbonaute
+            // lst_astronaute
             // 
-            this.lst_kerbonaute.FormattingEnabled = true;
-            this.lst_kerbonaute.Location = new System.Drawing.Point(6, 19);
-            this.lst_kerbonaute.Name = "lst_kerbonaute";
-            this.lst_kerbonaute.Size = new System.Drawing.Size(207, 121);
-            this.lst_kerbonaute.TabIndex = 9;
+            this.lst_astronaute.FormattingEnabled = true;
+            this.lst_astronaute.Location = new System.Drawing.Point(6, 19);
+            this.lst_astronaute.Name = "lst_astronaute";
+            this.lst_astronaute.Size = new System.Drawing.Size(138, 121);
+            this.lst_astronaute.TabIndex = 9;
             // 
             // groupBox2
             // 
@@ -701,17 +713,6 @@
             this.lbl_numVol.TabIndex = 30;
             this.lbl_numVol.Text = "X";
             // 
-            // rdBtn_nonFini
-            // 
-            this.rdBtn_nonFini.AutoSize = true;
-            this.rdBtn_nonFini.Location = new System.Drawing.Point(106, 45);
-            this.rdBtn_nonFini.Name = "rdBtn_nonFini";
-            this.rdBtn_nonFini.Size = new System.Drawing.Size(61, 17);
-            this.rdBtn_nonFini.TabIndex = 17;
-            this.rdBtn_nonFini.TabStop = true;
-            this.rdBtn_nonFini.Text = "Non fini";
-            this.rdBtn_nonFini.UseVisualStyleBackColor = true;
-            // 
             // frNewMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -790,7 +791,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ListBox lst_kerbonaute;
+        private System.Windows.Forms.ListBox lst_astronaute;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label13;

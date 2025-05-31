@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frEditListAstronautes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEditListAstronautes.Designer.cs">
+      <DependentUpon>frEditListAstronautes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frEditListUsedPayload.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frEditListAstronautes.resx">
+      <DependentUpon>frEditListAstronautes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frEditListUsedPayload.resx">
       <DependentUpon>frEditListUsedPayload.cs</DependentUpon>
     </EmbeddedResource>

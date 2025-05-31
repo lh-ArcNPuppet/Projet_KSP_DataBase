@@ -161,6 +161,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frEditListUsedPayload";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edition liste des payloads utilisé";
             this.Load += new System.EventHandler(this.frEditListUsedPayload_Load);

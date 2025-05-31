@@ -21,12 +21,16 @@ namespace Mission
             InitializeComponent();
             this.DialogResult = DialogResult.Cancel;
 
-            if (inputList != null || inputList != "")
+            if (inputList != "")
             {
                 string[] listPayloadsArray = inputList.Split(',');
 
                 lst_usedPayloads.Items.Clear();
                 lst_usedPayloads.Items.AddRange(listPayloadsArray);
+            }
+            else
+            {
+                lst_usedPayloads.Items.Clear();
             }
         }
 
@@ -84,16 +88,29 @@ namespace Mission
                 resultatList = string.Join(",", usedPayloads);
                  
                 this.DialogResult = DialogResult.OK;
-                this.Close();
+                Close();
             }
+            else { Close(); }
         }
 
         private void btn_editer_Click(object sender, EventArgs e)
         {
-            txtBox_modificationNomPayload.Text = lst_usedPayloads.SelectedItem.ToString();
+            if (lst_usedPayloads.SelectedItem != null)
+            {
+                txtBox_modificationNomPayload.Text = lst_usedPayloads.SelectedItem.ToString();
 
-            txtBox_modificationNomPayload.Enabled = true;
-            btn_modifier.Enabled = true;
+                txtBox_modificationNomPayload.Enabled = true;
+                btn_modifier.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Veuillez sélectionné un payload pour l'éditer.",
+                    "Avertissement : aucun payload sélectionné",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                    );
+            }
         }
 
         private void btn_modifier_Click(object sender, EventArgs e)

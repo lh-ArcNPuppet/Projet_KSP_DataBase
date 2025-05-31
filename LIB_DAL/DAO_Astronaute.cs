@@ -222,5 +222,42 @@ namespace LIB_DAL
                 return false;
             }
         }
+
+        public static int getIdByName(string nomAstronaute)
+        {
+            int res = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM vue_astronaute WHERE nom = @nom;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@nom", nomAstronaute);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_Astronaute astronaute = new DB_Astronaute(
+                                    dr.GetInt32(0),
+                                    dr.GetString(1),
+                                    dr.GetChar(2),
+                                    dr.GetString(3),
+                                    dr.GetInt32(4),
+                                    dr.GetInt32(5),
+                                    dr.GetString(6),
+                                    dr.GetInt32(7)
+                                );
+                            res = astronaute.getId();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+
+            return res;
+        }
     }
 }
