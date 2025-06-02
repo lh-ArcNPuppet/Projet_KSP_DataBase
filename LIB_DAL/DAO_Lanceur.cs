@@ -213,5 +213,46 @@ namespace LIB_DAL
                 return false;
             }
         }
+
+        public static int getIdByName(string nom)
+        {
+            int res = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM lanceur WHERE nom = @nom;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@nom", nom);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_Lanceur lanceur = new DB_Lanceur(
+                                    dr.GetInt32(0),
+                                    dr.GetString(1),
+                                    dr.GetString(2),
+                                    dr.GetInt32(3),
+                                    dr.GetInt32(4),
+                                    dr.GetDecimal(5),
+                                    dr.GetDecimal(6),
+                                    dr.GetDecimal(7),
+                                    dr.GetDecimal(8),
+                                    dr.GetDecimal(9),
+                                    dr.GetInt32(10),
+                                    dr.GetString(11)
+                                );
+                            res = lanceur.getId();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+
+            return res;
+        }
     }
 }

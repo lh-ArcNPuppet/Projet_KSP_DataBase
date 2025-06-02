@@ -13,26 +13,32 @@ namespace LIB_BLL
         private int numVol;
         private string nom;
 
-        private string statusMission;
-        private string lanceur;
-        private string payloadList; //A modifier pour une autre approche impliquant l'ajout de listBox
+        private int idStatusMission;
+        private string statusMission; //Utilisé uniquement pour la vue associé
+
+        private int idLanceur;
+        private string lanceur; //Utilisé uniquement pour la vue associé
+
+        private string payloadList;
         private int cost;
 
-        private int startYear;
-        private int startDay;
-        private string startHour;
+        private DateTime dateHeureDebut;
+        private DateTime dateHeureFin;
+        private string dureeMission;
 
-        private int endYear;
-        private int endDay;
-        private string endHour;
+        private string listAstronaute;
 
-        private string listAstronaute; //A modifier pour une autre approche impliquant l'ajout de listBox
+        private string systeme; //Utilisé uniquement pour la vue associé
+        private int idSysteme;
 
-        private string systeme;
-        private string astre;
+        private string astre; //Utilisé uniquement pour la vue associé
+        private int idAstre;
+
         private string objectif;
 
-        private string situationActuelle;
+        private int idSituationActuelle;
+        private string situationActuelle; //Utilisé uniquement pour la vue associé
+
         private string resultMission;
         private string commentaire;
 
@@ -41,19 +47,51 @@ namespace LIB_BLL
         public DB_Mission(
             int numVol,
             string nom,
-            string sttMission,
-            string lanceur,
-            string payloadList,
+            int idStatusMission,
+            int idLanceur,
             int cost,
-            int startY,
-            int startD,
-            string startH,
-            int endY,
-            int endD,
-            string endH,
+            string payloadList,
+            DateTime dtpMissionStart,
+            DateTime dtpMissionEnd,
+            string dureeMission,
             string listAstronaute,
-            string systeme,
+            int idSysteme,
+            int idAstre,
+            string objectif,
+            int idSituationActuelle,
+            string resultMission,
+            string commentaire)
+        {
+            this.numVol = numVol;
+            this.nom = nom;
+            this.idStatusMission = idStatusMission;
+            this.idLanceur = idLanceur;
+            this.payloadList = payloadList;
+            this.cost = cost;
+            this.dateHeureDebut = dtpMissionStart;
+            this.dateHeureFin = dtpMissionEnd;
+            this.dureeMission = dureeMission;
+            this.listAstronaute = listAstronaute;
+            this.idSysteme = idSysteme;
+            this.idAstre = idAstre;
+            this.objectif = objectif;
+            this.idSituationActuelle = idSituationActuelle;
+            this.resultMission = resultMission;
+            this.commentaire = commentaire;
+        }
+        public DB_Mission(
+            int numVol,
+            string statusMission,
+            string nom,
+            string lanceur,
+            int cost,
+            string payloadList,
+            DateTime dtpMissionStart,
+            DateTime dtpMissionEnd,
+            string dureeMission,
+            string listAstronaute,
             string astre,
+            string systeme,
             string objectif,
             string situationActuelle,
             string resultMission,
@@ -61,16 +99,13 @@ namespace LIB_BLL
         {
             this.numVol = numVol;
             this.nom = nom;
-            this.statusMission = sttMission;
+            this.statusMission = statusMission;
             this.lanceur = lanceur;
             this.payloadList = payloadList;
             this.cost = cost;
-            this.startYear = startY;
-            this.startDay = startD;
-            this.startHour = startH;
-            this.endYear = endY;
-            this.endDay = endD;
-            this.endHour = endH;
+            this.dateHeureDebut = dtpMissionStart;
+            this.dateHeureFin = dtpMissionEnd;
+            this.dureeMission = dureeMission;
             this.listAstronaute = listAstronaute;
             this.systeme = systeme;
             this.astre = astre;
@@ -80,47 +115,86 @@ namespace LIB_BLL
             this.commentaire = commentaire;
         }
         public DB_Mission(
-            int numVol,
-            string sttMission,
             string nom,
+            int idStatusMission,
+            int idLanceur,
+            string payloadList,
+            int cost,
+            DateTime dtpMissionStart,
+            DateTime dtpMissionEnd,
+            string dureeMission,
+            string listAstronaute,
+            int idSysteme,
+            int idAstre,
+            string objectif,
+            int idSituationActuelle,
+            string resultMission,
+            string commentaire)
+        {
+            this.nom = nom;
+            this.idStatusMission = idStatusMission;
+            this.idLanceur = idLanceur;
+            this.payloadList = payloadList;
+            this.cost = cost;
+            this.dateHeureDebut = dtpMissionStart;
+            this.dateHeureFin = dtpMissionEnd;
+            this.dureeMission = dureeMission;
+            this.listAstronaute = listAstronaute;
+            this.idSysteme = idSysteme;
+            this.idAstre = idAstre;
+            this.objectif = objectif;
+            this.idSituationActuelle = idSituationActuelle;
+            this.resultMission = resultMission;
+            this.commentaire = commentaire;
+        }
+
+        public DB_Mission(
+            int numVol,
+            string statusMission,
+            string nom,
+            DateTime dtpMissionStart,
+            DateTime dtpMissionEnd,
             string lanceur,
             string payloadList,
             string listAstronaute,
             string objectif,
             string situationActuelle,
-            string resultMission,
-            string commentaire)
+            string resultMission)
         {
             this.numVol = numVol;
             this.nom = nom;
-            this.statusMission = sttMission;
-            this.lanceur = lanceur;
+            this.statusMission = statusMission;
             this.payloadList = payloadList;
+            this.dateHeureDebut = dtpMissionStart;
+            this.lanceur = lanceur;
+            this.dateHeureFin = dtpMissionEnd;
             this.listAstronaute = listAstronaute;
             this.objectif = objectif;
             this.situationActuelle = situationActuelle;
             this.resultMission = resultMission;
-            this.commentaire = commentaire;
         }
+
 
         //Accesseurs - Getter
         public int getNumFlight() { return this.numVol; }
         public string getName() { return this.nom; }
         public string getMissionState() { return this.statusMission; }
+        public int getIdMissionState() { return this.idStatusMission; }
         public string getLanceur() { return this.lanceur; }
+        public int getIdLanceur() { return this.idLanceur; }
         public string getPayloadList() { return this.payloadList; }
         public int getCost() { return this.cost; }
-        public int getStartYear() { return this.startYear; }
-        public int getStartDay() { return this.startDay; }
-        public string getTimeStart() { return this.startHour; }
-        public int getEndYear() { return this.endYear; }
-        public int getEndDay() { return this.endDay; }
-        public string getEndTime() { return this.endHour; }
+        public DateTime getDateTimeMissionStart() { return this.dateHeureDebut; }
+        public DateTime getDateTimeMissionEnd() { return this.dateHeureFin; }
+        public string getMissionDuration() { return this.dureeMission; }
         public string getAstronautList() { return this.listAstronaute; }
         public string getAstre() { return this.astre; }
+        public int getIdAstre() { return this.idAstre; }
         public string getSysteme() { return this.systeme; }
+        public int getIdSysteme() { return this.idSysteme; }
         public string getObjectif() { return this.objectif; }
         public string getActualSituation() { return this.situationActuelle; }
+        public int getIdActualSituation() { return this.idSituationActuelle; }
         public string getResultsMission() { return this.resultMission; }
         public string getComments() { return this.commentaire; }
 
@@ -130,12 +204,9 @@ namespace LIB_BLL
         public void setLanceur(string l) { this.lanceur = l; }
         public void setPayloadList(string pl) { this.payloadList = pl; }
         public void setCost(int c) { this.cost = c; }
-        public void setStartYear(int sY) { this.startYear = sY; }
-        public void setStartDay(int sD) { this.startDay = sD; }
-        public void setStartTime(string sTime) { this.startHour = sTime; }
-        public void setEndYear(int eY) { this.endYear = eY; }
-        public void setEndDay(int eD) { this.endDay = eD; }
-        public void setEndTime(string eTime) { this.endHour = eTime; }
+        public void setDateTimeMissionStart(DateTime dtMissionStart) { this.dateHeureDebut = dtMissionStart; }
+        public void setDateTimeMissionEnd(DateTime dtMissionEnd) { this.dateHeureFin = dtMissionEnd; }
+        public void setMissionDuration(string dureeMission) { this.dureeMission = dureeMission; }
         public void setAstronautList(string al) { this.listAstronaute = al; }
         public void setAstre(string a) { this.astre = a; }
         public void setSysteme(string s) { this.systeme = s; }

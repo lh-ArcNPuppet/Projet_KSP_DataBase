@@ -236,8 +236,8 @@ namespace Configuration
                     if (cbo_systemeParent.Text.Trim().Length != 0)
                     {
                         string nom = txtBox_nom.Text.Trim();
-                        string type = DAO_TypeAstre.getIdByLibelle(cbo_type.SelectedItem.ToString()).ToString();
-                        string idSysteme = DAO_Systeme.getIdByName(cbo_systemeParent.SelectedItem.ToString()).ToString();
+                        int type = DAO_TypeAstre.getIdByLibelle(cbo_type.SelectedItem.ToString());
+                        int idSysteme = DAO_Systeme.getIdByName(cbo_systemeParent.SelectedItem.ToString());
                         decimal rayon = numUD_rayon.Value;
                         int temp = Convert.ToInt32(numUD_temperature.Value);
                         decimal gravAbs = numUD_graviteAbsolue.Value;

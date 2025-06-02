@@ -137,8 +137,8 @@ namespace LIB_DAL
                                     (
                                     dr.GetInt32(0), 
                                     dr.GetString(1), 
-                                    dr.GetString(2), 
-                                    dr.GetString(3),
+                                    dr.GetInt32(2), 
+                                    dr.GetInt32(3),
                                     dr.GetDecimal(4),
                                     dr.GetInt32(5),
                                     dr.GetDecimal(6),
@@ -241,6 +241,46 @@ namespace LIB_DAL
                 Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
                 return false;
             }
+        }
+
+        public static int getIdByName(string nom)
+        {
+            int res = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM astre WHERE nom = @nom;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@nom", nom);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_Astre astre = new DB_Astre(
+                                    dr.GetInt32(0),
+                                    dr.GetString(1),
+                                    dr.GetInt32(2),
+                                    dr.GetInt32(3),
+                                    dr.GetDecimal(4),
+                                    dr.GetInt32(5),
+                                    dr.GetDecimal(6),
+                                    dr.GetDecimal(7),
+                                    dr.GetString(8),
+                                    dr.GetString(9),
+                                    dr.GetString(10)
+                                    );
+                            res = astre.getId();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+
+            return res;
         }
     }
 }

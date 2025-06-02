@@ -170,5 +170,33 @@ namespace LIB_DAL
                 return false;
             }
         }
+
+        public static int getIdByLibelle(string libelle)
+        {
+            int res = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM situation_actuelle WHERE libelle = @libelle;";
+                using (MySqlCommand cmd = new MySqlCommand(sql, BDD_Connect.cnx))
+                {
+                    cmd.Parameters.AddWithValue("@libelle", libelle);
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            DB_TypeAstre ta = new DB_TypeAstre(dr.GetInt32(0), dr.GetString(1));
+                            res = ta.getId();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur durant la requête SQL : " + ex.ToString());
+            }
+
+            return res;
+        }
     }
 }

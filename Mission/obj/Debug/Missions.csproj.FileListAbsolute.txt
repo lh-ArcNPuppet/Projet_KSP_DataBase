@@ -45,3 +45,5 @@ P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\bin\Debug\MySql.Data.xml
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.exe.config
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditListUsedPayload.resources
 P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditListAstronautes.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frEditMission.resources
+P:\01- Programmation\03- C#\Projet_KSP_DataBase\Mission\obj\Debug\Mission.frDetailsMission.resources

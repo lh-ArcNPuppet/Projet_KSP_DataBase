@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frDetailsMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDetailsMission.Designer.cs">
+      <DependentUpon>frDetailsMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="frEditListAstronautes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="frEditListUsedPayload.Designer.cs">
       <DependentUpon>frEditListUsedPayload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frEditMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEditMission.Designer.cs">
+      <DependentUpon>frEditMission.cs</DependentUpon>
     </Compile>
     <Compile Include="frMission.cs">
       <SubType>Form</SubType>
@@ -72,11 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frDetailsMission.resx">
+      <DependentUpon>frDetailsMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frEditListAstronautes.resx">
       <DependentUpon>frEditListAstronautes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frEditListUsedPayload.resx">
       <DependentUpon>frEditListUsedPayload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEditMission.resx">
+      <DependentUpon>frEditMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frMission.resx">
       <DependentUpon>frMission.cs</DependentUpon>

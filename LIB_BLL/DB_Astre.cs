@@ -11,8 +11,13 @@ namespace LIB_BLL
         //Attributs privés
         private int id;
         private string nom;
+
         private string type;
+        private int idType;
+
+        private int idSystemeRelatif;
         private string systemeRelatif;
+
         private decimal rayon;
         private int temperature;
         private decimal graviteAbsolu;
@@ -28,6 +33,20 @@ namespace LIB_BLL
             this.nom = nom;
             this.type = type;
             this.systemeRelatif = systemeR;
+        }
+        public DB_Astre(int id, string nom, int idType, int idSystemeR, decimal r, int temp, decimal ga, decimal gs, string atm, string pOrbit, string desc)
+        {
+            this.id = id;
+            this.nom = nom;
+            this.idType = idType;
+            this.idSystemeRelatif = idSystemeR;
+            this.rayon = r;
+            this.temperature = temp;
+            this.graviteAbsolu = ga;
+            this.graviteSurface = gs;
+            this.atmosphere = atm;
+            this.periodeOrbitale = pOrbit;
+            this.description = desc;
         }
         public DB_Astre(int id, string nom, string type, string systemeR, decimal r, int temp, decimal ga, decimal gs, string atm, string pOrbit, string desc)
         {
@@ -48,6 +67,18 @@ namespace LIB_BLL
             this.nom = nom;
             this.type = type;
             this.systemeRelatif = systemeR;
+            this.rayon = r;
+            this.temperature = temp;
+            this.graviteAbsolu = ga;
+            this.atmosphere = atm;
+            this.periodeOrbitale = pOrbit;
+            this.description = desc;
+        }
+        public DB_Astre(string nom, int idType, int idSystemeR, decimal r, int temp, decimal ga, decimal gs, string atm, string pOrbit, string desc)
+        {
+            this.nom = nom;
+            this.idType = idType;
+            this.idSystemeRelatif = idSystemeR;
             this.rayon = r;
             this.temperature = temp;
             this.graviteAbsolu = ga;
