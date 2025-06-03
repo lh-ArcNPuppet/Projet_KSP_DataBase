@@ -259,5 +259,11 @@ namespace Calculateurs
             calculateData();
             launchCkeckup();
         }
+
+        private void btn_toggleAide_Click(object sender, EventArgs e)
+        {
+            frAideCalculateur frAideCalculateur = new frAideCalculateur();
+            frAideCalculateur.Show();
+        }
     }
 }

@@ -742,9 +742,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(9, 45);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 13);
+            this.label14.Size = new System.Drawing.Size(81, 13);
             this.label14.TabIndex = 2;
-            this.label14.Text = "Payload :";
+            this.label14.Text = "Payload (LEO) :";
             // 
             // groupBox2
             // 
@@ -827,6 +827,7 @@
             this.btn_toggleAide.TabIndex = 18;
             this.btn_toggleAide.Text = "Afficher aide";
             this.btn_toggleAide.UseVisualStyleBackColor = true;
+            this.btn_toggleAide.Click += new System.EventHandler(this.btn_toggleAide_Click);
             // 
             // frDeltaV_Calculator
             // 
@@ -877,7 +878,7 @@
             this.Controls.Add(this.numUD_etage1_m0);
             this.Name = "frDeltaV_Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Calculateur de deltaV / LKO";
+            this.Text = "Calculateur de deltaV / LEO";
             this.Load += new System.EventHandler(this.frDeltaV_Calculator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numUD_etage1_m0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_etage2_m0)).EndInit();

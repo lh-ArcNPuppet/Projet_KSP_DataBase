@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frAideCalculateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frAideCalculateur.Designer.cs">
+      <DependentUpon>frAideCalculateur.cs</DependentUpon>
+    </Compile>
     <Compile Include="frDeltaV-LKO_Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frAideCalculateur.resx">
+      <DependentUpon>frAideCalculateur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frDeltaV-LKO_Calculator.resx">
       <DependentUpon>frDeltaV-LKO_Calculator.cs</DependentUpon>
     </EmbeddedResource>
